@@ -1,0 +1,2210 @@
+@prefix : <http://example.org/BIM_lighting_properties_standards/CEN_TC_274_Ontology#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://example.org/BIM_lighting_properties_standards/CEN_TC_274_Ontology#0$H_zVMtjA3vm1ce$LVc1D> a rdf:Property ;
+    rdfs:label "overall MF" ;
+    :hasID "08-0036" ;
+    rdfs:comment """Overall MF required to adapt the variations of MF standards. 
+E.g., Japanese Maintenance Factor standard JIEG-001(2013) defines and uses “Ml”, “Md” instead of “LLMF”, “LSF”, “LMF”, “RSMF”. The Japanese MF Procedure is different from CIE 97:2005. Overall MF covers the difference.""" ;
+    rdfs:subPropertyOf :OperationsMaintenanceProperties .
+
+:00NGdZChz3LACcedAVtNNR a rdf:Property ;
+    rdfs:label "upward light output ratio ULOR" ;
+    :hasID "04-0013" ;
+    rdfs:comment "Ratio of the upward luminous flux of the luminaire, measured under specified practical conditions with its own light source(s) and equipment, to the sum of the individual luminous fluxes of the same light source(s) when operated outside the luminaire with the same equipment, under specified conditions. Not valid for absolute photometry." ;
+    rdfs:subPropertyOf :PhotometricProperties .
+
+:00aw6unKX0ghwxryKRoQm9 a rdf:Property ;
+    rdfs:label "control features" ;
+    :hasID "02-0035" ;
+    rdfs:comment "Description of Control Elements and Features." ;
+    rdfs:subPropertyOf :ElectricalProperties .
+
+:018C_3ZRn5IufwY89oB9NV a rdf:Property ;
+    rdfs:label "light source included" ;
+    :hasID "02-0012" ;
+    rdfs:comment "States whether the luminaire is supplied with light source." ;
+    rdfs:subPropertyOf :ElectricalProperties .
+
+:020_6qAJj7fO641UbZtyld a rdf:Property ;
+    rdfs:label "2D symbol" ;
+    :hasID "07-0006" ;
+    rdfs:comment "Symbol in floor plan." ;
+    rdfs:subPropertyOf :MarketingProperties .
+
+:029GIxceb34PwAvq2yhDdT a rdf:Property ;
+    rdfs:label "warranty ID" ;
+    :hasID "08-0003" ;
+    rdfs:comment "Identical with name." ;
+    rdfs:subPropertyOf :OperationsMaintenanceProperties .
+
+:02qYRg2w1BRufMbYctgnox a rdf:Property ;
+    rdfs:label "movement detection area" ;
+    :hasID "05-0008" ;
+    rdfs:comment """Detection area for walking for the standard mounting height.
+For round area: the angular range from 1° to 360° and radius [m]. For rectangular area: L x W [m].""" ;
+    rdfs:subPropertyOf :SensingDeviceProperties .
+
+:03XhO08LHDWvZXteTHjOi9 a rdf:Property ;
+    rdfs:label "acoustic absorption table" ;
+    :hasID "08-0030" ;
+    rdfs:comment "The sound absorption coefficient (ISO 354:2003) presented in table depending on frequencies in the human hearable range." ;
+    rdfs:subPropertyOf :OperationsMaintenanceProperties .
+
+:05F825n2fBxfST7DzrOuLm a rdf:Property ;
+    rdfs:label "clamping range" ;
+    :hasID "02-0045" ;
+    rdfs:comment "The range of clamping." ;
+    rdfs:subPropertyOf :ElectricalProperties .
+
+:05kD42GYbEFQDgWG2CHKt5 a rdf:Property ;
+    rdfs:label "access clearance rear" ;
+    :hasID "08-0028" ;
+    rdfs:comment "Access required for maintenance of this item." ;
+    rdfs:subPropertyOf :OperationsMaintenanceProperties .
+
+:05nmPIMs186u1u1s5MSd23 a rdf:Property ;
+    rdfs:label "maximum tilt angle" ;
+    :hasID "01-0040" ;
+    rdfs:comment "Maximum possible value for the rotation of the tilt angle (x-axis)." ;
+    rdfs:subPropertyOf :MechanicalProperties .
+
+:06HGeLCbn65vV_7eBdJolA a rdf:Property ;
+    rdfs:label "cost of installation" ;
+    :hasID "07-0058" ;
+    rdfs:comment "Cost of installation per unit." ;
+    rdfs:subPropertyOf :MarketingProperties .
+
+:06Vbbmtwv85QArFTsBPUPQ a rdf:Property ;
+    rdfs:label "control gear required" ;
+    :hasID "02-0019" ;
+    rdfs:comment "States if control gear is necessary." ;
+    rdfs:subPropertyOf :ElectricalProperties .
+
+:07VBqU4vn4ouinVL_JTUta a rdf:Property ;
+    rdfs:label "delay time orientation light" ;
+    :hasID "05-0025" ;
+    rdfs:comment "Switch-off delay after delay time." ;
+    rdfs:subPropertyOf :SensingDeviceProperties .
+
+<http://example.org/BIM_lighting_properties_standards/CEN_TC_274_Ontology#0AO7nhSa9FzBQWUu$Q4E5D> a rdf:Property ;
+    rdfs:label "EFO class number" ;
+    :hasID "07-0018" ;
+    rdfs:comment "EFO class number. http://efobasen.efo.no/" ;
+    rdfs:subPropertyOf :MarketingProperties .
+
+<http://example.org/BIM_lighting_properties_standards/CEN_TC_274_Ontology#0DEC0slYfE$vgGuckv0i7w> a rdf:Property ;
+    rdfs:label "stroboscopic visibility measure SVM" ;
+    :hasID "04-0046" ;
+    rdfs:comment "The stroboscopic visibility measure (SVM) metric aims to   assess the stroboscopic effect which can occur in conjunction with moving objects and light modulation in the frequency range 80 Hz to 2,000 Hz." ;
+    rdfs:subPropertyOf :PhotometricProperties .
+
+<http://example.org/BIM_lighting_properties_standards/CEN_TC_274_Ontology#0DRBpoc$LCOxVU4CNwfUgl> a rdf:Property ;
+    rdfs:label "required space in ceiling" ;
+    :hasID "06-0024" ;
+    rdfs:comment "The minimum needed space in a ceiling for recessed luminaires for e.g. for thermal aspects." ;
+    rdfs:subPropertyOf :MountingAccessoryProperties .
+
+:0DlY8lmBT8gxJCl04yS42z a rdf:Property ;
+    rdfs:label "dimming control method" ;
+    :hasID "02-0068" ;
+    rdfs:comment "Determines which dimming control type is applicable for the luminaire. Check with IEC/TC34." ;
+    rdfs:subPropertyOf :ElectricalProperties .
+
+:0FWc9hC5PEqgfN0fVzc2Yo a rdf:Property ;
+    rdfs:label "zhaga standard" ;
+    :hasID "02-0017" ;
+    rdfs:comment "Is the luminaire compliant with Zhaga." ;
+    rdfs:subPropertyOf :ElectricalProperties .
+
+:0FYKiM4lT7dAD13KWzXvsG a rdf:Property ;
+    rdfs:label "photometric centre position x direction" ;
+    :hasID "04-0002" ;
+    rdfs:comment "X position of the point used as origin for photometric measurements and calculations in relation to the middle of the bounding box. Positive values are aligned with the C0 level. Negative values are aligned with the C180 level. See EN 13032-4:2015." ;
+    rdfs:subPropertyOf :PhotometricProperties .
+
+:0G4TAennPD5gzRoG2rlZv_ a rdf:Property ;
+    rdfs:label "ILCOS light source type" ;
+    :hasID "02-0008" ;
+    rdfs:comment "Light Source type definition according ILCOS, IEC 61231:2010." ;
+    rdfs:subPropertyOf :ElectricalProperties .
+
+:0HKPlHCMXFOOmtqPiFpiwZ a rdf:Property ;
+    rdfs:label "turn angle selected value" ;
+    :hasID "01-0049" ;
+    rdfs:comment "Selected value for the turn angle (y-axis). Turn can also be referred to as ‘twist’ or ‘cant’." ;
+    rdfs:subPropertyOf :MechanicalProperties .
+
+:0I4OByNdDC4BHSKOAD8s5t a rdf:Property ;
+    rdfs:label "access clearance right" ;
+    :hasID "08-0026" ;
+    rdfs:comment "Access required for maintenance of this item." ;
+    rdfs:subPropertyOf :OperationsMaintenanceProperties .
+
+<http://example.org/BIM_lighting_properties_standards/CEN_TC_274_Ontology#0Ias3th8D2cg4EvP$KqQcv> a rdf:Property ;
+    rdfs:label "electrical safety class" ;
+    :hasID "02-0030" ;
+    rdfs:comment "Indicates whether the electrical device has a protective earth connection or not." ;
+    rdfs:subPropertyOf :ElectricalProperties .
+
+:0J5hwLgUf4YAvWrE2XCwq4 a rdf:Property ;
+    rdfs:label "cut-off angle" ;
+    :hasID "04-0033" ;
+    rdfs:comment """Angle, measured up from nadir, between the vertical axis and the first line of sight at which the light sources and the surfaces of high luminance are not visible.
+If the beam is not rotation symmetrical the photometric plane needs to specified.""" ;
+    rdfs:subPropertyOf :PhotometricProperties .
+
+<http://example.org/BIM_lighting_properties_standards/CEN_TC_274_Ontology#0Lb$H8dJ52Zvfl9YSL5M6i> a rdf:Property ;
+    rdfs:label "remote control" ;
+    :hasID "05-0028" ;
+    rdfs:comment "Operation/ settings with remote control." ;
+    rdfs:subPropertyOf :SensingDeviceProperties .
+
+:0M6duWSxD2KBE3HH3CEdiB a rdf:Property ;
+    rdfs:label "disposal symbol" ;
+    :hasID "08-0020" ;
+    rdfs:comment "Identical with name." ;
+    rdfs:subPropertyOf :OperationsMaintenanceProperties .
+
+:0NMpOQzNH679doR_IuOYUl a rdf:Property ;
+    rdfs:label "median useful life" ;
+    :hasID "08-0013" ;
+    rdfs:comment """Median useful life (of LED modules). Length of time during which 50 % (B50) of a population of operating LED modules of the same type have parametrically failed to provide at least percentage Lx of the initial luminous flux. 
+Recommend in fixed time value for Median Useful Life 35k, 50k, 75k, and/or 100k hours according application.""" ;
+    rdfs:subPropertyOf :OperationsMaintenanceProperties .
+
+:0RSzTiJYH0Mf1Je5KswHaY a rdf:Property ;
+    rdfs:label "correlated colour temperature value after dimming" ;
+    :hasID "04-0048" ;
+    rdfs:comment "Identical with name. Details would be help to understand." ;
+    rdfs:subPropertyOf :PhotometricProperties .
+
+:0RTU7Kmn15Ax1tSLCuIgSG a rdf:Property ;
+    rdfs:label "emergency lighting initial charge time" ;
+    :hasID "03-0017" ;
+    rdfs:comment "Duration (in h) in which the emergency lighting batteries are being charged for the first usage after the installation." ;
+    rdfs:subPropertyOf :EmergencyLightingProperties .
+
+:0RUiuKsU90ifoIhJ4jl6z1 a rdf:Property ;
+    rdfs:label "installation specification" ;
+    :hasID "06-0041" ;
+    rdfs:comment "Installation specification file." ;
+    rdfs:subPropertyOf :MountingAccessoryProperties .
+
+:0Raptd45z3S8EfZlGBNO61 a rdf:Property ;
+    rdfs:label "control gear replaceable" ;
+    :hasID "02-0063" ;
+    rdfs:comment "Control gear replaceable, according to IEC 60598-1" ;
+    rdfs:subPropertyOf :ElectricalProperties .
+
+:0Svsivsef3cA_xQc5SiL_b a rdf:Property ;
+    rdfs:label "execution" ;
+    :hasID "07-0037" ;
+    rdfs:comment "Installation sequencing including start date, end date and duration." ;
+    rdfs:subPropertyOf :MarketingProperties .
+
+<http://example.org/BIM_lighting_properties_standards/CEN_TC_274_Ontology#0TI$bRxzzEBPOscE5oX3a3> a rdf:Property ;
+    rdfs:label "CIE flux code" ;
+    :hasID "04-0020" ;
+    rdfs:comment "Set of values of flux triplet, downward flux fraction and light output ratio, representative of the relative flux distribution of the luminaire, used in the calculation of utilization factors and/or utilances." ;
+    rdfs:subPropertyOf :PhotometricProperties .
+
+<http://example.org/BIM_lighting_properties_standards/CEN_TC_274_Ontology#0TsI8tu$n8ZPVg19uWpkrI> a rdf:Property ;
+    rdfs:label "omniclass number" ;
+    :hasID "07-0028" ;
+    rdfs:comment "Identical with name." ;
+    rdfs:subPropertyOf :MarketingProperties .
+
+:0TzE4sMDv1pwfygK1xxjm5 a rdf:Property ;
+    rdfs:label "standby power" ;
+    :hasID "02-0006" ;
+    rdfs:comment "Power consumption of switched off luminaire. All electrical components including emergency and lighting controls components have to be considered. Is also known as parasitic power. See also ISO/CIE 20086:2019." ;
+    rdfs:subPropertyOf :ElectricalProperties .
+
+:0UNN88etzCERr47ME5ygfW a rdf:Property ;
+    rdfs:label "assembly place" ;
+    :hasID "07-0030" ;
+    rdfs:comment "A designation where the product was assembled." ;
+    rdfs:subPropertyOf :MarketingProperties .
+
+:0WXZRI6CD2KfL4xC1uuLBF a rdf:Property ;
+    rdfs:label "height of the luminous area" ;
+    :hasID "01-0021" ;
+    rdfs:comment "To be aligned with z-axis and gamma 180°." ;
+    rdfs:subPropertyOf :MechanicalProperties .
+
+:0WjAaRYTX8eOZcC3iDTL8b a rdf:Property ;
+    rdfs:label "radiation transmitting standard" ;
+    :hasID "02-0060" ;
+    rdfs:comment "Determines whether the luminaire is in accordance with a wireless connection standard." ;
+    rdfs:subPropertyOf :ElectricalProperties .
+
+:0Wy67y94v1fhghSU3mbcgU a rdf:Property ;
+    rdfs:label "emergency lighting rated input power" ;
+    :hasID "03-0010" ;
+    rdfs:comment "Rated Input power consumed by the emergency lighting." ;
+    rdfs:subPropertyOf :EmergencyLightingProperties .
+
+:0XeHsouWz8PxASJ4mpkdEY a rdf:Property ;
+    rdfs:label "correlated colour temperature CCT" ;
+    :hasID "04-0024" ;
+    rdfs:comment "The colour temperature of any source of radiation is defined as the temperature (in Kelvin) of a black-body or Planckian radiator whose radiation has the same chromaticity as the source of radiation. See also EN 12665:2018." ;
+    rdfs:subPropertyOf :PhotometricProperties .
+
+:0Y3iFNJcH3Xh_0Axe6FRZy a rdf:Property ;
+    rdfs:label "turn angle default" ;
+    :hasID "01-0048" ;
+    rdfs:comment "Default value for the turn angle (y-axis). Turn can also be referred to as ‘twist’ or ‘cant’." ;
+    rdfs:subPropertyOf :MechanicalProperties .
+
+:0ZLLxjlvv6i9vtRcuL17nh a rdf:Property ;
+    rdfs:label "other sensing devices" ;
+    :hasID "05-0015" ;
+    rdfs:comment "Features to measure other parameters by sensing device." ;
+    rdfs:subPropertyOf :SensingDeviceProperties .
+
+:0ZQK4SN5b1_OIheX6xr9TZ a rdf:Property ;
+    rdfs:label "EL-number" ;
+    :hasID "07-0016" ;
+    rdfs:comment "El-number is a product/ article number for electrical material providing efficient handling and identification of products in the electrical industry. Country specific." ;
+    rdfs:subPropertyOf :MarketingProperties .
+
+<http://example.org/BIM_lighting_properties_standards/CEN_TC_274_Ontology#0_oftQZ_jB$e1oGoWeQWoV> a rdf:Property ;
+    rdfs:label "tilt angle steps" ;
+    :hasID "01-0042" ;
+    rdfs:comment "Step width for the tilt angle (x-axis)." ;
+    rdfs:subPropertyOf :MechanicalProperties .
+
+:0bitv3Ynz53umOYqdoyGy7 a rdf:Property ;
+    rdfs:label """rated ambient
+temperature""" ;
+    :hasID "08-0014" ;
+    rdfs:comment "Rated ambient performance temperature, highest ambient temperature around the luminaire related to a rated performance of the luminaire under normal operating conditions." ;
+    rdfs:subPropertyOf :OperationsMaintenanceProperties .
+
+:0eq8JpPhf2mxsbyxHgN4rg a rdf:Property ;
+    rdfs:label "detection method" ;
+    :hasID "05-0005" ;
+    rdfs:comment "Applied technology for detection." ;
+    rdfs:subPropertyOf :SensingDeviceProperties .
+
+<http://example.org/BIM_lighting_properties_standards/CEN_TC_274_Ontology#0f2B86WL1DauqVXMD$Svdh> a rdf:Property ;
+    rdfs:label "max. ambient temperature" ;
+    :hasID "06-0041" ;
+    rdfs:comment "Maximal ambient temperature." ;
+    rdfs:subPropertyOf :MountingAccessoryProperties .
+
+:0f2af0EifB1Qi6xalTs1Xn a rdf:Property ;
+    rdfs:label "sealing material" ;
+    :hasID "01-0029" ;
+    rdfs:comment "Material of the sealing of a luminaire." ;
+    rdfs:subPropertyOf :MechanicalProperties .
+
+:0fa4jPy7f3KhErAn_5SUg7 a rdf:Property ;
+    rdfs:label "holder to install – flush mounting box?" ;
+    :hasID "01-0052" ;
+    rdfs:comment "Mechanical device to get the luminaire or sensor mounted ???" ;
+    rdfs:subPropertyOf :MechanicalProperties .
+
+:0fafA0Xg17xAyphZUB6DEj a rdf:Property ;
+    rdfs:label "radiation power" ;
+    :hasID "05-0006" ;
+    rdfs:comment "Identical with name." ;
+    rdfs:subPropertyOf :SensingDeviceProperties .
+
+:0iACWRZ2HAFfY7UBnCGjHq a rdf:Property ;
+    rdfs:label "reflector material" ;
+    :hasID "01-0057" ;
+    rdfs:comment "Material of the reflector of a luminaire." ;
+    rdfs:subPropertyOf :MechanicalProperties .
+
+:0jGPV_emX0auTlyNQx4grP a rdf:Property ;
+    rdfs:label "dimming method" ;
+    :hasID "02-0038" ;
+    rdfs:comment "Determines which dimmer type is applicable for the luminaire." ;
+    rdfs:subPropertyOf :ElectricalProperties .
+
+:0jRoUrk2nF5QFenmXXlBTS a rdf:Property ;
+    rdfs:label "minimum distance" ;
+    :hasID "01-0034" ;
+    rdfs:comment "Describes the minimum required distance of the luminaire housing to other objects." ;
+    rdfs:subPropertyOf :MechanicalProperties .
+
+:0nMElVYCfAX8eq7QEwZK1f a rdf:Property ;
+    rdfs:label "emergency lighting recharge time" ;
+    :hasID "03-0018" ;
+    rdfs:comment "Duration (in h) in which the emergency lighting batteries are being re-charged." ;
+    rdfs:subPropertyOf :EmergencyLightingProperties .
+
+<http://example.org/BIM_lighting_properties_standards/CEN_TC_274_Ontology#0nXXpyMbD4QgzHiMoFE$Kf> a rdf:Property ;
+    rdfs:label "Suitable for emergency lighting" ;
+    :hasID "03-0001" ;
+    rdfs:comment "Determines whether emergency lighting is possible." ;
+    rdfs:subPropertyOf :EmergencyLightingProperties .
+
+<http://example.org/BIM_lighting_properties_standards/CEN_TC_274_Ontology#0ncEfeE8r1tAckiu$03ei2> a rdf:Property ;
+    rdfs:label "luminaire luminance" ;
+    :hasID "04-0035" ;
+    rdfs:comment "Average of the luminaire surface luminance. See also EN 13032-1:2012." ;
+    rdfs:subPropertyOf :PhotometricProperties .
+
+:0nqhEfiCr249NvE9Fv2yTf a rdf:Property ;
+    rdfs:label "maximum pendant length" ;
+    :hasID "06-0012" ;
+    rdfs:comment "Identical with name." ;
+    rdfs:subPropertyOf :MountingAccessoryProperties .
+
+:0nxCXUkH97wPwN9azBYbMv a rdf:Property ;
+    rdfs:label "optical system" ;
+    :hasID "07-0046" ;
+    rdfs:comment "Description of the optical system used in the luminaire including surface texture." ;
+    rdfs:subPropertyOf :MarketingProperties .
+
+:0plc23S8D6oOMzeqDx58d1 a rdf:Property ;
+    rdfs:label "UGR 4H8H 70/50/20 L/Q" ;
+    :hasID "04-0034" ;
+    rdfs:comment "UGR table value of the room width of 4 x H and the room length of 8 x H and reflexion factors of 70/50/20 for transverse and parallel to light source axis." ;
+    rdfs:subPropertyOf :PhotometricProperties .
+
+:0qBCPAI5j85ewtsRgzQ4Fw a rdf:Property ;
+    rdfs:label "integral circuit protection" ;
+    :hasID "02-0043" ;
+    rdfs:comment "Determines whether the product involves an integrated circuit protection if not the zero should be stated." ;
+    rdfs:subPropertyOf :ElectricalProperties .
+
+:0qiz0v1kLAPBRWAW6wO1PA a rdf:Property ;
+    rdfs:label "orientation angle selected value" ;
+    :hasID "01-0039" ;
+    rdfs:comment "Selected value for the orientation angle (z-axis)." ;
+    rdfs:subPropertyOf :MechanicalProperties .
+
+<http://example.org/BIM_lighting_properties_standards/CEN_TC_274_Ontology#0sS$18Rbj3zgOAOm28vPEj> a rdf:Property ;
+    rdfs:label "noise level" ;
+    :hasID "08-0032" ;
+    rdfs:comment "Noise level which is produced by the luminaire." ;
+    rdfs:subPropertyOf :OperationsMaintenanceProperties .
+
+:0t3b9jtWP9uxX2ceuaw31x a rdf:Property ;
+    rdfs:label "EBKP number" ;
+    :hasID "07-0017" ;
+    rdfs:comment "EBKP number for Swiss tenders." ;
+    rdfs:subPropertyOf :MarketingProperties .
+
+<http://example.org/BIM_lighting_properties_standards/CEN_TC_274_Ontology#0uHyDd8Gb9$fp0seVNo6UJ> a rdf:Property ;
+    rdfs:label "URL product website" ;
+    :hasID "07-0007" ;
+    rdfs:comment "Product page website address. Deeplink." ;
+    rdfs:subPropertyOf :MarketingProperties .
+
+:0uHyOzAgvCyRqsNVDKfTFl a rdf:Property ;
+    rdfs:label "EX classification properties" ;
+    :hasID "06-0018" ;
+    rdfs:comment "Specifies whether the fitting is intended for installation in an explosive environment. ATEX directive (94/9/EC), EN 60079-0:2014, EN 60079-15:2011, EN 60079-7:2016." ;
+    rdfs:subPropertyOf :MountingAccessoryProperties .
+
+:0vrx8v9OT8OA5U0yeMudCa a rdf:Property ;
+    rdfs:label "logistics" ;
+    :hasID "07-0036" ;
+    rdfs:comment "Logistical details including storage and placement on site/holding area." ;
+    rdfs:subPropertyOf :MarketingProperties .
+
+:0w56LObA94ivbaiikyEXf2 a rdf:Property ;
+    rdfs:label "tilt angle default" ;
+    :hasID "01-0043" ;
+    rdfs:comment "Default value for the tilt angle (x-axis)." ;
+    rdfs:subPropertyOf :MechanicalProperties .
+
+:0wVs5XlEPE5gBsG3nTILKR a rdf:Property ;
+    rdfs:label "photometric beam shape" ;
+    :hasID "04-0014" ;
+    rdfs:comment "Description of photometric Beam typical shape." ;
+    rdfs:subPropertyOf :PhotometricProperties .
+
+:0yWXemifLBGBnzVtqC_b8Q a rdf:Property ;
+    rdfs:label "illuminance range" ;
+    :hasID "05-0016" ;
+    rdfs:comment "Determines the illuminance range that can be measured by sensing device." ;
+    rdfs:subPropertyOf :SensingDeviceProperties .
+
+:0yvFhm4xvDggZvLzgzhiyq a rdf:Property ;
+    rdfs:label "type of packaging" ;
+    :hasID "01-0015" ;
+    rdfs:comment "Type of packaging. Available types of packaging to be specified by the manufacturers." ;
+    rdfs:subPropertyOf :MechanicalProperties .
+
+<http://example.org/BIM_lighting_properties_standards/CEN_TC_274_Ontology#0zjByQSTX24wsxTI25Lzj$> a rdf:Property ;
+    rdfs:label "active power" ;
+    :hasID "02-0004" ;
+    rdfs:comment "Consumption of the power corresponding to the dim level of the luminaire. It is presented as a table of power (W) related to the luminous flux emitted (lm) or the percentage of dimming (%)." ;
+    rdfs:subPropertyOf :ElectricalProperties .
+
+:100MSXxt96iBH86YJ6lECo a rdf:Property ;
+    rdfs:label "number of phases" ;
+    :hasID "02-0047" ;
+    rdfs:comment "Specifies the number of phase that a luminaire can be connected to." ;
+    rdfs:subPropertyOf :ElectricalProperties .
+
+:10FyhmRzL5cx5mPB_MdfTB a rdf:Property ;
+    rdfs:label "switching capacity of sensing device" ;
+    :hasID "05-0030" ;
+    rdfs:comment "Switching capacity of sensing device. Power and cos phi." ;
+    rdfs:subPropertyOf :SensingDeviceProperties .
+
+<http://example.org/BIM_lighting_properties_standards/CEN_TC_274_Ontology#10UDC$GOvEHexmf_I8j9xG> a rdf:Property ;
+    rdfs:label "shipping length" ;
+    :hasID "01-0013" ;
+    rdfs:comment "Length of the packed luminaire or sensing device as it is shipped." ;
+    rdfs:subPropertyOf :MechanicalProperties .
+
+:11NYXtsrfCQeaNj_BvIGT5 a rdf:Property ;
+    rdfs:label "roll over" ;
+    :hasID "01-0055" ;
+    rdfs:comment "The luminaire is suitable for roll over." ;
+    rdfs:subPropertyOf :MechanicalProperties .
+
+:11SZgYx5H3RvmoGz9uTiTf a rdf:Property ;
+    rdfs:label "cable cross-section" ;
+    :hasID "02-0046" ;
+    rdfs:comment "Value of acceptable minimum and maximum cable cross-section." ;
+    rdfs:subPropertyOf :ElectricalProperties .
+
+:1284Zyx8D4uR55X2cRsWzu a rdf:Property ;
+    rdfs:label "needle flame test" ;
+    :hasID "01-0018" ;
+    rdfs:comment "Method for testing and assessment of the fire hazard of plastic material using a needle flame according to IEC 60695-11-5:2017." ;
+    rdfs:subPropertyOf :MechanicalProperties .
+
+<http://example.org/BIM_lighting_properties_standards/CEN_TC_274_Ontology#12_LtdVG5DqvZ$R5Y3Ua8I> a rdf:Property ;
+    rdfs:label "led module replaceable" ;
+    :hasID "02-0061" ;
+    rdfs:comment "Identical with name." ;
+    rdfs:subPropertyOf :ElectricalProperties .
+
+:13i4dlOM1FvhfPVt5JElgA a rdf:Property ;
+    rdfs:label "housing colour" ;
+    :hasID "07-0042" ;
+    rdfs:comment "The name of colour of the housing or RAL number." ;
+    rdfs:subPropertyOf :MarketingProperties .
+
+:13nvJo5TjBevj9Xq8d0d_k a rdf:Property ;
+    rdfs:label "pole material" ;
+    :hasID "06-0035" ;
+    rdfs:comment "The material of which the pole is mainly made of." ;
+    rdfs:subPropertyOf :MountingAccessoryProperties .
+
+:14NxmCBlnDDgk6xXOL9Ydl a rdf:Property ;
+    rdfs:label "pole accessory" ;
+    :hasID "06-0036" ;
+    rdfs:comment "Specifies which extra accessory are required for pole." ;
+    rdfs:subPropertyOf :MountingAccessoryProperties .
+
+:16XdmXw8T3HOIi0TOcc8LH a rdf:Property ;
+    rdfs:label "impact protection rating IK" ;
+    :hasID "01-0016" ;
+    rdfs:comment "Degree of protection provided by enclosures for electrical equipment against external mechanical impacts according to IEC 62262:2002 and IEC 60068-2-75:1997." ;
+    rdfs:subPropertyOf :MechanicalProperties .
+
+<http://example.org/BIM_lighting_properties_standards/CEN_TC_274_Ontology#17a067965CqhDelQ$Y3mcP> a rdf:Property ;
+    rdfs:label "rated input power" ;
+    :hasID "02-0002" ;
+    rdfs:comment "Input power consumed by the light source(s), control gear and control circuit in or associated with a luminaire including any standby power when the luminaire is turned on." ;
+    rdfs:subPropertyOf :ElectricalProperties .
+
+:18DBbGWJXFbRcORysjk7TX a rdf:Property ;
+    rdfs:label "channel n" ;
+    :hasID "05-0020" ;
+    rdfs:comment "Channel n function." ;
+    rdfs:subPropertyOf :SensingDeviceProperties .
+
+:18_K3PHM50sAUN6OEG2oCA a rdf:Property ;
+    rdfs:label "housing material" ;
+    :hasID "07-0043" ;
+    rdfs:comment "The main material which the housing is made of." ;
+    rdfs:subPropertyOf :MarketingProperties .
+
+<http://example.org/BIM_lighting_properties_standards/CEN_TC_274_Ontology#18n9980eTBYQhPpZr2K$$d> a rdf:Property ;
+    rdfs:label "maintenance required according an operation time" ;
+    :hasID "08-0009" ;
+    rdfs:comment "Maintenance tasks required during a specific operation time frame." ;
+    rdfs:subPropertyOf :OperationsMaintenanceProperties .
+
+:19BQiuhJj8qgDgvk6nbxxB a rdf:Property ;
+    rdfs:label "abrupt failure value" ;
+    :hasID "08-0015" ;
+    rdfs:comment "Abrupt failure value AFV percentile of LED modules failing to operate at median useful life, Lx. AFV depended significantly on the control gear failure." ;
+    rdfs:subPropertyOf :OperationsMaintenanceProperties .
+
+<http://example.org/BIM_lighting_properties_standards/CEN_TC_274_Ontology#19Z9XKYDT4p8HR0ZbD$wO_> a rdf:Property ;
+    rdfs:label "Height" ;
+    :hasID "01-0002" ;
+    rdfs:comment "Height of the housing of the luminaire or sensing device. Corresponds to z-axis, gamma angle 180° and 180° vertical of the Light Distribution Curve. This definition is regardless of orientation of luminaires." ;
+    rdfs:subPropertyOf :MechanicalProperties .
+
+<http://example.org/BIM_lighting_properties_standards/CEN_TC_274_Ontology#1A3s$Z4Sj7jQFfzbfen7Yu> a rdf:Property ;
+    rdfs:label "multilamp light source wattage" ;
+    :hasID "02-0011" ;
+    rdfs:comment "Luminaires that could be equipped with more than one light source wattage. Selection of all possible nominal light source output wattage." ;
+    rdfs:subPropertyOf :ElectricalProperties .
+
+:1BRkxPEZ94jwUmqiTtK6xv a rdf:Property ;
+    rdfs:label "conformity mark" ;
+    :hasID "07-0019" ;
+    rdfs:comment "Specifies which conformity mark a product has." ;
+    rdfs:subPropertyOf :MarketingProperties .
+
+<http://example.org/BIM_lighting_properties_standards/CEN_TC_274_Ontology#1BRqnx6Qr6G8KJpH$WYPD_> a rdf:Property ;
+    rdfs:label "colour temperature adjusting range" ;
+    :hasID "04-0025" ;
+    rdfs:comment "Lower and upper border of an adjustable colour temperature of a light source." ;
+    rdfs:subPropertyOf :PhotometricProperties .
+
+:1CGllDBHDEBgXIfKouXTHT a rdf:Property ;
+    rdfs:label "half-value angle" ;
+    :hasID "04-0016" ;
+    rdfs:comment """Angle of the beam centre to the point where the luminous intensity is reduced to half. See also IEC 61341:Ed.2.
+If the beam is not rotation symmetrical the photometric plane needs to specified.""" ;
+    rdfs:subPropertyOf :PhotometricProperties .
+
+:1ELEjwitTBhANPTqofV2Tl a rdf:Property ;
+    rdfs:label "light source position of usage" ;
+    :hasID "02-0015" ;
+    rdfs:comment "Light Source usage position (Horizontal/Vertical) possibly with range of angle." ;
+    rdfs:subPropertyOf :ElectricalProperties .
+
+:1G6UMbjabF6Orb_N36O2Sf a rdf:Property ;
+    rdfs:label "timecode of manufacture data creation" ;
+    :hasID "07-0048" ;
+    rdfs:comment "Timecode of manufacture data creation." ;
+    rdfs:subPropertyOf :MarketingProperties .
+
+:1H6f7P7l571P_cjMg7gPxK a rdf:Property ;
+    rdfs:label "product family" ;
+    :hasID "07-0011" ;
+    rdfs:comment "Manufacturer specific product groups or modular systems." ;
+    rdfs:subPropertyOf :MarketingProperties .
+
+<http://example.org/BIM_lighting_properties_standards/CEN_TC_274_Ontology#1HQ71YJV93sPROewsL6c$7> a rdf:Property ;
+    rdfs:label "name of switch" ;
+    :hasID "08-0033" ;
+    rdfs:comment "Related switch ID." ;
+    rdfs:subPropertyOf :OperationsMaintenanceProperties .
+
+<http://example.org/BIM_lighting_properties_standards/CEN_TC_274_Ontology#1HsN$oJ6j5chUD_Pqk7bYq> a rdf:Property ;
+    rdfs:label "amount of switching cycles" ;
+    :hasID "08-0019" ;
+    rdfs:comment "Amount of switching cycles." ;
+    rdfs:subPropertyOf :OperationsMaintenanceProperties .
+
+:1HwoGGCU51GuZcYqOLj23B a rdf:Property ;
+    rdfs:label "foldable" ;
+    :hasID "06-0039" ;
+    rdfs:comment "Specifies whether the pole is foldable." ;
+    rdfs:subPropertyOf :MountingAccessoryProperties .
+
+:1K_1K1q6n7KgOFJw5Cuc_i a rdf:Property ;
+    rdfs:label "ingress protection IP code" ;
+    :hasID "02-0031" ;
+    rdfs:comment "The IP code classifies and rates the degree of protection provided against intrusion (body parts such as hands and fingers), , accidental contact, and water by mechanical casings and . See also IEC 60529:2014." ;
+    rdfs:subPropertyOf :ElectricalProperties .
+
+:1Kv1pLf6D1dA85JgnKKPT1 a rdf:Property ;
+    rdfs:label "acoustic absorption average" ;
+    :hasID "08-0031" ;
+    rdfs:comment "Acoustic absorption in average over the audible range." ;
+    rdfs:subPropertyOf :OperationsMaintenanceProperties .
+
+:1LMicN7VzFIhNU67UsE5xV a rdf:Property ;
+    rdfs:label "health and safety information" ;
+    :hasID "08-0005" ;
+    rdfs:comment "The object's health and safety information." ;
+    rdfs:subPropertyOf :OperationsMaintenanceProperties .
+
+:1LMif8MLv7ZPUtU0223RaG a rdf:Property ;
+    rdfs:label "luminaire type CIE 97" ;
+    :hasID "07-0045" ;
+    rdfs:comment "The luminaire types presented in CIE 97:2005 according to calculation of Luminaire Maintenance Factor." ;
+    rdfs:subPropertyOf :MarketingProperties .
+
+:1LrBLaYtnCARKperF_2Ykh a rdf:Property ;
+    rdfs:label "glow wire resistance" ;
+    :hasID "01-0017" ;
+    rdfs:comment "The glow wire test for fire hazard according to IEC 60695-2:2014 to test electrical products, assemblies or individual components." ;
+    rdfs:subPropertyOf :MechanicalProperties .
+
+:1M2v5GMAjByhRQPjDnZjSf a rdf:Property ;
+    rdfs:label "delay time" ;
+    :hasID "05-0026" ;
+    rdfs:comment "Switch-off delay after last detection." ;
+    rdfs:subPropertyOf :SensingDeviceProperties .
+
+<http://example.org/BIM_lighting_properties_standards/CEN_TC_274_Ontology#1MWULf$c11YBSMTdevnV$G> a rdf:Property ;
+    rdfs:label "detection range adjustable" ;
+    :hasID "05-0012" ;
+    rdfs:comment "The method of adjustment of detection range." ;
+    rdfs:subPropertyOf :SensingDeviceProperties .
+
+:1NvFrN1kP1MBnwjfcEtZS9 a rdf:Property ;
+    rdfs:label "initial colour tolerance" ;
+    :hasID "04-0030" ;
+    rdfs:comment "Initial Colour Tolerance in step McAdam ellipses (SDCM)." ;
+    rdfs:subPropertyOf :PhotometricProperties .
+
+:1PHo3fKGj5Vfdmyy1dCzYd a rdf:Property ;
+    rdfs:label "type and function of mandatory accessory" ;
+    :hasID "06-0019" ;
+    rdfs:comment "Type and function of mandatory electrical, optical or mechanical accessory." ;
+    rdfs:subPropertyOf :MountingAccessoryProperties .
+
+:1PL17P9t53oexZksoRkx7Y a rdf:Property ;
+    rdfs:label "photobiology class" ;
+    :hasID "04-0037" ;
+    rdfs:comment "The required measurement methods and the calculation methodology are set in the harmonized standard IEC 62471:2009 / CIE S009:2006 „Photobiological safety of lamps and lamp systems“. The standard divides the sources of incoherent optical radiation into four groups: in the Exempt Group (no photobiological risk) and the Risk Groups 1 to 3 with increasing hazard potential." ;
+    rdfs:subPropertyOf :PhotometricProperties .
+
+:1PMNxHS2z4tRuwiQxyzRfs a rdf:Property ;
+    rdfs:label "number of light outputs" ;
+    :hasID "01-0019" ;
+    rdfs:comment "Number of plane surfaces with light output." ;
+    rdfs:subPropertyOf :MechanicalProperties .
+
+:1PP9ePMOD2Cg8c791pC_V3 a rdf:Property ;
+    rdfs:label "features" ;
+    :hasID "07-0013" ;
+    rdfs:comment "Free text to describe product." ;
+    rdfs:subPropertyOf :MarketingProperties .
+
+:1P_6Ftq01BWh4HTGTurOn8 a rdf:Property ;
+    rdfs:label "number of detection areas" ;
+    :hasID "05-0014" ;
+    rdfs:comment "Number of individually analysable detection areas." ;
+    rdfs:subPropertyOf :SensingDeviceProperties .
+
+:1PfnLpEVb6493m0aO3614o a rdf:Property ;
+    rdfs:label "tender text" ;
+    :hasID "07-0014" ;
+    rdfs:comment "Tender text of the product." ;
+    rdfs:subPropertyOf :MarketingProperties .
+
+:1QFaMGG19DhwzoLgqvywvv a rdf:Property ;
+    rdfs:label "emergency nominal voltage" ;
+    :hasID "03-0009" ;
+    rdfs:comment "Nominal voltage in emergency operation." ;
+    rdfs:subPropertyOf :EmergencyLightingProperties .
+
+:1QmFILGbX6_BfU63rG5mrh a rdf:Property ;
+    rdfs:label "luminous efficacy" ;
+    :hasID "04-0007" ;
+    rdfs:comment "Quotient of the luminous flux emitted by the luminaire and the power absorbed by the light source and associated circuits of the luminaire." ;
+    rdfs:subPropertyOf :PhotometricProperties .
+
+:1RGMcZL0X4SvXP9H1tpT7e a rdf:Property ;
+    rdfs:label "default light source power" ;
+    :hasID "02-0014" ;
+    rdfs:comment "Recommended light source power by supplier or manufacturer." ;
+    rdfs:subPropertyOf :ElectricalProperties .
+
+:1RIsLltoX1whNaYkaCoHXJ a rdf:Property ;
+    rdfs:label "recessed required depth" ;
+    :hasID "01-0007" ;
+    rdfs:comment "Required minimum installation depth, height of the invisible / hidden mounting part of the luminaire (for recessed or flush mount)." ;
+    rdfs:subPropertyOf :MechanicalProperties .
+
+:1RPyGAgMf4hRTZ0DogLFnU a rdf:Property ;
+    rdfs:label "Weight" ;
+    :hasID "01-0005" ;
+    rdfs:comment "Weight of the luminaire or sensing device." ;
+    rdfs:subPropertyOf :MechanicalProperties .
+
+:1S1uI1hob0OAsYAUDvnB5e a rdf:Property ;
+    rdfs:label "turn angle steps" ;
+    :hasID "01-0047" ;
+    rdfs:comment "Step width for the turn angle (y-axis). Turn can also be referred to as ‘twist’ or ‘cant’." ;
+    rdfs:subPropertyOf :MechanicalProperties .
+
+:1Se8FIfFf5JBgGuAx706WI a rdf:Property ;
+    rdfs:label "correlated colour temperature change characteristics with dimming" ;
+    :hasID "04-0047" ;
+    rdfs:comment "Identical with name. Details would be help to understand." ;
+    rdfs:subPropertyOf :PhotometricProperties .
+
+<http://example.org/BIM_lighting_properties_standards/CEN_TC_274_Ontology#1UUzk8eSnF9h$NyNPliShg> a rdf:Property ;
+    rdfs:label "with connecting cable" ;
+    :hasID "02-0050" ;
+    rdfs:comment "Determines whether the product involves connecting cable." ;
+    rdfs:subPropertyOf :ElectricalProperties .
+
+:1UbCUUp8z5Cg3dmIqQ4lsq a rdf:Property ;
+    rdfs:label "product picture" ;
+    :hasID "07-0005" ;
+    rdfs:comment "Picture of the product as file." ;
+    rdfs:subPropertyOf :MarketingProperties .
+
+:1UrfPrHgj2whM6TeNYn83l a rdf:Property ;
+    rdfs:label "supply phase" ;
+    :hasID "02-0048" ;
+    rdfs:comment "Determines the number of supply phase used for the device electrical input." ;
+    rdfs:subPropertyOf :ElectricalProperties .
+
+:1VfpYas4LATPhtnD2ceh_Z a rdf:Property ;
+    rdfs:label "environmental assessment rating" ;
+    :hasID "07-0040" ;
+    rdfs:comment "Summary of achieved ratings for the object. For example LEED, ETL, BREEAM or Minergie. The protocol and result of Environmental assessment rating has to specified." ;
+    rdfs:subPropertyOf :MarketingProperties .
+
+:1W6c2bUHL1jxn4_Jc4IGgo a rdf:Property ;
+    rdfs:label "supply circuit conductor" ;
+    :hasID "02-0044" ;
+    rdfs:comment "Specifies the connection for a supply circuit." ;
+    rdfs:subPropertyOf :ElectricalProperties .
+
+:1Wn0GwUE1FnAiLZx7prEfj a rdf:Property ;
+    rdfs:label "radio interference suppression" ;
+    :hasID "07-0024" ;
+    rdfs:comment "Specifies whether the product is able to suppress radio interference." ;
+    rdfs:subPropertyOf :MarketingProperties .
+
+:1Zek8UyXfE6gToN8_RDHFg a rdf:Property ;
+    rdfs:label "shipping weight" ;
+    :hasID "01-0011" ;
+    rdfs:comment "Weight of the shipping package of the luminaire or sensing device." ;
+    rdfs:subPropertyOf :MechanicalProperties .
+
+:1_oAxKXSb5R97lfGHcRkN8 a rdf:Property ;
+    rdfs:label "access clearance top" ;
+    :hasID "08-0029" ;
+    rdfs:comment "Access required for maintenance of this item." ;
+    rdfs:subPropertyOf :OperationsMaintenanceProperties .
+
+:1aiuNjGlP5CeuWyc0dii8P a rdf:Property ;
+    rdfs:label "access clearance front" ;
+    :hasID "08-0027" ;
+    rdfs:comment "Access required for maintenance of this item." ;
+    rdfs:subPropertyOf :OperationsMaintenanceProperties .
+
+<http://example.org/BIM_lighting_properties_standards/CEN_TC_274_Ontology#1am96tJSj0_e6A
+MEqEh3sq> a rdf:Property ;
+    rdfs:label """IES TM-30-
+15""" ;
+    :hasID "04-0026" ;
+    rdfs:comment """The CIE 224:2017 TR include Fidelity-Index Rf that uses 99 reference colours (CES = Colour Evaluation Samples) to estimate colour rendering
+and quality Gamut-Index Rg to
+estimate color saturation. Also includes a Color Vector Graphic
+to see color specific saturations.""" ;
+    rdfs:subPropertyOf :PhotometricProperties .
+
+:1auIwSthrFvRTJgX6NfO9Z a rdf:Property ;
+    rdfs:label "length of the luminous area" ;
+    :hasID "01-0022" ;
+    rdfs:comment "Length is parallel to the C90-C270 plane. Aligned with the Y axis and with 90° horizontal." ;
+    rdfs:subPropertyOf :MechanicalProperties .
+
+:1bLQmOkZL08ugkgUMbJ1CC a rdf:Property ;
+    rdfs:label "drive over" ;
+    :hasID "01-0054" ;
+    rdfs:comment "Luminaire is resistant to the car's weight." ;
+    rdfs:subPropertyOf :MechanicalProperties .
+
+:1dN7YuSk56zRdAl0GO075q a rdf:Property ;
+    rdfs:label "TLCI" ;
+    :hasID "04-0027" ;
+    rdfs:comment "Television Lighting Consistency Index (TLCI) evaluate the spectral power distribution of luminaires for television purposes. The higher result the better colour rendering quality from range 0 to 100. See also EN 12193:2018. Maybe CIE." ;
+    rdfs:subPropertyOf :PhotometricProperties .
+
+:1dPvrZN3vEIB0n0vwYvDcX a rdf:Property ;
+    rdfs:label "Width" ;
+    :hasID "01-0004" ;
+    rdfs:comment """Width of the housing of the luminaire or sensing device.
+Width is set parallel to the C0-C180 plane. Corresponds to the x-axis and with 0° horizontal of the Light Distribution Curve. This definition is regardless of orientation of luminaires.""" ;
+    rdfs:subPropertyOf :MechanicalProperties .
+
+:1e7TJk_HfAhhcTKI19SL1I a rdf:Property ;
+    rdfs:label "housing surface" ;
+    :hasID "07-0044" ;
+    rdfs:comment "The surface finish of the housing material." ;
+    rdfs:subPropertyOf :MarketingProperties .
+
+:1eSA4uAT143wt25u696up8 a rdf:Property ;
+    rdfs:label "construction design & management" ;
+    :hasID "07-0039" ;
+    rdfs:comment "Health and safety issues associated with the safe construction of the object prior to completion." ;
+    rdfs:subPropertyOf :MarketingProperties .
+
+:1ebB1Zyw92L8aunjbTiNu1 a rdf:Property ;
+    rdfs:label "applied accessory" ;
+    :hasID "06-0021" ;
+    rdfs:comment "Selected accessory." ;
+    rdfs:subPropertyOf :MountingAccessoryProperties .
+
+:1fBDdf6YP2O8_JFTCLHktp a rdf:Property ;
+    rdfs:label "socket" ;
+    :hasID "02-0009" ;
+    rdfs:comment "A device which mechanically supports and provides electrical connections for a compatible electric light source. See also IEC60061:2018." ;
+    rdfs:subPropertyOf :ElectricalProperties .
+
+:1h35yfOg10veXdUQaAudl2 a rdf:Property ;
+    rdfs:label "with sensing device" ;
+    :hasID "02-0053" ;
+    rdfs:comment "Determines whether the luminaire contains an integrated sensing device." ;
+    rdfs:subPropertyOf :ElectricalProperties .
+
+:1hLQSaFhL7LOoWCue_qAOm a rdf:Property ;
+    rdfs:label "battery voltage" ;
+    :hasID "03-0021" ;
+    rdfs:comment "Identical with name." ;
+    rdfs:subPropertyOf :EmergencyLightingProperties .
+
+:1hwc11plv2A90eCTHqW7ZB a rdf:Property ;
+    rdfs:label "total harmonic distortion THD" ;
+    :hasID "02-0062" ;
+    rdfs:comment "Ratio of the effective value of the sum of all harmonic components to the effective value of the fundamental according to IEC 61000-3-2:2010." ;
+    rdfs:subPropertyOf :ElectricalProperties .
+
+:1i4AYS799CBxV0ZlYKoY1M a rdf:Property ;
+    rdfs:label "emergency lighting inrush current time" ;
+    :hasID "03-0013" ;
+    rdfs:comment "Inrush current time of emergency lighting after turning on. Needed for the correct sizing of AC/AC central systems." ;
+    rdfs:subPropertyOf :EmergencyLightingProperties .
+
+:1i_XY2Awj5RRadNmgPS3yQ a rdf:Property ;
+    rdfs:label "shipping height" ;
+    :hasID "01-0012" ;
+    rdfs:comment "Height of the packed luminaire or sensing device as it is shipped." ;
+    rdfs:subPropertyOf :MechanicalProperties .
+
+<http://example.org/BIM_lighting_properties_standards/CEN_TC_274_Ontology#1j$UsOSPP4NBILY9q7mCWW> a rdf:Property ;
+    rdfs:label "mounting place" ;
+    :hasID "06-0002" ;
+    rdfs:comment "Place, where the luminaire or the detector can be mounted." ;
+    rdfs:subPropertyOf :MountingAccessoryProperties .
+
+:1lEpo0LO16FPpSj0jFwIOu a rdf:Property ;
+    rdfs:label """light distribution curve
+LDC""" ;
+    :hasID "04-0001" ;
+    rdfs:comment """Light distribution curve
+LDC as Eulumdat, ANSI/IES LM-63, ANSI/IES TM-33 or UNI 11733 files. A luminaire can emit more than one Light Distribution Curves.""" ;
+    rdfs:subPropertyOf :PhotometricProperties .
+
+:1lh0A7J0P1yfpuJvqgOATC a rdf:Property ;
+    rdfs:label "BUG rating of light distribution" ;
+    :hasID "04-0019" ;
+    rdfs:comment "The BUG classification (Backlight, Uplight, and Glare) according to IDA/IESNA evaluates the light output of outdoor lights regarding to glare, light pollution and light trespass." ;
+    rdfs:subPropertyOf :PhotometricProperties .
+
+:1mHV_4yHLEFuxOaIDlNmNn a rdf:Property ;
+    rdfs:label "diameter of the luminous area" ;
+    :hasID "01-0020" ;
+    rdfs:comment "Identical with name." ;
+    rdfs:subPropertyOf :MechanicalProperties .
+
+:1nKr7A75b8reMNAfPW1iw1 a rdf:Property ;
+    rdfs:label "nominal light source output power" ;
+    :hasID "02-0010" ;
+    rdfs:comment "Approximate power output used to designate or identify the light source." ;
+    rdfs:subPropertyOf :ElectricalProperties .
+
+:1nkkOblIH5CxeBDCDq2WyX a rdf:Property ;
+    rdfs:label "detection area adjustable" ;
+    :hasID "05-0003" ;
+    rdfs:comment "The type of the adjustment of the detection area." ;
+    rdfs:subPropertyOf :SensingDeviceProperties .
+
+:1oCak0l6v9Bew_SHOfRFnw a rdf:Property ;
+    rdfs:label "Pliable" ;
+    :hasID "01-0025" ;
+    rdfs:comment "The Luminaire body is flexible." ;
+    rdfs:subPropertyOf :MechanicalProperties .
+
+:1oLuIWYPjCIvl7dqwEXdaN a rdf:Property ;
+    rdfs:label "with power plug" ;
+    :hasID "02-0051" ;
+    rdfs:comment "Determines whether the luminaire includes a power plug." ;
+    rdfs:subPropertyOf :ElectricalProperties .
+
+<http://example.org/BIM_lighting_properties_standards/CEN_TC_274_Ontology#1qhhuqryT4$xTSgToocAE3> a rdf:Property ;
+    rdfs:label "radiation pattern file" ;
+    :hasID "02-0057" ;
+    rdfs:comment "File reference to pattern file which contains the radiation distribution similar to a Eulumdat file for light." ;
+    rdfs:subPropertyOf :ElectricalProperties .
+
+<http://example.org/BIM_lighting_properties_standards/CEN_TC_274_Ontology#1rOIzi$gb9FQAy3lzwGIQH> a rdf:Property ;
+    rdfs:label "glare index classes" ;
+    :hasID "04-0044" ;
+    rdfs:comment "Glare index classes according EN 13201-2:2003 (2016, CIE)" ;
+    rdfs:subPropertyOf :PhotometricProperties .
+
+:1rdcbmVG19UgBf_YVdUo9f a rdf:Property ;
+    rdfs:label "dimmable" ;
+    :hasID "02-0036" ;
+    rdfs:comment "Determines if the luminaire is dimmable." ;
+    rdfs:subPropertyOf :ElectricalProperties .
+
+:1rmuEdFRv8kRsnF7G5uiWM a rdf:Property ;
+    rdfs:label "NBS code" ;
+    :hasID "07-0056" ;
+    rdfs:comment "Identical with name." ;
+    rdfs:subPropertyOf :MarketingProperties .
+
+:1sYsm6e7H82AbC_0tk06XB a rdf:Property ;
+    rdfs:label "upward light ratio ULR" ;
+    :hasID "04-0012" ;
+    rdfs:comment "Ratio of the total luminaire flux that is emitted above the horizontal by all luminaires to the total luminaire flux from all luminaires in an installation, when the luminaires are mounted in their mounting position." ;
+    rdfs:subPropertyOf :PhotometricProperties .
+
+<http://example.org/BIM_lighting_properties_standards/CEN_TC_274_Ontology#1u894$Gsj3PPXX6m5zKlOG> a rdf:Property ;
+    rdfs:label "description" ;
+    :hasID "07-0012" ;
+    rdfs:comment "Description or comments." ;
+    rdfs:subPropertyOf :MarketingProperties .
+
+:1uJglYpRnFpQ4tStHaR2Pf a rdf:Property ;
+    rdfs:label "Length" ;
+    :hasID "01-0003" ;
+    rdfs:comment """Length of the housing of the luminaire or sensing device.
+Length is set parallel to the C90-C270 plane. Corresponds to y-axis and with 90° horizontal of the Light Distribution Curve. This definition is regardless of orientation of luminaires.""" ;
+    rdfs:subPropertyOf :MechanicalProperties .
+
+:1ulcTIh3v58Qk62qqSVp9Q a rdf:Property ;
+    rdfs:label "luminous intensity classes" ;
+    :hasID "04-0045" ;
+    rdfs:comment "Luminous intensity classes according EN 13201-2:2003 (2016, CIE)" ;
+    rdfs:subPropertyOf :PhotometricProperties .
+
+:1vsP4zxUz78h3Ps8HNeo2c a rdf:Property ;
+    rdfs:label "US-types of luminaire light distribution" ;
+    :hasID "04-0018" ;
+    rdfs:comment """US-Types of luminaire light distribution according to IESNA for street lighting. 
+Note: These types are used in IES photometry files.""" ;
+    rdfs:subPropertyOf :PhotometricProperties .
+
+<http://example.org/BIM_lighting_properties_standards/CEN_TC_274_Ontology#1wCN2A$WbE8fKo62d91E_m> a rdf:Property ;
+    rdfs:label "separate light measurement n" ;
+    :hasID "05-0023" ;
+    rdfs:comment "Sensing device channel n has a separate light measurement." ;
+    rdfs:subPropertyOf :SensingDeviceProperties .
+
+:1x76Uc_LbDVh6mrLtcsUNS a rdf:Property ;
+    rdfs:label "spacing between fixing points" ;
+    :hasID "06-0014" ;
+    rdfs:comment "Distance between two fixing points." ;
+    rdfs:subPropertyOf :MountingAccessoryProperties .
+
+:1xemg75ajBTPMS5G7a6XYC a rdf:Property ;
+    rdfs:label "pole" ;
+    :hasID "06-0033" ;
+    rdfs:comment "Specifies which type of pole is suitable." ;
+    rdfs:subPropertyOf :MountingAccessoryProperties .
+
+:1yEEzJyufC8uEtTHhzqxUF a rdf:Property ;
+    rdfs:label "mounting point offset position y direction" ;
+    :hasID "06-0005" ;
+    rdfs:comment "Y position of the point used as origin for the mounting in relation to the middle of the bounding box. Positive values are aligned with the C90 level. Negative values are aligned with the C270 level." ;
+    rdfs:subPropertyOf :MountingAccessoryProperties .
+
+:1yXI0s7ePEcuYBBrfpkEq9 a rdf:Property ;
+    rdfs:label "standards" ;
+    :hasID "07-0041" ;
+    rdfs:comment "Product standard dependant on type of luminaire." ;
+    rdfs:subPropertyOf :MarketingProperties .
+
+:1ybyhd8TbACg99OxpWMoOg a rdf:Property ;
+    rdfs:label "shipping width" ;
+    :hasID "01-0014" ;
+    rdfs:comment "Width of the packed luminaire or sensing device as it is shipped." ;
+    rdfs:subPropertyOf :MechanicalProperties .
+
+:1ymgRlSerBqBwALgiHgX7j a rdf:Property ;
+    rdfs:label "measurement method" ;
+    :hasID "05-0011" ;
+    rdfs:comment "The measurement of the presence detection area was done according to IEC 63180:2020." ;
+    rdfs:subPropertyOf :SensingDeviceProperties .
+
+:1zs4Cj96j3d8TWAeeixJga a rdf:Property ;
+    rdfs:label "luminaire housing shape 3D" ;
+    :hasID "01-0010" ;
+    rdfs:comment "Three-dimensional simplified shape of luminaire or sensing device." ;
+    rdfs:subPropertyOf :MechanicalProperties .
+
+<http://example.org/BIM_lighting_properties_standards/CEN_TC_274_Ontology#2$EwGC$sz7aAg8lhZu5Bhj> a rdf:Property ;
+    rdfs:label "assembly code" ;
+    :hasID "07-0029" ;
+    rdfs:comment "Identical with name." ;
+    rdfs:subPropertyOf :MarketingProperties .
+
+:200Trg0X9FquhZp9ZMM4ud a rdf:Property ;
+    rdfs:label "pictogram escape direction" ;
+    :hasID "03-0024" ;
+    rdfs:comment "The direction of escape pictogram. Does not include the description of the pictogram." ;
+    rdfs:subPropertyOf :EmergencyLightingProperties .
+
+<http://example.org/BIM_lighting_properties_standards/CEN_TC_274_Ontology#21GF1lrRP4denYC8o6ot$N> a rdf:Property ;
+    rdfs:label "control gear" ;
+    :hasID "02-0018" ;
+    rdfs:comment "Type of control gear, which is required to control the electrical operation of the light source(s)." ;
+    rdfs:subPropertyOf :ElectricalProperties .
+
+:21jRpyk419WuBLxjfSqXoY a rdf:Property ;
+    rdfs:label "PAR" ;
+    :hasID "04-0029" ;
+    rdfs:comment "Total photon exposure in the 400 nm to 700 nm waveband." ;
+    rdfs:subPropertyOf :PhotometricProperties .
+
+:22IpUkOwD2iOIVugd8CAfb a rdf:Property ;
+    rdfs:label "nominal frequency" ;
+    :hasID "02-0027" ;
+    rdfs:comment "Nominal frequency at which the product operates normally as specified by the supplier or manufacturer." ;
+    rdfs:subPropertyOf :ElectricalProperties .
+
+:22ydbaQRPEC9lt_tK6Qw4Q a rdf:Property ;
+    rdfs:label "applied pendant length" ;
+    :hasID "06-0013" ;
+    rdfs:comment "Selected pendant length in current situation." ;
+    rdfs:subPropertyOf :MountingAccessoryProperties .
+
+:24CkSPPcb8Fx0fUWeZlnfW a rdf:Property ;
+    rdfs:label "DALI DT8" ;
+    :hasID "02-0042" ;
+    rdfs:comment "Determines whether the luminaire is DALI Device Type 8." ;
+    rdfs:subPropertyOf :ElectricalProperties .
+
+:24jtpZAXPBEf5VI4O64p98 a rdf:Property ;
+    rdfs:label "number of PIR switching zones" ;
+    :hasID "05-0013" ;
+    rdfs:comment "Number of PIR Switching zones indicates how sensitive the sensing device is for detection of small movement." ;
+    rdfs:subPropertyOf :SensingDeviceProperties .
+
+<http://example.org/BIM_lighting_properties_standards/CEN_TC_274_Ontology#24nX7s16TBMe_Qfk$rKDn3> a rdf:Property ;
+    rdfs:label "colour appearance" ;
+    :hasID "04-0022" ;
+    rdfs:comment "Monochromatic colour of light (e.g. blue, red, white). As name or a description of the colour or as colour coordinate of an specific colour system (e.g. RGB, CIE 1931 XYZ color space)." ;
+    rdfs:subPropertyOf :PhotometricProperties .
+
+:25PgdtZ3T1Jg2kDytRpy4U a rdf:Property ;
+    rdfs:label "CO2 footprint" ;
+    :hasID "07-0027" ;
+    rdfs:comment "Total emissions caused by product manufacturing, expressed in CO2 equivalents." ;
+    rdfs:subPropertyOf :MarketingProperties .
+
+:26Cck1Shb27v8JU1a1vgKV a rdf:Property ;
+    rdfs:label "photometry" ;
+    :hasID "04-0043" ;
+    rdfs:comment "Photometry is absolute or relative." ;
+    rdfs:subPropertyOf :PhotometricProperties .
+
+:26KAJOVBvF8gIMOZaAOFTV a rdf:Property ;
+    rdfs:label "orientation angle steps" ;
+    :hasID "01-0037" ;
+    rdfs:comment "Step width for the orientation angle (Z-axis)." ;
+    rdfs:subPropertyOf :MechanicalProperties .
+
+:28T0Q968jDwvyxAshmZRwz a rdf:Property ;
+    rdfs:label "type of distribution" ;
+    :hasID "04-0009" ;
+    rdfs:comment "The classification of luminaires regarding the amount of light flux emitted into upper or lower half-space. See also ISO CIE 20086:2019." ;
+    rdfs:subPropertyOf :PhotometricProperties .
+
+:28UYB1MD91NhF5F8uF6VCZ a rdf:Property ;
+    rdfs:label "colour rendering index CRI" ;
+    :hasID "04-0023" ;
+    rdfs:comment "Coefficient that indicates how well the colour of a lit object is perceived by the human eye. The CRI scale ranges from 1 to 100, where 100 means the perfect rendering properties for a specified set of 8 test colour samples. See also EN 12665:2018." ;
+    rdfs:subPropertyOf :PhotometricProperties .
+
+:28uWq1nqP3XgcTzLzylewL a rdf:Property ;
+    rdfs:label "delay time" ;
+    :hasID "05-0024" ;
+    rdfs:comment "Switch-off delay after last detection." ;
+    rdfs:subPropertyOf :SensingDeviceProperties .
+
+<http://example.org/BIM_lighting_properties_standards/CEN_TC_274_Ontology#29UfpgwX5Eyu$KCZIxfJZy> a rdf:Property ;
+    rdfs:label "item number" ;
+    :hasID "07-0004" ;
+    rdfs:comment "Product number." ;
+    rdfs:subPropertyOf :MarketingProperties .
+
+:29ZiimATr4QO0B4wwiQNa8 a rdf:Property ;
+    rdfs:label "battery type" ;
+    :hasID "03-0019" ;
+    rdfs:comment "Battery type, Cell type." ;
+    rdfs:subPropertyOf :EmergencyLightingProperties .
+
+<http://example.org/BIM_lighting_properties_standards/CEN_TC_274_Ontology#2A6xVlUTj9QP1G$qb4FiWv> a rdf:Property ;
+    rdfs:label "cut-out diameter" ;
+    :hasID "01-0006" ;
+    rdfs:comment "Diameter of the cut-out hole (for recessed or flush mount)." ;
+    rdfs:subPropertyOf :MechanicalProperties .
+
+:2AbG9j5jXCaOYPDNWeOM7T a rdf:Property ;
+    rdfs:label "chemical resistance" ;
+    :hasID "07-0023" ;
+    rdfs:comment "Chemical resistance of the product." ;
+    rdfs:subPropertyOf :MarketingProperties .
+
+:2Afk3AuoX0YfhlG9pMfb5q a rdf:Property ;
+    rdfs:label "colour controllable" ;
+    :hasID "02-0033" ;
+    rdfs:comment "States if the colour is controllable." ;
+    rdfs:subPropertyOf :ElectricalProperties .
+
+:2AvYrjYPr0sRr1MihNFaSY a rdf:Property ;
+    rdfs:label "access clearance bottom" ;
+    :hasID "08-0024" ;
+    rdfs:comment "Access required for maintenance of this item." ;
+    rdfs:subPropertyOf :OperationsMaintenanceProperties .
+
+:2BFsFYpCbFKfkbtjAMxZOc a rdf:Property ;
+    rdfs:label "photometric code" ;
+    :hasID "04-0017" ;
+    rdfs:comment "A code consists out of CRI, CCT, initial colour variation (MacAdam ellipse steps), colour variation through life (MacAdam ellipse steps) and lumen maintenance value (Lx)." ;
+    rdfs:subPropertyOf :PhotometricProperties .
+
+<http://example.org/BIM_lighting_properties_standards/CEN_TC_274_Ontology#2C6Bl_wyb9muBfd$Z_MZiE> a rdf:Property ;
+    rdfs:label "detection area" ;
+    :hasID "05-0002" ;
+    rdfs:comment "Defines the detection angle or the detection area for the standard mounting height. For round area: the angular range from 1° to 360° and radius [m]. For rectangular area: L x W [m]." ;
+    rdfs:subPropertyOf :SensingDeviceProperties .
+
+:2DJLgonKH2zvtUylGDtoL3 a rdf:Property ;
+    rdfs:label "halogen-free" ;
+    :hasID "01-0031" ;
+    rdfs:comment "States whether the product is halogen-free according IEC 61249-2-21:2004." ;
+    rdfs:subPropertyOf :MechanicalProperties .
+
+<http://example.org/BIM_lighting_properties_standards/CEN_TC_274_Ontology#2ENV$TQoL31gDSHIZzyR4N> a rdf:Property ;
+    rdfs:label "inrush current time" ;
+    :hasID "02-0026" ;
+    rdfs:comment "Inrush current time after turning on." ;
+    rdfs:subPropertyOf :ElectricalProperties .
+
+<http://example.org/BIM_lighting_properties_standards/CEN_TC_274_Ontology#2EYqu_hCHFEO0cQ_qv5wD$> a rdf:Property ;
+    rdfs:label "flicker" ;
+    :hasID "04-0042" ;
+    rdfs:comment "Impression of unsteadiness of visual sensation induced by a light stimulus whose luminance or spectral distribution fluctuates with time." ;
+    rdfs:subPropertyOf :PhotometricProperties .
+
+:2F38RxmOf3ow0715JRf5OO a rdf:Property ;
+    rdfs:label "overall radius" ;
+    :hasID "01-0053" ;
+    rdfs:comment "Overall Radius of the housing of the luminaire or sensing device. Suitable for round or sections. Not suitable for ellipsoid forms. Here more values are needed.  CHECK" ;
+    rdfs:subPropertyOf :MechanicalProperties .
+
+:2FA0ih18LF_uKt46e5ErIv a rdf:Property ;
+    rdfs:label "apparent load" ;
+    :hasID "02-0001" ;
+    rdfs:comment "Apparent Load of the product." ;
+    rdfs:subPropertyOf :ElectricalProperties .
+
+<http://example.org/BIM_lighting_properties_standards/CEN_TC_274_Ontology#2GZ1YB8enFVhDHOKgLc$BU> a rdf:Property ;
+    rdfs:label "overall diameter" ;
+    :hasID "01-0001" ;
+    rdfs:comment "Overall Diameter of the housing of the round luminaire or sensing device. CHECK" ;
+    rdfs:subPropertyOf :MechanicalProperties .
+
+:2Hn3h7rKb0RhRhIOAzSkNR a rdf:Property ;
+    rdfs:label "relative humidity range" ;
+    :hasID "06-0029" ;
+    rdfs:comment "The relative humidity of environment that enables product to function." ;
+    rdfs:subPropertyOf :MountingAccessoryProperties .
+
+<http://example.org/BIM_lighting_properties_standards/CEN_TC_274_Ontology#2IIcSIkhzBQvi6jCIbKMm$> a rdf:Property ;
+    rdfs:label "type and function of optional accessory" ;
+    :hasID "06-0020" ;
+    rdfs:comment "Type and function of optional electrical, optical or mechanical accessory." ;
+    rdfs:subPropertyOf :MountingAccessoryProperties .
+
+<http://example.org/BIM_lighting_properties_standards/CEN_TC_274_Ontology#2Js$jQ5CD1r9USPJVLD951> a rdf:Property ;
+    rdfs:label "typical assembly site" ;
+    :hasID "06-0001" ;
+    rdfs:comment "Typical assembly site in indoor or outdoor premises." ;
+    rdfs:subPropertyOf :MountingAccessoryProperties .
+
+:2LJHyobk57buKgQhTXFfR_ a rdf:Property ;
+    rdfs:label "maximum nominal output power of light source" ;
+    :hasID "02-0013" ;
+    rdfs:comment "Identical with name." ;
+    rdfs:subPropertyOf :ElectricalProperties .
+
+:2LRta8up516AVL46ac887F a rdf:Property ;
+    rdfs:label "production year" ;
+    :hasID "07-0031" ;
+    rdfs:comment "Production year of the final assembly." ;
+    rdfs:subPropertyOf :MarketingProperties .
+
+:2Lel0vZXj7QhDuUJYQqOEc a rdf:Property ;
+    rdfs:label "delivery" ;
+    :hasID "07-0035" ;
+    rdfs:comment "Delivery details including time and date." ;
+    rdfs:subPropertyOf :MarketingProperties .
+
+:2MDJxTVzv57ALNnXX1bC1W a rdf:Property ;
+    rdfs:label "photometric centre position z direction" ;
+    :hasID "04-0004" ;
+    rdfs:comment """Z position of the point used as origin for photometric measurements and calculations in relation to the middle of the bounding box. Positive values are aligned with the gamma angle 180° (up). Negative values are aligned with the gamma angle 0° (down). 
+If the light centre point is at the bottom side, then this value is the negative half of the height. See also EN 13032-4:2015.""" ;
+    rdfs:subPropertyOf :PhotometricProperties .
+
+<http://example.org/BIM_lighting_properties_standards/CEN_TC_274_Ontology#2MMb3d$6fDdxWoq1W$ZGln> a rdf:Property ;
+    rdfs:label "switch input channel n" ;
+    :hasID "05-0021" ;
+    rdfs:comment "Directly connectable switch for channel n." ;
+    rdfs:subPropertyOf :SensingDeviceProperties .
+
+<http://example.org/BIM_lighting_properties_standards/CEN_TC_274_Ontology#2NmVhTk4TFfvwDNSYyqj$4> a rdf:Property ;
+    rdfs:label "orientation angle default" ;
+    :hasID "01-0038" ;
+    rdfs:comment "Default value for the orientation angle (z-axis)." ;
+    rdfs:subPropertyOf :MechanicalProperties .
+
+:2Ofl8_YFT4IOfQwk92MRwM a rdf:Property ;
+    rdfs:label "GTIN number" ;
+    :hasID "07-0015" ;
+    rdfs:comment "GTIN number (previously EAN) is a unique product/article number for handling, tracking, and identification of products. GTIN (Global Trade Item Number) is issued by GS1." ;
+    rdfs:subPropertyOf :MarketingProperties .
+
+:2Oq5QYgMf06gdSXn61YqDa a rdf:Property ;
+    rdfs:label "covering of insulation not allowed" ;
+    :hasID "06-0025" ;
+    rdfs:comment "Covering of Insulation in a ceiling is not allowed for the luminaire." ;
+    rdfs:subPropertyOf :MountingAccessoryProperties .
+
+:2P36C2ZwH7cuGiaRJIyiCQ a rdf:Property ;
+    rdfs:label "bracket length" ;
+    :hasID "06-0032" ;
+    rdfs:comment "Length of the boom." ;
+    rdfs:subPropertyOf :MountingAccessoryProperties .
+
+<http://example.org/BIM_lighting_properties_standards/CEN_TC_274_Ontology#2RVwJxv$TCNB03cljqpK26> a rdf:Property ;
+    rdfs:label "with switch" ;
+    :hasID "02-0052" ;
+    rdfs:comment "Determines whether the luminaire has a switch included." ;
+    rdfs:subPropertyOf :ElectricalProperties .
+
+:2SIvCAZun4Wxd4khWGmURU a rdf:Property ;
+    rdfs:label "product data sheet" ;
+    :hasID "07-0008" ;
+    rdfs:comment "Identical with name." ;
+    rdfs:subPropertyOf :MarketingProperties .
+
+:2SM664IIzBFOlcuHC24iWz a rdf:Property ;
+    rdfs:label "dimming range" ;
+    :hasID "02-0039" ;
+    rdfs:comment "Determines which range of dimming is possible for luminaire." ;
+    rdfs:subPropertyOf :ElectricalProperties .
+
+:2SWE7gcPD5VOe7RpsLynyc a rdf:Property ;
+    rdfs:label "with ascending aid" ;
+    :hasID "06-0037" ;
+    rdfs:comment "Specifies whether the pole has an ascending aid." ;
+    rdfs:subPropertyOf :MountingAccessoryProperties .
+
+:2SqBhDZKD1hBjGWsV4q_GQ a rdf:Property ;
+    rdfs:label "width of the luminous area" ;
+    :hasID "01-0023" ;
+    rdfs:comment "Width is parallel to the C0-C180 plane. Aligned with the X axis and with 0° horizontal." ;
+    rdfs:subPropertyOf :MechanicalProperties .
+
+:2UOOchRyr2eQDXabAwecx5 a rdf:Property ;
+    rdfs:label "light source count" ;
+    :hasID "02-0016" ;
+    rdfs:comment "Number of light sources in one luminaire. Not valid for LED luminaires." ;
+    rdfs:subPropertyOf :ElectricalProperties .
+
+:2UfXwD2hLDxeeUzqPOJWhh a rdf:Property ;
+    rdfs:label "emergency facilities" ;
+    :hasID "03-0008" ;
+    rdfs:comment "Emergency facilities code according IEC 60598-2-22:2015 annex B c)" ;
+    rdfs:subPropertyOf :EmergencyLightingProperties .
+
+:2V7FGx16L3rBlzByIwOg8P a rdf:Property ;
+    rdfs:label "BIP code" ;
+    :hasID "07-0057" ;
+    rdfs:comment "Type ID for different luminaire categories, used in Sweden. http://www.bipkoder.se/#/beteckningar" ;
+    rdfs:subPropertyOf :MarketingProperties .
+
+:2VEYAfd7j4FQtJgAb_riA5 a rdf:Property ;
+    rdfs:label "cutting out length" ;
+    :hasID "01-0008" ;
+    rdfs:comment "Length of the cut-out hole (for recessed or flush mount)." ;
+    rdfs:subPropertyOf :MechanicalProperties .
+
+:2VsGUEC0v62AXkp0i8pFrI a rdf:Property ;
+    rdfs:label "rated chromaticity coordinate values" ;
+    :hasID "04-0032" ;
+    rdfs:comment """Chromaticity coordinates
+ratio of each of a set of 3 tristimulus values to their sum according ISO 11664-1:2007.
+As the sum of the 3 chromaticity coordinates is equal to 1, two of them are sufficient to define a chromaticity. In the CIE standard colorimetric systems, the chromaticity coordinates are represented by the symbols x, y, z and x10, y10, z10.""" ;
+    rdfs:subPropertyOf :PhotometricProperties .
+
+<http://example.org/BIM_lighting_properties_standards/CEN_TC_274_Ontology#2VyjV_tdrECAYMwT1$nafE> a rdf:Property ;
+    rdfs:label "price" ;
+    :hasID "07-0032" ;
+    rdfs:comment "Price per unit." ;
+    rdfs:subPropertyOf :MarketingProperties .
+
+<http://example.org/BIM_lighting_properties_standards/CEN_TC_274_Ontology#2WGVMrEo99aPK$EDJPaPtF> a rdf:Property ;
+    rdfs:label "emergency lighting charging power" ;
+    :hasID "03-0016" ;
+    rdfs:comment "Input power to the charging circuit of emergency luminaires when the light sources are not operating." ;
+    rdfs:subPropertyOf :EmergencyLightingProperties .
+
+:2XGbfN7gP1ugSmAfQOjIzn a rdf:Property ;
+    rdfs:label "emergency operation type" ;
+    :hasID "03-0007" ;
+    rdfs:comment "Emergency operation type according IEC 60598-2-22:2015 annex B b)" ;
+    rdfs:subPropertyOf :EmergencyLightingProperties .
+
+:2XiNAY0D121wETmb0AmovG a rdf:Property ;
+    rdfs:label "maintained colour tolerance" ;
+    :hasID "04-0031" ;
+    rdfs:comment "Maintained Colour Tolerance after 6000 h in step McAdam ellipses (SDCM)." ;
+    rdfs:subPropertyOf :PhotometricProperties .
+
+:2Yq5DQRXP7efr3cQyq8sqS a rdf:Property ;
+    rdfs:label "backup supply system" ;
+    :hasID "03-0005" ;
+    rdfs:comment "The type of backup supply system according IEC 60598-2-22:2015." ;
+    rdfs:subPropertyOf :EmergencyLightingProperties .
+
+:2Ys5wBTunE_AZBAQnsTadY a rdf:Property ;
+    rdfs:label "lamp lumen maintenance factor" ;
+    :hasID "08-0016" ;
+    rdfs:comment "The lamp lumen maintenance factor is the ratio of luminous flux at a specific time compared to a new light source. It is describing the aging of the light source or the reduction of light intensity over time. The time for the LLMF is related to the median useful life." ;
+    rdfs:subPropertyOf :OperationsMaintenanceProperties .
+
+:2a382qr4fB08Wb9xoufkaq a rdf:Property ;
+    rdfs:label "quantity of addresses" ;
+    :hasID "02-0041" ;
+    rdfs:comment "Determines the quantity of addresses of the product." ;
+    rdfs:subPropertyOf :ElectricalProperties .
+
+<http://example.org/BIM_lighting_properties_standards/CEN_TC_274_Ontology#2d9pUf$QXEtxHYdBYou0$3> a rdf:Property ;
+    rdfs:label "constant light output start power" ;
+    :hasID "02-0055" ;
+    rdfs:comment "Identical with name." ;
+    rdfs:subPropertyOf :ElectricalProperties .
+
+:2dcn2m0XXFA88QqxxSsTnG a rdf:Property ;
+    rdfs:label "lead time" ;
+    :hasID "07-0034" ;
+    rdfs:comment "Expected lead time from placement of order to delivery." ;
+    rdfs:subPropertyOf :MarketingProperties .
+
+:2dlY1dvhzC4R5KMzF6j4fE a rdf:Property ;
+    rdfs:label "PNL number" ;
+    :hasID "08-0035" ;
+    rdfs:comment "PNL Name. Check Panel Load / What is it? Is it a name or a number?" ;
+    rdfs:subPropertyOf :OperationsMaintenanceProperties .
+
+:2eE6ivKdb3xANg8HGEDFZH a rdf:Property ;
+    rdfs:label "detector characteristics" ;
+    :hasID "05-0001" ;
+    rdfs:comment "Shape of the detection area." ;
+    rdfs:subPropertyOf :SensingDeviceProperties .
+
+:2ebPfCuzP6euRypnhmgpDH a rdf:Property ;
+    rdfs:label """default
+mounting height""" ;
+    :hasID "06-0007" ;
+    rdfs:comment "Default distance from floor to mounting point of the luminaire or sensing device." ;
+    rdfs:subPropertyOf :MountingAccessoryProperties .
+
+:2gBflnlCfCgwR3hT_QVGtQ a rdf:Property ;
+    rdfs:label "cable length" ;
+    :hasID "01-0024" ;
+    rdfs:comment "Cable for power supply. Zero means no cable supplied." ;
+    rdfs:subPropertyOf :MechanicalProperties .
+
+:2gMYX1hkHEE8kQmgimay3h a rdf:Property ;
+    rdfs:label "light output ratio LOR" ;
+    :hasID "04-0008" ;
+    rdfs:comment "Ratio of the luminous flux of the luminaire, measured under specified practical conditions with its own light source(s) and equipment, to the sum of the individual luminous fluxes of the same conventional light source(s) according to EN 12665:2018 – ILV? Check also definition. Always 1 for absolute photometry." ;
+    rdfs:subPropertyOf :PhotometricProperties .
+
+:2gWWkY9bz7dOFB4Pgn6h7G a rdf:Property ;
+    rdfs:label "light transmitting surface material" ;
+    :hasID "07-0047" ;
+    rdfs:comment "The material the light transmitting surface is made of." ;
+    rdfs:subPropertyOf :MarketingProperties .
+
+:2gmo70bVX90uJh2YAvS62s a rdf:Property ;
+    rdfs:label "rated luminous flux of the light source" ;
+    :hasID "04-0006" ;
+    rdfs:comment """Value of the initial luminous flux of a given type of light source declared by the manufacturer or the responsible vendor, the light source being operated at a
+ambient temperature of 25 °C See also EN 13032-4:2015.""" ;
+    rdfs:subPropertyOf :PhotometricProperties .
+
+:2gr49_xaP46O1yRdKp3PXW a rdf:Property ;
+    rdfs:label "min. ambient temperature" ;
+    :hasID "06-0028" ;
+    rdfs:comment "Minimal ambient temperature." ;
+    rdfs:subPropertyOf :MountingAccessoryProperties .
+
+<http://example.org/BIM_lighting_properties_standards/CEN_TC_274_Ontology#2h_4I$zWjAF8gO8u$1m5iL> a rdf:Property ;
+    rdfs:label "DSE workplaces approve" ;
+    :hasID "04-0036" ;
+    rdfs:comment "Display Screen Equipment workplaces approve according to EN 12464-1:2011." ;
+    rdfs:subPropertyOf :PhotometricProperties .
+
+:2hiYLf6991OwJ7Ra5hI8RK a rdf:Property ;
+    rdfs:label "battery exchange after x years" ;
+    :hasID "08-0023" ;
+    rdfs:comment "The battery's service life." ;
+    rdfs:subPropertyOf :OperationsMaintenanceProperties .
+
+:2iV9K3GCTD9AwDRJQ2QaSP a rdf:Property ;
+    rdfs:label "type of detector" ;
+    :hasID "05-0004" ;
+    rdfs:comment "The type of detection possible for sensing device." ;
+    rdfs:subPropertyOf :SensingDeviceProperties .
+
+:2kMc1GwgH1LAnZ1huo7mq_ a rdf:Property ;
+    rdfs:label "colour temperature controllable" ;
+    :hasID "02-0034" ;
+    rdfs:comment "States if the colour temperature is controllable." ;
+    rdfs:subPropertyOf :ElectricalProperties .
+
+:2lG7sF6af5sRrHYUSubDNV a rdf:Property ;
+    rdfs:label "thickness of ceiling minimum" ;
+    :hasID "06-0022" ;
+    rdfs:comment "The minimum thickness of the ceiling for recessed or flush mount." ;
+    rdfs:subPropertyOf :MountingAccessoryProperties .
+
+:2lRl_DnFf97P6CAO2kfYEp a rdf:Property ;
+    rdfs:label "windage" ;
+    :hasID "06-0016" ;
+    rdfs:comment "Projected area which is used calculate wind resistance for structural calculations." ;
+    rdfs:subPropertyOf :MountingAccessoryProperties .
+
+:2mGS7VdXfBo8rV8OFHuW7b a rdf:Property ;
+    rdfs:label "control gear quantity" ;
+    :hasID "02-0021" ;
+    rdfs:comment "The quantity of control gears." ;
+    rdfs:subPropertyOf :ElectricalProperties .
+
+:2miHIoA8z7qwVd3XUvTBLm a rdf:Property ;
+    rdfs:label "special function" ;
+    :hasID "07-0059" ;
+    rdfs:comment "special function or extra function" ;
+    rdfs:subPropertyOf :MarketingProperties .
+
+:2nKXmluvb7_8clWogllEcr a rdf:Property ;
+    rdfs:label "through wiring" ;
+    :hasID "02-0049" ;
+    rdfs:comment "Determines whether the luminaire is suitable for through wiring with the indication of the maximum current." ;
+    rdfs:subPropertyOf :ElectricalProperties .
+
+:2oaQ3AOnn40wmt6Zfp6ooy a rdf:Property ;
+    rdfs:label "nominal current" ;
+    :hasID "02-0024" ;
+    rdfs:comment "Electrical nominal current." ;
+    rdfs:subPropertyOf :ElectricalProperties .
+
+:2ogWrMo6H5GxfzoDEWfaui a rdf:Property ;
+    rdfs:label "sensing device position" ;
+    :hasID "05-0031" ;
+    rdfs:comment "Relative position of luminaire and sensing device." ;
+    rdfs:subPropertyOf :SensingDeviceProperties .
+
+:2oxTEZw7TCPPcnnsapMO1u a rdf:Property ;
+    rdfs:label "rated luminous flux of the luminaire" ;
+    :hasID "04-0005" ;
+    rdfs:comment """Value of the initial luminous flux of a given type of luminaire declared by the manufacturer or the responsible vendor, the luminaire being operated at a
+ambient temperature of 25 °C See also EN 13032-4:2015.""" ;
+    rdfs:subPropertyOf :PhotometricProperties .
+
+:2pFfNBOuv1Tf_RTQpYktGL a rdf:Property ;
+    rdfs:label "cutting out width" ;
+    :hasID "01-0009" ;
+    rdfs:comment "Width of the cut-out hole (for recessed or flush mount)." ;
+    rdfs:subPropertyOf :MechanicalProperties .
+
+:2pJ0x1y_L22u4JkKPyw8n7 a rdf:Property ;
+    rdfs:label "assembly place" ;
+    :hasID "08-0006" ;
+    rdfs:comment "Defining where the assembly is intended to take place, on the building site, a room number or others." ;
+    rdfs:subPropertyOf :OperationsMaintenanceProperties .
+
+:2qdgZ6NbnCfOAJFXNAjkhw a rdf:Property ;
+    rdfs:label "with starter" ;
+    :hasID "06-0027" ;
+    rdfs:comment "The luminaire has a starter." ;
+    rdfs:subPropertyOf :MountingAccessoryProperties .
+
+:2qgqLlM2b91wjREM3dUep2 a rdf:Property ;
+    rdfs:label "testing method" ;
+    :hasID "03-0006" ;
+    rdfs:comment "Testing method of emergency lighting. According to IEC 62034:2012." ;
+    rdfs:subPropertyOf :EmergencyLightingProperties .
+
+<http://example.org/BIM_lighting_properties_standards/CEN_TC_274_Ontology#2rhswpHMv6jxnu7t2SG$8a> a rdf:Property ;
+    rdfs:label "with base plate" ;
+    :hasID "06-0038" ;
+    rdfs:comment "Specifies whether the pole has a base plate." ;
+    rdfs:subPropertyOf :MountingAccessoryProperties .
+
+:2sRMMfIvvEvwH0LKqBmNoy a rdf:Property ;
+    rdfs:label "impulse withstand voltage" ;
+    :hasID "02-0032" ;
+    rdfs:comment "Identical with name." ;
+    rdfs:subPropertyOf :ElectricalProperties .
+
+:2sk0IXxZ93A9vfVQArmqx0 a rdf:Property ;
+    rdfs:label "emergency lighting inrush current" ;
+    :hasID "03-0012" ;
+    rdfs:comment "Initial current of emergency lighting after turning on (rated value). Needed for the correct sizing of AC/AC central systems." ;
+    rdfs:subPropertyOf :EmergencyLightingProperties .
+
+:2stqdB0GP4nxzyYpEVWwqt a rdf:Property ;
+    rdfs:label "risk management" ;
+    :hasID "07-0038" ;
+    rdfs:comment "Risk management plan details associated with the object." ;
+    rdfs:subPropertyOf :MarketingProperties .
+
+<http://example.org/BIM_lighting_properties_standards/CEN_TC_274_Ontology#2tDs9PFTzF$wJWyj72SQyt> a rdf:Property ;
+    rdfs:label "circuit number and" ;
+    :hasID "08-0034" ;
+    rdfs:comment "Related Circuit Number" ;
+    rdfs:subPropertyOf :OperationsMaintenanceProperties .
+
+:2vKQ_e3oT6txePlhDBTVpL a rdf:Property ;
+    rdfs:label "Uniclass code" ;
+    :hasID "07-0054" ;
+    rdfs:comment "Identical with name." ;
+    rdfs:subPropertyOf :MarketingProperties .
+
+<http://example.org/BIM_lighting_properties_standards/CEN_TC_274_Ontology#2vu3$oP75AvhGsrUczduBw> a rdf:Property ;
+    rdfs:label "Omniclass title" ;
+    :hasID "07-0053" ;
+    rdfs:comment "Identical with name." ;
+    rdfs:subPropertyOf :MarketingProperties .
+
+:2vwn75Kg55RuoCwjIK1l_l a rdf:Property ;
+    rdfs:label "circuit number" ;
+    :hasID "08-0007" ;
+    rdfs:comment "Identical with name." ;
+    rdfs:subPropertyOf :OperationsMaintenanceProperties .
+
+:2wGK64QFXCNBTJGIZ9W9T3 a rdf:Property ;
+    rdfs:label "replace cover glass" ;
+    :hasID "08-0021" ;
+    rdfs:comment "Identical with name." ;
+    rdfs:subPropertyOf :OperationsMaintenanceProperties .
+
+<http://example.org/BIM_lighting_properties_standards/CEN_TC_274_Ontology#2wiaN2gSf0$RFeAF8d_51K> a rdf:Property ;
+    rdfs:label "power consumption of the controls" ;
+    :hasID "02-0007" ;
+    rdfs:comment "Power consumption of the detector with the light switched off and without motion detection / presence detection (idle state)." ;
+    rdfs:subPropertyOf :ElectricalProperties .
+
+<http://example.org/BIM_lighting_properties_standards/CEN_TC_274_Ontology#2x$3cuweH5LO5HlpN3AB5I> a rdf:Property ;
+    rdfs:label "update cycle of manufacture data creation" ;
+    :hasID "07-0049" ;
+    rdfs:comment "Update cycle of manufacture data creation." ;
+    rdfs:subPropertyOf :MarketingProperties .
+
+:2xTmgI4Kz07w8ouThMxNae a rdf:Property ;
+    rdfs:label "maintenance tasks according SFG20" ;
+    :hasID "08-0008" ;
+    rdfs:comment "Maintenance tasks or SFG20 codes to time interval." ;
+    rdfs:subPropertyOf :OperationsMaintenanceProperties .
+
+<http://example.org/BIM_lighting_properties_standards/CEN_TC_274_Ontology#3$$yIxYFj1E9zXdzpVaCgt> a rdf:Property ;
+    rdfs:label "rated voltage" ;
+    :hasID "02-0066" ;
+    rdfs:comment "The voltage or range of voltages indicated on the luminaire. Reference – Check with IEC/TC34" ;
+    rdfs:subPropertyOf :ElectricalProperties .
+
+<http://example.org/BIM_lighting_properties_standards/CEN_TC_274_Ontology#3$hGYwTMb2sQ53dzP$Gjc9> a rdf:Property ;
+    rdfs:label "emergency lighting light source type" ;
+    :hasID "03-0004" ;
+    rdfs:comment "Light source type of an additional separate emergency light source within the luminaire." ;
+    rdfs:subPropertyOf :EmergencyLightingProperties .
+
+:30Ko89Zdb53uyKzRXpupJT a rdf:Property ;
+    rdfs:label "radio transmitting power" ;
+    :hasID "02-0058" ;
+    rdfs:comment "Power of the wireless module expressed in decibel ratio of a power value. IEEE" ;
+    rdfs:subPropertyOf :ElectricalProperties .
+
+<http://example.org/BIM_lighting_properties_standards/CEN_TC_274_Ontology#30M$RN1TX7$gz0O8$bv0j4> a rdf:Property ;
+    rdfs:label "operating temperature" ;
+    :hasID "01-0033" ;
+    rdfs:comment "Range defined by the minimum and maximum operating temperatures at which the luminaire operates normally as specified by the supplier or manufacturer." ;
+    rdfs:subPropertyOf :MechanicalProperties .
+
+:31u6SnYpz4Bw32mCwGONyo a rdf:Property ;
+    rdfs:label "basic unit" ;
+    :hasID "07-0033" ;
+    rdfs:comment "Basic unit of the product in pieces." ;
+    rdfs:subPropertyOf :MarketingProperties .
+
+<http://example.org/BIM_lighting_properties_standards/CEN_TC_274_Ontology#31uC3C$W1CZgyILMlF1ZAl> a rdf:Property ;
+    rdfs:label "maintenance and cleaning" ;
+    :hasID "08-0004" ;
+    rdfs:comment "The object's maintenance and cleaning requirements." ;
+    rdfs:subPropertyOf :OperationsMaintenanceProperties .
+
+:322VYxGfH6DOZHOmPOqDqO a rdf:Property ;
+    rdfs:label "URL manufacturer" ;
+    :hasID "07-0003" ;
+    rdfs:comment "Manufacturer website address." ;
+    rdfs:subPropertyOf :MarketingProperties .
+
+<http://example.org/BIM_lighting_properties_standards/CEN_TC_274_Ontology#33Dkxr2dX6s8LZdwlS$DiR> a rdf:Property ;
+    rdfs:label "RoHs directive" ;
+    :hasID "07-0025" ;
+    rdfs:comment "Specifies whether product satisfies the RoHS Directive." ;
+    rdfs:subPropertyOf :MarketingProperties .
+
+<http://example.org/BIM_lighting_properties_standards/CEN_TC_274_Ontology#33Kd_d$Xv1GgCDg5DDP5vn> a rdf:Property ;
+    rdfs:label """maximum
+mounting height""" ;
+    :hasID "06-0010" ;
+    rdfs:comment "Maximum distance from floor to mounting point of the luminaire or sensing device." ;
+    rdfs:subPropertyOf :MountingAccessoryProperties .
+
+:33M24NjTn3SxpLaPp27aqY a rdf:Property ;
+    rdfs:label "wall thickness" ;
+    :hasID "06-0026" ;
+    rdfs:comment "The minimum required wall thickness for mounting" ;
+    rdfs:subPropertyOf :MountingAccessoryProperties .
+
+:34PG7VadHC1QphPcsq0gLM a rdf:Property ;
+    rdfs:label "operation and maintenance manual" ;
+    :hasID "08-0001" ;
+    rdfs:comment "Hyperlink to Manufacturer O&M Data." ;
+    rdfs:subPropertyOf :OperationsMaintenanceProperties .
+
+<http://example.org/BIM_lighting_properties_standards/CEN_TC_274_Ontology#34itbruFnDWgvJgUmwG$rq> a rdf:Property ;
+    rdfs:label "mounting point offset position z direction" ;
+    :hasID "06-0006" ;
+    rdfs:comment """Z position of the point used as origin for the mounting in relation to the middle of the bounding box. Positive values are aligned with the gamma angle 180° (up). Negative values are aligned with the gamma angle 0° (down). 
+If the mounting point is at the upper side then this value has to be the half of the height.""" ;
+    rdfs:subPropertyOf :MountingAccessoryProperties .
+
+:36Xu4jb_T9vQ3ZUeKan53F a rdf:Property ;
+    rdfs:label "emergency LDC" ;
+    :hasID "03-0015" ;
+    rdfs:comment "Emergency lighting Light Distribution Curve as file." ;
+    rdfs:subPropertyOf :EmergencyLightingProperties .
+
+:38wYgCHqr1A8vcapxWfUmV a rdf:Property ;
+    rdfs:label "maximum luminous flux of Emergency lighting" ;
+    :hasID "03-0027" ;
+    rdfs:comment "The maximum luminous flux from an emergency luminaire." ;
+    rdfs:subPropertyOf :EmergencyLightingProperties .
+
+:39JfcO9AbAr9oN6p6vcFzd a rdf:Property ;
+    rdfs:label "useful life" ;
+    :hasID "08-0010" ;
+    rdfs:comment "Useful life of the luminaire with declaration of Lx, By and ambient temperature." ;
+    rdfs:subPropertyOf :OperationsMaintenanceProperties .
+
+:3ACN_DHdbCURKfz1ZxjzME a rdf:Property ;
+    rdfs:label "fire protection" ;
+    :hasID "07-0022" ;
+    rdfs:comment "Fire protection classification for flame retardant and self-extinguishing according to UL94." ;
+    rdfs:subPropertyOf :MarketingProperties .
+
+:3AdnhhX2L3bBC6l6oSZU6O a rdf:Property ;
+    rdfs:label "approval mark" ;
+    :hasID "07-0020" ;
+    rdfs:comment "Specifies which approval marks a product has." ;
+    rdfs:subPropertyOf :MarketingProperties .
+
+:3AgJzo7ND4zB4c3ysHuewK a rdf:Property ;
+    rdfs:label "walk over" ;
+    :hasID "01-0056" ;
+    rdfs:comment "Luminaire is resistant to the man's weight." ;
+    rdfs:subPropertyOf :MechanicalProperties .
+
+:3B8KQ1WqfC8x5qTA1pA7PY a rdf:Property ;
+    rdfs:label "constant light output average power" ;
+    :hasID "02-0064" ;
+    rdfs:comment "Identical with name." ;
+    rdfs:subPropertyOf :ElectricalProperties .
+
+<http://example.org/BIM_lighting_properties_standards/CEN_TC_274_Ontology#3BBcI8ACb3Ff6$2nRfx7Cg> a rdf:Property ;
+    rdfs:label "mounting outside the arms reach" ;
+    :hasID "06-0015" ;
+    rdfs:comment "Mounting outside the hand area" ;
+    rdfs:subPropertyOf :MountingAccessoryProperties .
+
+:3CckyLFxX8KxZVvgilS7Jt a rdf:Property ;
+    rdfs:label "ground recessed accessibility class" ;
+    :hasID "01-0026" ;
+    rdfs:comment "Specific application class for ground recessed luminaries according temperature limits, dimensions and static load resistance in kN according to IEC 60598-2-13:2017. Update" ;
+    rdfs:subPropertyOf :MechanicalProperties .
+
+:3E7MzAVgHDlBQIdGhHFHL1 a rdf:Property ;
+    rdfs:label "presence detection area" ;
+    :hasID "05-0010" ;
+    rdfs:comment """Detection area for minor movement for the standard mounting height.
+For round area: the angular range from 1° to 360° and radius [m]. For rectangular area: L x W [m]""" ;
+    rdfs:subPropertyOf :SensingDeviceProperties .
+
+:3ERn8VgnjDjhulH3MaG9yG a rdf:Property ;
+    rdfs:label "nominal mains voltage" ;
+    :hasID "02-0028" ;
+    rdfs:comment "Nominal voltage at which the product operates normally as specified by the supplier or manufacturer." ;
+    rdfs:subPropertyOf :ElectricalProperties .
+
+<http://example.org/BIM_lighting_properties_standards/CEN_TC_274_Ontology#3ETH0SOQH5DeS9U$Wj1Aa8> a rdf:Property ;
+    rdfs:label "radiation transmitting frequency" ;
+    :hasID "02-0059" ;
+    rdfs:comment "The frequency of radiation for wireless transmission." ;
+    rdfs:subPropertyOf :ElectricalProperties .
+
+:3GwYrPlNbAYu8gPAOJZgwc a rdf:Property ;
+    rdfs:label "maximum orientation angle" ;
+    :hasID "01-0035" ;
+    rdfs:comment "Maximum of possible values for the rotation of the orientation angle (z-axis)." ;
+    rdfs:subPropertyOf :MechanicalProperties .
+
+:3HSRRigDn3bwrPttqPraMV a rdf:Property ;
+    rdfs:label "battery capacity" ;
+    :hasID "03-0020" ;
+    rdfs:comment "Identical with name." ;
+    rdfs:subPropertyOf :EmergencyLightingProperties .
+
+:3HorBzYr10DBaLrbgxq2fS a rdf:Property ;
+    rdfs:label "photometric centre position y direction" ;
+    :hasID "04-0003" ;
+    rdfs:comment "Y position of the point used as origin for photometric measurements and calculations in relation to the middle of the bounding box. Positive values are aligned with the C90 level. Negative values are aligned with the C270 level. See EN 13032-4:2015." ;
+    rdfs:subPropertyOf :PhotometricProperties .
+
+:3IPpBFdz17PB0W0suiESss a rdf:Property ;
+    rdfs:label "temperature on light aperture" ;
+    :hasID "01-0032" ;
+    rdfs:comment "Average temperature of light emitting surface of a luminaire." ;
+    rdfs:subPropertyOf :MechanicalProperties .
+
+:3Im9FC0mL7guhzlonQ2RjN a rdf:Property ;
+    rdfs:label "application" ;
+    :hasID "07-0010" ;
+    rdfs:comment "Field of application for the luminaire." ;
+    rdfs:subPropertyOf :MarketingProperties .
+
+:3JqWxX_JPBDPKVYVZAezD6 a rdf:Property ;
+    rdfs:label "melanopic factor" ;
+    :hasID "04-0028" ;
+    rdfs:comment "Melanopic factor of luminous radiation daylight equivalent based on CIE standard illuminant D65. See also CIE S 026" ;
+    rdfs:subPropertyOf :PhotometricProperties .
+
+:3Kg5x8kWr1zhsZyRr30Ovs a rdf:Property ;
+    rdfs:label "bracket" ;
+    :hasID "06-0031" ;
+    rdfs:comment "The Luminaire has a boom." ;
+    rdfs:subPropertyOf :MountingAccessoryProperties .
+
+:3Kn4FA4wT8fwq6TqMs8LSq a rdf:Property ;
+    rdfs:label "battery exchange possible" ;
+    :hasID "08-0022" ;
+    rdfs:comment "Identical with name." ;
+    rdfs:subPropertyOf :OperationsMaintenanceProperties .
+
+:3LBrQkLDDFheBOxrGk8Zr_ a rdf:Property ;
+    rdfs:label "power factor" ;
+    :hasID "02-0003" ;
+    rdfs:comment "Ratio of the amount of the active power to the apparent power at 100% load. See also IEC 80000-6:2008." ;
+    rdfs:subPropertyOf :ElectricalProperties .
+
+:3LN_2aQQD049K9w6fm2THi a rdf:Property ;
+    rdfs:label "current DC-operation" ;
+    :hasID "03-0011" ;
+    rdfs:comment "Identical with name." ;
+    rdfs:subPropertyOf :EmergencyLightingProperties .
+
+<http://example.org/BIM_lighting_properties_standards/CEN_TC_274_Ontology#3M6mU$FIP6KQ80BVaK5PCO> a rdf:Property ;
+    rdfs:label "control gear location" ;
+    :hasID "02-0022" ;
+    rdfs:comment "Describes the location of the control gear. Inside or outside of the luminaire. Or distance to light source." ;
+    rdfs:subPropertyOf :ElectricalProperties .
+
+:3NVB__G3H5NRiaJlgbbc_9 a rdf:Property ;
+    rdfs:label "assembly description" ;
+    :hasID "07-0052" ;
+    rdfs:comment "Identical with name." ;
+    rdfs:subPropertyOf :MarketingProperties .
+
+:3Nafl5m1f91eUjON0JbahC a rdf:Property ;
+    rdfs:label "spectrum" ;
+    :hasID "04-0021" ;
+    rdfs:comment "The spectrum of radiation describes its composition with regard to wavelength. It is presented as a table of energy (eV) depending on wavelength (nm). Default steps 5nm, default interval 380 - 780nm. The photometric file formats ANSI/IES TM-33 or UNI 11733 also contain spectral distributions." ;
+    rdfs:subPropertyOf :PhotometricProperties .
+
+:3O71lbRGPDpOk4BrfOhVAO a rdf:Property ;
+    rdfs:label "downward flux fraction" ;
+    :hasID "04-0010" ;
+    rdfs:comment "Ratio of the downward flux to the total flux of the luminaire." ;
+    rdfs:subPropertyOf :PhotometricProperties .
+
+:3Q6UsxAKD0Q8mO0x0ZsmhD a rdf:Property ;
+    rdfs:label "dedicated emergency lighting type" ;
+    :hasID "03-0003" ;
+    rdfs:comment "Product type for an application of the emergency lighting. Dedicated to emergency luminaires only." ;
+    rdfs:subPropertyOf :EmergencyLightingProperties .
+
+:3RRkslNcn3IBFmyVoAyyMc a rdf:Property ;
+    rdfs:label "voltage type" ;
+    :hasID "02-0029" ;
+    rdfs:comment "AC Alternating Current / DC Direct Current / UC Universal Current (Alternating or Direct Current)." ;
+    rdfs:subPropertyOf :ElectricalProperties .
+
+:3SPWY2QXj1Tve2T7PA9Uw4 a rdf:Property ;
+    rdfs:label "duration time and luminous flux of emergency lighting" ;
+    :hasID "03-0014" ;
+    rdfs:comment "Presentation of the variation of the emergency lighting output during the usage time. It is presented as a table of luminous flux emitted (lm) and corresponding duration times (h)." ;
+    rdfs:subPropertyOf :EmergencyLightingProperties .
+
+<http://example.org/BIM_lighting_properties_standards/CEN_TC_274_Ontology#3T$XxssuT27PO4Ye$SVikp> a rdf:Property ;
+    rdfs:label "ball impact resistant" ;
+    :hasID "06-0017" ;
+    rdfs:comment "Ball impact resistant according VDE 0710-13:1981." ;
+    rdfs:subPropertyOf :MountingAccessoryProperties .
+
+:3UBMXTzMP2ev8RJ6CTkBmS a rdf:Property ;
+    rdfs:label "tenth-value angle" ;
+    :hasID "04-0015" ;
+    rdfs:comment """Angle of the beam centre to the point where the luminous intensity is reduced to one tenth. See also IEC 61341:Ed.2.
+If the beam is not rotation symmetrical the photometric plane needs to specified.""" ;
+    rdfs:subPropertyOf :PhotometricProperties .
+
+<http://example.org/BIM_lighting_properties_standards/CEN_TC_274_Ontology#3UEOcatIDEMf$qdvydAlfg> a rdf:Property ;
+    rdfs:label "constant light output end power" ;
+    :hasID "02-0056" ;
+    rdfs:comment "Identical with name." ;
+    rdfs:subPropertyOf :ElectricalProperties .
+
+:3VHFOwjl13sv6CBYkwU2wh a rdf:Property ;
+    rdfs:label "tilt angle selected value" ;
+    :hasID "01-0044" ;
+    rdfs:comment "Selected value for the tilt angle (x-axis)." ;
+    rdfs:subPropertyOf :MechanicalProperties .
+
+:3WFOEtzHjE2gEwIqwNt23B a rdf:Property ;
+    rdfs:label "minimum turn angle" ;
+    :hasID "01-0046" ;
+    rdfs:comment "Minimum possible value for the rotation of the turn angle (y-axis). Turn can also be referred to as ‘twist’ or ‘cant’." ;
+    rdfs:subPropertyOf :MechanicalProperties .
+
+:3YVv_4s1LA0uiEUpMsReJ9 a rdf:Property ;
+    rdfs:label "with dimmer" ;
+    :hasID "02-0037" ;
+    rdfs:comment "Determines whether the luminaire has a dimmer included." ;
+    rdfs:subPropertyOf :ElectricalProperties .
+
+:3ZWzCOV090TukLTsY8Vcua a rdf:Property ;
+    rdfs:label "minimum tilt angle" ;
+    :hasID "01-0041" ;
+    rdfs:comment "Minimum possible value for the rotation of the tilt angle (x-axis)." ;
+    rdfs:subPropertyOf :MechanicalProperties .
+
+:3ZYG5CttLDKh1KDatlaH_w a rdf:Property ;
+    rdfs:label "fire protection labelling" ;
+    :hasID "07-0021" ;
+    rdfs:comment "Fire protection labelling accordance IEC 60598-1:2020." ;
+    rdfs:subPropertyOf :MarketingProperties .
+
+:3ZohUj9if8EBuv5LU5H7s9 a rdf:Property ;
+    rdfs:label "spigot diameter" ;
+    :hasID "06-0040" ;
+    rdfs:comment "The size of spigot for mounting on the pole." ;
+    rdfs:subPropertyOf :MountingAccessoryProperties .
+
+:3_eFt0HBf3UgmfsROvHbly a rdf:Property ;
+    rdfs:label "interface" ;
+    :hasID "02-0040" ;
+    rdfs:comment "Determines which communication or control interface is indicated for the luminaire or sensing device." ;
+    rdfs:subPropertyOf :ElectricalProperties .
+
+:3a5GdiFJ1CzvyjChoIq9lh a rdf:Property ;
+    rdfs:label "battery form factor" ;
+    :hasID "03-0022" ;
+    rdfs:comment "Battery form factor and dimension." ;
+    rdfs:subPropertyOf :EmergencyLightingProperties .
+
+:3b4KsrGCb2dw2Or1JqfnoW a rdf:Property ;
+    rdfs:label """default
+mounting distance""" ;
+    :hasID "06-0008" ;
+    rdfs:comment "Default distance from ceiling to luminaire or sensing device." ;
+    rdfs:subPropertyOf :MountingAccessoryProperties .
+
+<http://example.org/BIM_lighting_properties_standards/CEN_TC_274_Ontology#3bHsk$G7n05BgiaYUYUg6s> a rdf:Property ;
+    rdfs:label "2nd rated voltage" ;
+    :hasID "02-0067" ;
+    rdfs:comment "Rated voltage on the secondary side (in the case of lighting using a voltage converter). Reference – Check with IEC/TC34" ;
+    rdfs:subPropertyOf :ElectricalProperties .
+
+:3bKRB3yaT3s8fMSl_u6Kyb a rdf:Property ;
+    rdfs:label "photometric class UTE" ;
+    :hasID "04-0040" ;
+    rdfs:comment """French standard with photometric classification. The standard NF (UTE) C71-121 (1995) in France, "Méthode simplifiée de prédétermination
+des éclairements dans les espaces clos et classification correspondante des luminaires".""" ;
+    rdfs:subPropertyOf :PhotometricProperties .
+
+:3bww1seCDA3xO1TXuKRIa5 a rdf:Property ;
+    rdfs:label "thickness of ceiling maximum" ;
+    :hasID "06-0023" ;
+    rdfs:comment "The maximum thickness of the ceiling for recessed installation." ;
+    rdfs:subPropertyOf :MountingAccessoryProperties .
+
+:3ceOGuHgz4Px_qL3kqmnLB a rdf:Property ;
+    rdfs:label "HF frequency" ;
+    :hasID "05-0007" ;
+    rdfs:comment "The frequency of High Frequency radiation." ;
+    rdfs:subPropertyOf :SensingDeviceProperties .
+
+:3csxKAakP79PFF8_VH6_b4 a rdf:Property ;
+    rdfs:label "output channel n" ;
+    :hasID "05-0022" ;
+    rdfs:comment "Identical with name." ;
+    rdfs:subPropertyOf :SensingDeviceProperties .
+
+:3d9jfSb_z7WB2y0xbHeccR a rdf:Property ;
+    rdfs:label "energy efficiency of ballast" ;
+    :hasID "02-0023" ;
+    rdfs:comment "The IEC62442-1:2018 define the measuring methods for the total input power of the ballast–light source system." ;
+    rdfs:subPropertyOf :ElectricalProperties .
+
+<http://example.org/BIM_lighting_properties_standards/CEN_TC_274_Ontology#3dyQmC$KHDfvD_wfGSgfji> a rdf:Property ;
+    rdfs:label "viewing distance" ;
+    :hasID "03-0026" ;
+    rdfs:comment "Viewing distance of pictogram according to ISO 30061:2007." ;
+    rdfs:subPropertyOf :EmergencyLightingProperties .
+
+:3e4zxIOO5EZu5szfTou0vU a rdf:Property ;
+    rdfs:label "average rated life of light source" ;
+    :hasID "08-0011" ;
+    rdfs:comment "Expected lifetime of a light source. Not allowed at LED." ;
+    rdfs:subPropertyOf :OperationsMaintenanceProperties .
+
+:3ejPldyc9Bau0HaTHZMtva a rdf:Property ;
+    rdfs:label "3D model file" ;
+    :hasID "01-0050" ;
+    rdfs:comment "The description of a location of the 3D model file." ;
+    rdfs:subPropertyOf :MechanicalProperties .
+
+:3fYv9z7yf7cwK81XdvBN10 a rdf:Property ;
+    rdfs:label "access clearance left" ;
+    :hasID "08-0025" ;
+    rdfs:comment "Access required for maintenance of this item." ;
+    rdfs:subPropertyOf :OperationsMaintenanceProperties .
+
+<http://example.org/BIM_lighting_properties_standards/CEN_TC_274_Ontology#3gmbhSjFD4JOPQZ7_I$HzY> a rdf:Property ;
+    rdfs:label "manufacturer" ;
+    :hasID "07-0002" ;
+    rdfs:comment "Identical with name." ;
+    rdfs:subPropertyOf :MarketingProperties .
+
+:3gpxb3oaLA8BkchUDMfQDm a rdf:Property ;
+    rdfs:label """minimum
+mounting height""" ;
+    :hasID "06-0009" ;
+    rdfs:comment "Minimum distance from floor to mounting point of the luminaire or sensing device." ;
+    rdfs:subPropertyOf :MountingAccessoryProperties .
+
+:3hG4MOE1n7S8AB5aJLRMVj a rdf:Property ;
+    rdfs:label """applied
+mounting height""" ;
+    :hasID "06-0011" ;
+    rdfs:comment "Selected distance from floor to mounting point of the luminaire or sensing device." ;
+    rdfs:subPropertyOf :MountingAccessoryProperties .
+
+:3i22ssv3nDYAGDmO9prt0t a rdf:Property ;
+    rdfs:label "lamp survival factor" ;
+    :hasID "08-0017" ;
+    rdfs:comment "The lamp survival factor depends on the service lifetime of a light source.  LSF=1 is saying that there will be no loss of light because of light source failure." ;
+    rdfs:subPropertyOf :OperationsMaintenanceProperties .
+
+:3jAmXEFTn9oPlBD_oO4BfE a rdf:Property ;
+    rdfs:label "silicon-free" ;
+    :hasID "01-0030" ;
+    rdfs:comment "States whether the luminaire is silicon-free." ;
+    rdfs:subPropertyOf :MechanicalProperties .
+
+:3kZ3CJ9Xb9DBPoZ15k3vIQ a rdf:Property ;
+    rdfs:label "control gear included" ;
+    :hasID "02-0020" ;
+    rdfs:comment "Shipped with or without ballast." ;
+    rdfs:subPropertyOf :ElectricalProperties .
+
+:3kbFNwkkb7gPUsnc_COBg4 a rdf:Property ;
+    rdfs:label "constant light output" ;
+    :hasID "02-0054" ;
+    rdfs:comment "Determines whether the luminous flux stays constant over the declared lifetime." ;
+    rdfs:subPropertyOf :ElectricalProperties .
+
+<http://example.org/BIM_lighting_properties_standards/CEN_TC_274_Ontology#3krkQTVbv0$g9Xj9eYC6nh> a rdf:Property ;
+    rdfs:label "compensation type" ;
+    :hasID "02-0005" ;
+    rdfs:comment "Identifies the form of compensation used for power factor correction and radio interference suppression." ;
+    rdfs:subPropertyOf :ElectricalProperties .
+
+<http://example.org/BIM_lighting_properties_standards/CEN_TC_274_Ontology#3l5DBp$G5BYgD3F40Zha26> a rdf:Property ;
+    rdfs:label "remote control deactivateable" ;
+    :hasID "05-0029" ;
+    rdfs:comment "Operation/ settings with remote control deactivate able." ;
+    rdfs:subPropertyOf :SensingDeviceProperties .
+
+:3m5UX0NuH4YRPUJ1EmzXz7 a rdf:Property ;
+    rdfs:label "mounting type" ;
+    :hasID "06-0003" ;
+    rdfs:comment "Type of mounting used for the luminaire or sensing device." ;
+    rdfs:subPropertyOf :MountingAccessoryProperties .
+
+:3m_7Bd74r4PwfVU5h_M3Cc a rdf:Property ;
+    rdfs:label "conductor rail type" ;
+    :hasID "06-0030" ;
+    rdfs:comment "Conductor rail type, if needed." ;
+    rdfs:subPropertyOf :MountingAccessoryProperties .
+
+:3p1kEeiDL4i8RySiTGkUyU a rdf:Property ;
+    rdfs:label "cable inlet" ;
+    :hasID "01-0051" ;
+    rdfs:comment "Cable inlet, type and count, free description" ;
+    rdfs:subPropertyOf :MechanicalProperties .
+
+:3pJBuEixPAV9f0wTnl2cOM a rdf:Property ;
+    rdfs:label "emergency unit integrated" ;
+    :hasID "03-0002" ;
+    rdfs:comment "Indicates if emergency lighting is integrated. Combined luminaire for standard and emergency lighting with one or multiple Light Distribution Curves." ;
+    rdfs:subPropertyOf :EmergencyLightingProperties .
+
+:3pijcXRsT9mAFfcOBnThIw a rdf:Property ;
+    rdfs:label "product Name" ;
+    :hasID "07-0001" ;
+    rdfs:comment "Luminaire Name." ;
+    rdfs:subPropertyOf :MarketingProperties .
+
+:3qn7sE55H1FuwsBozcktbX a rdf:Property ;
+    rdfs:label "minimum orientation angle" ;
+    :hasID "01-0036" ;
+    rdfs:comment "Minimum possible value for the rotation of the orientation angle (z-axis)." ;
+    rdfs:subPropertyOf :MechanicalProperties .
+
+:3r0wL8u3P6_uzIMJ4Mi8q2 a rdf:Property ;
+    rdfs:label "cuneco cassification system CCS code" ;
+    :hasID "07-0055" ;
+    rdfs:comment "Identical with name." ;
+    rdfs:subPropertyOf :MarketingProperties .
+
+:3rSw5_7y94zxvrAini0W2u a rdf:Property ;
+    rdfs:label "inter-connection mode" ;
+    :hasID "05-0019" ;
+    rdfs:comment "Interconnection with other sensing devices." ;
+    rdfs:subPropertyOf :SensingDeviceProperties .
+
+:3rfirTJfj9bgIELSX4VRBz a rdf:Property ;
+    rdfs:label "inrush current" ;
+    :hasID "02-0025" ;
+    rdfs:comment "Initial current after turning on. Base for quantity of luminaires per fuse or similar." ;
+    rdfs:subPropertyOf :ElectricalProperties .
+
+<http://example.org/BIM_lighting_properties_standards/CEN_TC_274_Ontology#3s3aB5AOr6Swmx1Bfi6E$Z> a rdf:Property ;
+    rdfs:label "addressability" ;
+    :hasID "03-0025" ;
+    rdfs:comment "The type of addressability of the emergency lighting controller." ;
+    rdfs:subPropertyOf :EmergencyLightingProperties .
+
+<http://example.org/BIM_lighting_properties_standards/CEN_TC_274_Ontology#3sOx4EgST3axh5ZPV$lkbS> a rdf:Property ;
+    rdfs:label "control gear lifetime" ;
+    :hasID "08-0012" ;
+    rdfs:comment "Expected lifetime of a control gear." ;
+    rdfs:subPropertyOf :OperationsMaintenanceProperties .
+
+:3sUm8npDPCLwPblKJJzmT_ a rdf:Property ;
+    rdfs:label "pole height" ;
+    :hasID "06-0034" ;
+    rdfs:comment "The height of the pole." ;
+    rdfs:subPropertyOf :MountingAccessoryProperties .
+
+:3sfcCPOKnB5f2vY_zitAto a rdf:Property ;
+    rdfs:label "product group" ;
+    :hasID "07-0009" ;
+    rdfs:comment "Identical with name." ;
+    rdfs:subPropertyOf :MarketingProperties .
+
+:3v5OARYZT1YPVKbbszPFRk a rdf:Property ;
+    rdfs:label "burn-in time" ;
+    :hasID "08-0002" ;
+    rdfs:comment "Burn in time for the used light source technology." ;
+    rdfs:subPropertyOf :OperationsMaintenanceProperties .
+
+:3wGph6hnfEOuWEuOMDd9mz a rdf:Property ;
+    rdfs:label "downward light output ratio DLOR" ;
+    :hasID "04-0011" ;
+    rdfs:comment "Ratio of the downward luminous flux of the luminaire, measured under specified practical conditions with its own light source(s) and equipment, to the sum of the individual luminous fluxes of the same light source(s) when operated outside the luminaire with the same equipment, under specified conditions. Not valid for absolute photometry." ;
+    rdfs:subPropertyOf :PhotometricProperties .
+
+:3waXMP9nLE3BiTn9dGUiFJ a rdf:Property ;
+    rdfs:label "orientation light" ;
+    :hasID "05-0027" ;
+    rdfs:comment "Reduced artificial light after the delay-time passed." ;
+    rdfs:subPropertyOf :SensingDeviceProperties .
+
+:3weB85rrjDBOfsW2DojyA8 a rdf:Property ;
+    rdfs:label "photometric class DIN5040" ;
+    :hasID "04-0038" ;
+    rdfs:comment "German standard with photometric classification.  The contributions to the effective luminous flux are then rated and summed up per room segment." ;
+    rdfs:subPropertyOf :PhotometricProperties .
+
+:3wvXOhA3DA3xJZfFWVhAEE a rdf:Property ;
+    rdfs:label "energy efficiency class" ;
+    :hasID "07-0026" ;
+    rdfs:comment "Identical with name." ;
+    rdfs:subPropertyOf :MarketingProperties .
+
+:3xgdt_Hlz889Ek6KSUeCE5 a rdf:Property ;
+    rdfs:label "operation mode" ;
+    :hasID "05-0017" ;
+    rdfs:comment "Mode of operation like full automatic or half automatic." ;
+    rdfs:subPropertyOf :SensingDeviceProperties .
+
+:3y6XZJ_WfAuRm3fgIIBh0R a rdf:Property ;
+    rdfs:label "mounting point offset position x direction" ;
+    :hasID "06-0004" ;
+    rdfs:comment "X position of the point used as origin for the mounting in relation to the middle of the bounding box. Positive values are aligned with the C0 level. Negative values are aligned with the C180 level." ;
+    rdfs:subPropertyOf :MountingAccessoryProperties .
+
+<http://example.org/BIM_lighting_properties_standards/CEN_TC_274_Ontology#3yprn4XcD1CP0A67A$WxFb> a rdf:Property ;
+    rdfs:label "surge protection" ;
+    :hasID "02-0065" ;
+    rdfs:comment "Identical with name." ;
+    rdfs:subPropertyOf :ElectricalProperties .
+
+:3zQynANFH5AxO46k9nGJV_ a rdf:Property ;
+    rdfs:label "luminaire maintenance factor" ;
+    :hasID "08-0018" ;
+    rdfs:comment """The luminaire maintenance factor is the ratio of the luminaires luminous flux before and after cleaning. It is presented as a table of environmental conditions depending on the cleaning period of the luminaire in years. Classification of the environmental conditions based on CIE 97:2005: 
+VC Very clean,
+C Clean,
+N Normal,
+D Dirty.""" ;
+    rdfs:subPropertyOf :OperationsMaintenanceProperties .
+
+:3zsZztBEH9sPA24POLsfWn a rdf:Property ;
+    rdfs:label "maximum turn angle" ;
+    :hasID "01-0045" ;
+    rdfs:comment "Maximum possible value for the rotation of the turn angle (y-axis). Turn can also be referred to as ‘twist’ or ‘cant’." ;
+    rdfs:subPropertyOf :MechanicalProperties .
+
+:hasID a rdf:Property .
+
+:EmergencyLightingProperties a rdf:Property .
+
+:SensingDeviceProperties a rdf:Property .
+
+:OperationsMaintenanceProperties a rdf:Property .
+
+:MountingAccessoryProperties a rdf:Property .
+
+:PhotometricProperties a rdf:Property .
+
+:MechanicalProperties a rdf:Property .
+
+:MarketingProperties a rdf:Property .
+
+:ElectricalProperties a rdf:Property .
+

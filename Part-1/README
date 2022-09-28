@@ -1,0 +1,21 @@
+CEN2Onto_generator.py    
+    the program creates an ontology from CEN/TS 17623:2021 for BIM lighting properties
+    the input is the standard document BIM_Properties.docx
+    the output is CEN_TS_17623_2021.ttl
+       
+notor_ontology_generator.py
+    the program creates an ontology of the fagerhult lighting product (from the excel file)
+    the input is the excel file Notor65_betaopti.xlsx
+    the output is fagerhult_notor_ontology.ttl
+
+notor_RDF_generator.py
+    the program creates the linked data of the fagerhult lighting product data (from the excel file)
+    the input is the excel file Notor65_betaopti.xlsx
+    the output is fagerhult_notor_product_data.ttl
+
+mapping2standards.xlsx
+    the excel file containts the mappings between fagerhult termnology and the CEN/TS 17623:2021 standard 
+
+README
+    this file
+

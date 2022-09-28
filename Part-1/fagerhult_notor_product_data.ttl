@@ -1,0 +1,1206 @@
+@prefix : <http://example.org/fagerhult_notor_ontology#> .
+@prefix notor: <http://example.org/fagerhult_notor_product_data#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+notor:7320046630874 a :A1_LD_Notor65_Betaopti ;
+    :Colour "Anodised" ;
+    :Height_mm "65" ;
+    :IP_rating "20" ;
+    :Length_mm "1267" ;
+    :Light_control "DaliPhasePulseControl" ;
+    :Louvre "Beta Opti" ;
+    :Lumen_output "2138" ;
+    :Max_ambient_temperature_C "25" ;
+    :Min_ambient_temperature_C "-25" ;
+    :Photometric_Web_File "https://www.fagerhult.com/Products/notor/13300-449/GetFileFromCommerce/?filename=13300-449.ies&documentRef=154693" ;
+    :Weight_kg "2.6" ;
+    :Width_mm "65" ;
+    :lm_W "130" ;
+    notor:hasArtNr "13300-402" .
+
+notor:7320046630898 a :A1_LD_Notor65_Betaopti ;
+    :Colour "Anodised" ;
+    :Height_mm "65" ;
+    :IP_rating "20" ;
+    :Length_mm "1328" ;
+    :Light_control "PhasePulse" ;
+    :Louvre "Beta Opti" ;
+    :Lumen_output "2138" ;
+    :Max_ambient_temperature_C "25" ;
+    :Min_ambient_temperature_C "-25" ;
+    :Photometric_Web_File "https://www.fagerhult.com/Products/notor/13300-449/GetFileFromCommerce/?filename=13300-449.ies&documentRef=154690" ;
+    :Weight_kg "2.6" ;
+    :Width_mm "65" ;
+    :lm_W "130" ;
+    notor:hasArtNr "13300-449" .
+
+notor:7320046630911 a :A1_LD_Notor65_Betaopti ;
+    :Colour "Anodised" ;
+    :Height_mm "65" ;
+    :IP_rating "20" ;
+    :Length_mm "1328" ;
+    :Light_control "ESenseActive" ;
+    :Louvre "Beta Opti" ;
+    :Lumen_output "2090" ;
+    :Max_ambient_temperature_C "25" ;
+    :Min_ambient_temperature_C "-25" ;
+    :Photometric_Web_File "https://www.fagerhult.com/Products/notor/13300-449/GetFileFromCommerce/?filename=13300-449.ies&documentRef=154691" ;
+    :Weight_kg "2.6" ;
+    :Width_mm "65" ;
+    :lm_W "109" ;
+    notor:hasArtNr "13300-442" .
+
+notor:7320046630959 a :A1_LD_Notor65_Betaopti ;
+    :Colour "Anodised" ;
+    :Height_mm "65" ;
+    :IP_rating "20" ;
+    :Length_mm "1267" ;
+    :Light_control "DaliPhasePulseControl" ;
+    :Louvre "Beta Opti" ;
+    :Lumen_output "3411" ;
+    :Max_ambient_temperature_C "25" ;
+    :Min_ambient_temperature_C "-25" ;
+    :Photometric_Web_File "https://www.fagerhult.com/Products/notor/13301-449/GetFileFromCommerce/?filename=13301-449.ies&documentRef=154701" ;
+    :Weight_kg "2.6" ;
+    :Width_mm "65" ;
+    :lm_W "131" ;
+    notor:hasArtNr "13301-402" .
+
+notor:7320046630973 a :A1_LD_Notor65_Betaopti ;
+    :Colour "Anodised" ;
+    :Height_mm "65" ;
+    :IP_rating "20" ;
+    :Length_mm "1328" ;
+    :Light_control "PhasePulse" ;
+    :Louvre "Beta Opti" ;
+    :Lumen_output "3411" ;
+    :Max_ambient_temperature_C "25" ;
+    :Min_ambient_temperature_C "-25" ;
+    :Photometric_Web_File "https://www.fagerhult.com/Products/notor/13301-449/GetFileFromCommerce/?filename=13301-449.ies&documentRef=154699" ;
+    :Weight_kg "2.6" ;
+    :Width_mm "65" ;
+    :lm_W "131" ;
+    notor:hasArtNr "13301-449" .
+
+notor:7320046631192 a :A1_LD_Notor65_Betaopti ;
+    :Colour "White" ;
+    :Height_mm "65" ;
+    :IP_rating "20" ;
+    :Length_mm "1267" ;
+    :Light_control "DaliPhasePulseControl" ;
+    :Louvre "Beta Opti" ;
+    :Lumen_output "2138" ;
+    :Max_ambient_temperature_C "25" ;
+    :Min_ambient_temperature_C "-25" ;
+    :Photometric_Web_File "https://www.fagerhult.com/Products/notor/13300-449/GetFileFromCommerce/?filename=13300-449.ies&documentRef=154738" ;
+    :Weight_kg "2.6" ;
+    :Width_mm "65" ;
+    :lm_W "130" ;
+    notor:hasArtNr "13304-402" .
+
+notor:7320046631215 a :A1_LD_Notor65_Betaopti ;
+    :Colour "White" ;
+    :Height_mm "65" ;
+    :IP_rating "20" ;
+    :Length_mm "1328" ;
+    :Light_control "PhasePulse" ;
+    :Louvre "Beta Opti" ;
+    :Lumen_output "2138" ;
+    :Max_ambient_temperature_C "25" ;
+    :Min_ambient_temperature_C "-25" ;
+    :Photometric_Web_File "https://www.fagerhult.com/Products/notor/13304-449/GetFileFromCommerce/?filename=13304-449.ies&documentRef=154726" ;
+    :Weight_kg "2.6" ;
+    :Width_mm "65" ;
+    :lm_W "130" ;
+    notor:hasArtNr "13304-449" .
+
+notor:7320046631239 a :A1_LD_Notor65_Betaopti ;
+    :Colour "White" ;
+    :Height_mm "65" ;
+    :IP_rating "20" ;
+    :Length_mm "1328" ;
+    :Light_control "ESenseActive" ;
+    :Louvre "Beta Opti" ;
+    :Lumen_output "2090" ;
+    :Max_ambient_temperature_C "25" ;
+    :Min_ambient_temperature_C "-25" ;
+    :Photometric_Web_File "https://www.fagerhult.com/Products/notor/13300-449/GetFileFromCommerce/?filename=13300-449.ies&documentRef=154737" ;
+    :Weight_kg "2.6" ;
+    :Width_mm "65" ;
+    :lm_W "109" ;
+    notor:hasArtNr "13304-442" .
+
+notor:7320046631277 a :A1_LD_Notor65_Betaopti ;
+    :Colour "White" ;
+    :Height_mm "65" ;
+    :IP_rating "20" ;
+    :Length_mm "1267" ;
+    :Light_control "DaliPhasePulseControl" ;
+    :Louvre "Beta Opti" ;
+    :Lumen_output "3411" ;
+    :Max_ambient_temperature_C "25" ;
+    :Min_ambient_temperature_C "-25" ;
+    :Photometric_Web_File "https://www.fagerhult.com/Products/notor/13300-449/GetFileFromCommerce/?filename=13300-449.ies&documentRef=154736" ;
+    :Weight_kg "2.6" ;
+    :Width_mm "65" ;
+    :lm_W "131" ;
+    notor:hasArtNr "13305-402" .
+
+notor:7320046631291 a :A1_LD_Notor65_Betaopti ;
+    :Colour "White" ;
+    :Height_mm "65" ;
+    :IP_rating "20" ;
+    :Length_mm "1328" ;
+    :Light_control "PhasePulse" ;
+    :Louvre "Beta Opti" ;
+    :Lumen_output "3411" ;
+    :Max_ambient_temperature_C "25" ;
+    :Min_ambient_temperature_C "-25" ;
+    :Photometric_Web_File "https://www.fagerhult.com/Products/notor/13300-449/GetFileFromCommerce/?filename=13300-449.ies&documentRef=154735" ;
+    :Weight_kg "2.6" ;
+    :Width_mm "65" ;
+    :lm_W "131" ;
+    notor:hasArtNr "13305-449" .
+
+notor:7320046631314 a :A1_LD_Notor65_Betaopti ;
+    :Colour "White" ;
+    :Height_mm "65" ;
+    :IP_rating "20" ;
+    :Length_mm "1328" ;
+    :Light_control "ESenseActive" ;
+    :Louvre "Beta Opti" ;
+    :Lumen_output "3334" ;
+    :Max_ambient_temperature_C "25" ;
+    :Min_ambient_temperature_C "-25" ;
+    :Photometric_Web_File "https://www.fagerhult.com/Products/notor/13300-449/GetFileFromCommerce/?filename=13300-449.ies&documentRef=154734" ;
+    :Weight_kg "2.6" ;
+    :Width_mm "65" ;
+    :lm_W "115" ;
+    notor:hasArtNr "13305-442" .
+
+notor:7320046631352 a :A1_LD_Notor65_Betaopti ;
+    :Colour "White" ;
+    :Height_mm "65" ;
+    :IP_rating "20" ;
+    :Length_mm "1267" ;
+    :Light_control "DaliPhasePulseControl" ;
+    :Louvre "Beta Opti" ;
+    :Lumen_output "2200" ;
+    :Max_ambient_temperature_C "25" ;
+    :Min_ambient_temperature_C "-25" ;
+    :Photometric_Web_File "https://www.fagerhult.com/Products/notor/13300-449/GetFileFromCommerce/?filename=13300-449.ies&documentRef=154732" ;
+    :Weight_kg "2.6" ;
+    :Width_mm "65" ;
+    :lm_W "134" ;
+    notor:hasArtNr "13306-402" .
+
+notor:7320046631376 a :A1_LD_Notor65_Betaopti ;
+    :Colour "White" ;
+    :Height_mm "65" ;
+    :IP_rating "20" ;
+    :Length_mm "1328" ;
+    :Light_control "PhasePulse" ;
+    :Louvre "Beta Opti" ;
+    :Lumen_output "2200" ;
+    :Max_ambient_temperature_C "25" ;
+    :Min_ambient_temperature_C "-25" ;
+    :Photometric_Web_File "https://www.fagerhult.com/Products/notor/13300-449/GetFileFromCommerce/?filename=13300-449.ies&documentRef=154731" ;
+    :Weight_kg "2.6" ;
+    :Width_mm "65" ;
+    :lm_W "134" ;
+    notor:hasArtNr "13306-449" .
+
+notor:7320046631390 a :A1_LD_Notor65_Betaopti ;
+    :Colour "White" ;
+    :Height_mm "65" ;
+    :IP_rating "20" ;
+    :Length_mm "1328" ;
+    :Light_control "ESenseActive" ;
+    :Louvre "Beta Opti" ;
+    :Lumen_output "2200" ;
+    :Max_ambient_temperature_C "25" ;
+    :Min_ambient_temperature_C "-25" ;
+    :Photometric_Web_File "https://www.fagerhult.com/Products/notor/13300-449/GetFileFromCommerce/?filename=13300-449.ies&documentRef=154733" ;
+    :Weight_kg "2.6" ;
+    :Width_mm "65" ;
+    :lm_W "115" ;
+    notor:hasArtNr "13306-442" .
+
+notor:7320046631437 a :A1_LD_Notor65_Betaopti ;
+    :Colour "White" ;
+    :Height_mm "65" ;
+    :IP_rating "20" ;
+    :Length_mm "1267" ;
+    :Light_control "DaliPhasePulseControl" ;
+    :Louvre "Beta Opti" ;
+    :Lumen_output "3509" ;
+    :Max_ambient_temperature_C "25" ;
+    :Min_ambient_temperature_C "-25" ;
+    :Photometric_Web_File "https://www.fagerhult.com/Products/notor/13304-449/GetFileFromCommerce/?filename=13304-449.ies&documentRef=154740" ;
+    :Weight_kg "2.6" ;
+    :Width_mm "65" ;
+    :lm_W "135" ;
+    notor:hasArtNr "13307-402" .
+
+notor:7320046631512 a :A1_LD_Notor65_Betaopti ;
+    :Colour "Anodised" ;
+    :Height_mm "65" ;
+    :IP_rating "20" ;
+    :Length_mm "1267" ;
+    :Light_control "DaliPhasePulseControl" ;
+    :Louvre "Beta Opti" ;
+    :Lumen_output "4666" ;
+    :Max_ambient_temperature_C "25" ;
+    :Min_ambient_temperature_C "-25" ;
+    :Photometric_Web_File "https://www.fagerhult.com/Products/notor/13304-449/GetFileFromCommerce/?filename=13304-449.ies&documentRef=154739" ;
+    :Weight_kg "2.8" ;
+    :Width_mm "65" ;
+    :lm_W "134" ;
+    notor:hasArtNr "13308-402" .
+
+notor:7320046631550 a :A1_LD_Notor65_Betaopti ;
+    :Colour "Anodised" ;
+    :Height_mm "65" ;
+    :IP_rating "20" ;
+    :Length_mm "1328" ;
+    :Light_control "ESenseActive" ;
+    :Louvre "Beta Opti" ;
+    :Lumen_output "4560" ;
+    :Max_ambient_temperature_C "25" ;
+    :Min_ambient_temperature_C "-25" ;
+    :Photometric_Web_File "https://www.fagerhult.com/Products/notor/13304-449/GetFileFromCommerce/?filename=13304-449.ies&documentRef=154738" ;
+    :Weight_kg "2.8" ;
+    :Width_mm "65" ;
+    :lm_W "124" ;
+    notor:hasArtNr "13308-442" .
+
+notor:7320046631611 a :A1_LD_Notor65_Betaopti ;
+    :Colour "Anodised" ;
+    :Height_mm "65" ;
+    :IP_rating "20" ;
+    :Length_mm "1328" ;
+    :Light_control "PhasePulse" ;
+    :Louvre "Beta Opti" ;
+    :Lumen_output "5914" ;
+    :Max_ambient_temperature_C "25" ;
+    :Min_ambient_temperature_C "-25" ;
+    :Photometric_Web_File "https://www.fagerhult.com/Products/notor/13304-449/GetFileFromCommerce/?filename=13304-449.ies&documentRef=154737" ;
+    :Weight_kg "2.8" ;
+    :Width_mm "65" ;
+    :lm_W "137" ;
+    notor:hasArtNr "13309-449" .
+
+notor:7320046631635 a :A1_LD_Notor65_Betaopti ;
+    :Colour "Anodised" ;
+    :Height_mm "65" ;
+    :IP_rating "20" ;
+    :Length_mm "1328" ;
+    :Light_control "ESenseActive" ;
+    :Louvre "Beta Opti" ;
+    :Lumen_output "5746" ;
+    :Max_ambient_temperature_C "25" ;
+    :Min_ambient_temperature_C "-25" ;
+    :Photometric_Web_File "https://www.fagerhult.com/Products/notor/13304-449/GetFileFromCommerce/?filename=13304-449.ies&documentRef=154736" ;
+    :Weight_kg "2.8" ;
+    :Width_mm "65" ;
+    :lm_W "125" ;
+    notor:hasArtNr "13309-442" .
+
+notor:7320046631697 a :A1_LD_Notor65_Betaopti ;
+    :Colour "Anodised" ;
+    :Height_mm "65" ;
+    :IP_rating "20" ;
+    :Length_mm "1328" ;
+    :Light_control "PhasePulse" ;
+    :Louvre "Beta Opti" ;
+    :Lumen_output "4800" ;
+    :Max_ambient_temperature_C "25" ;
+    :Min_ambient_temperature_C "-25" ;
+    :Photometric_Web_File "https://www.fagerhult.com/Products/notor/13304-449/GetFileFromCommerce/?filename=13304-449.ies&documentRef=154735" ;
+    :Weight_kg "2.8" ;
+    :Width_mm "65" ;
+    :lm_W "138" ;
+    notor:hasArtNr "13310-449" .
+
+notor:7320046631758 a :A1_LD_Notor65_Betaopti ;
+    :Colour "Anodised" ;
+    :Height_mm "65" ;
+    :IP_rating "20" ;
+    :Length_mm "1267" ;
+    :Light_control "DaliPhasePulseControl" ;
+    :Louvre "Beta Opti" ;
+    :Lumen_output "6084" ;
+    :Max_ambient_temperature_C "25" ;
+    :Min_ambient_temperature_C "-25" ;
+    :Photometric_Web_File "https://www.fagerhult.com/Products/notor/13304-449/GetFileFromCommerce/?filename=13304-449.ies&documentRef=154734" ;
+    :Weight_kg "2.8" ;
+    :Width_mm "65" ;
+    :lm_W "141" ;
+    notor:hasArtNr "13311-402" .
+
+notor:7320046631772 a :A1_LD_Notor65_Betaopti ;
+    :Colour "Anodised" ;
+    :Height_mm "65" ;
+    :IP_rating "20" ;
+    :Length_mm "1328" ;
+    :Light_control "PhasePulse" ;
+    :Louvre "Beta Opti" ;
+    :Lumen_output "6084" ;
+    :Max_ambient_temperature_C "25" ;
+    :Min_ambient_temperature_C "-25" ;
+    :Photometric_Web_File "https://www.fagerhult.com/Products/notor/13301-449/GetFileFromCommerce/?filename=13301-449.ies&documentRef=154697" ;
+    :Weight_kg "2.8" ;
+    :Width_mm "65" ;
+    :lm_W "141" ;
+    notor:hasArtNr "13311-449" .
+
+notor:7320046631796 a :A1_LD_Notor65_Betaopti ;
+    :Colour "Anodised" ;
+    :Height_mm "65" ;
+    :IP_rating "20" ;
+    :Length_mm "1328" ;
+    :Light_control "ESenseActive" ;
+    :Louvre "Beta Opti" ;
+    :Lumen_output "6084" ;
+    :Max_ambient_temperature_C "25" ;
+    :Min_ambient_temperature_C "-25" ;
+    :Photometric_Web_File "https://www.fagerhult.com/Products/notor/13304-449/GetFileFromCommerce/?filename=13304-449.ies&documentRef=154733" ;
+    :Weight_kg "2.8" ;
+    :Width_mm "65" ;
+    :lm_W "132" ;
+    notor:hasArtNr "13311-442" .
+
+notor:7320046631833 a :A1_LD_Notor65_Betaopti ;
+    :Colour "White" ;
+    :Height_mm "65" ;
+    :IP_rating "20" ;
+    :Length_mm "1267" ;
+    :Light_control "DaliPhasePulseControl" ;
+    :Louvre "Beta Opti" ;
+    :Lumen_output "4666" ;
+    :Max_ambient_temperature_C "25" ;
+    :Min_ambient_temperature_C "-25" ;
+    :Photometric_Web_File "https://www.fagerhult.com/Products/notor/13304-449/GetFileFromCommerce/?filename=13304-449.ies&documentRef=154745" ;
+    :Weight_kg "2.8" ;
+    :Width_mm "65" ;
+    :lm_W "134" ;
+    notor:hasArtNr "13312-402" .
+
+notor:7320046631857 a :A1_LD_Notor65_Betaopti ;
+    :Colour "White" ;
+    :Height_mm "65" ;
+    :IP_rating "20" ;
+    :Length_mm "1328" ;
+    :Light_control "PhasePulse" ;
+    :Louvre "Beta Opti" ;
+    :Lumen_output "4666" ;
+    :Max_ambient_temperature_C "25" ;
+    :Min_ambient_temperature_C "-25" ;
+    :Photometric_Web_File "https://www.fagerhult.com/Products/notor/13300-449/GetFileFromCommerce/?filename=13300-449.ies&documentRef=154730" ;
+    :Weight_kg "2.8" ;
+    :Width_mm "65" ;
+    :lm_W "134" ;
+    notor:hasArtNr "13312-449" .
+
+notor:7320046631871 a :A1_LD_Notor65_Betaopti ;
+    :Colour "White" ;
+    :Height_mm "65" ;
+    :IP_rating "20" ;
+    :Length_mm "1328" ;
+    :Light_control "ESenseActive" ;
+    :Louvre "Beta Opti" ;
+    :Lumen_output "4560" ;
+    :Max_ambient_temperature_C "25" ;
+    :Min_ambient_temperature_C "-25" ;
+    :Photometric_Web_File "https://www.fagerhult.com/Products/notor/13300-449/GetFileFromCommerce/?filename=13300-449.ies&documentRef=154729" ;
+    :Weight_kg "2.8" ;
+    :Width_mm "65" ;
+    :lm_W "124" ;
+    notor:hasArtNr "13312-442" .
+
+notor:7320046631918 a :A1_LD_Notor65_Betaopti ;
+    :Colour "White" ;
+    :Height_mm "65" ;
+    :IP_rating "20" ;
+    :Length_mm "1267" ;
+    :Light_control "DaliPhasePulseControl" ;
+    :Louvre "Beta Opti" ;
+    :Lumen_output "5914" ;
+    :Max_ambient_temperature_C "25" ;
+    :Min_ambient_temperature_C "-25" ;
+    :Photometric_Web_File "https://www.fagerhult.com/Products/notor/13300-449/GetFileFromCommerce/?filename=13300-449.ies&documentRef=154728" ;
+    :Weight_kg "2.8" ;
+    :Width_mm "65" ;
+    :lm_W "137" ;
+    notor:hasArtNr "13313-402" .
+
+notor:7320046631932 a :A1_LD_Notor65_Betaopti ;
+    :Colour "White" ;
+    :Height_mm "65" ;
+    :IP_rating "20" ;
+    :Length_mm "1328" ;
+    :Light_control "PhasePulse" ;
+    :Louvre "Beta Opti" ;
+    :Lumen_output "5914" ;
+    :Max_ambient_temperature_C "25" ;
+    :Min_ambient_temperature_C "-25" ;
+    :Photometric_Web_File "https://www.fagerhult.com/Products/notor/13300-449/GetFileFromCommerce/?filename=13300-449.ies&documentRef=154727" ;
+    :Weight_kg "2.8" ;
+    :Width_mm "65" ;
+    :lm_W "137" ;
+    notor:hasArtNr "13313-449" .
+
+notor:7320046631956 a :A1_LD_Notor65_Betaopti ;
+    :Colour "White" ;
+    :Height_mm "65" ;
+    :IP_rating "20" ;
+    :Length_mm "1328" ;
+    :Light_control "ESenseActive" ;
+    :Louvre "Beta Opti" ;
+    :Lumen_output "5746" ;
+    :Max_ambient_temperature_C "25" ;
+    :Min_ambient_temperature_C "-25" ;
+    :Photometric_Web_File "https://www.fagerhult.com/Products/notor/13300-449/GetFileFromCommerce/?filename=13300-449.ies&documentRef=154726" ;
+    :Weight_kg "2.8" ;
+    :Width_mm "65" ;
+    :lm_W "125" ;
+    notor:hasArtNr "13313-442" .
+
+notor:7320046631994 a :A1_LD_Notor65_Betaopti ;
+    :Colour "White" ;
+    :Height_mm "65" ;
+    :IP_rating "20" ;
+    :Length_mm "1267" ;
+    :Light_control "DaliPhasePulseControl" ;
+    :Louvre "Beta Opti" ;
+    :Lumen_output "4800" ;
+    :Max_ambient_temperature_C "25" ;
+    :Min_ambient_temperature_C "-25" ;
+    :Photometric_Web_File "https://www.fagerhult.com/Products/notor/13300-449/GetFileFromCommerce/?filename=13300-449.ies&documentRef=154724" ;
+    :Weight_kg "2.8" ;
+    :Width_mm "65" ;
+    :lm_W "138" ;
+    notor:hasArtNr "13314-402" .
+
+notor:7320046632014 a :A1_LD_Notor65_Betaopti ;
+    :Colour "White" ;
+    :Height_mm "65" ;
+    :IP_rating "20" ;
+    :Length_mm "1328" ;
+    :Light_control "PhasePulse" ;
+    :Louvre "Beta Opti" ;
+    :Lumen_output "4800" ;
+    :Max_ambient_temperature_C "25" ;
+    :Min_ambient_temperature_C "-25" ;
+    :Photometric_Web_File "https://www.fagerhult.com/Products/notor/13300-449/GetFileFromCommerce/?filename=13300-449.ies&documentRef=154725" ;
+    :Weight_kg "2.8" ;
+    :Width_mm "65" ;
+    :lm_W "138" ;
+    notor:hasArtNr "13314-449" .
+
+notor:7320046632038 a :A1_LD_Notor65_Betaopti ;
+    :Colour "White" ;
+    :Height_mm "65" ;
+    :IP_rating "20" ;
+    :Length_mm "1328" ;
+    :Light_control "ESenseActive" ;
+    :Louvre "Beta Opti" ;
+    :Lumen_output "4800" ;
+    :Max_ambient_temperature_C "25" ;
+    :Min_ambient_temperature_C "-25" ;
+    :Photometric_Web_File "https://www.fagerhult.com/Products/notor/13300-449/GetFileFromCommerce/?filename=13300-449.ies&documentRef=154722" ;
+    :Weight_kg "2.8" ;
+    :Width_mm "65" ;
+    :lm_W "130" ;
+    notor:hasArtNr "13314-442" .
+
+notor:7320046632076 a :A1_LD_Notor65_Betaopti ;
+    :Colour "White" ;
+    :Height_mm "65" ;
+    :IP_rating "20" ;
+    :Length_mm "1267" ;
+    :Light_control "DaliPhasePulseControl" ;
+    :Louvre "Beta Opti" ;
+    :Lumen_output "6084" ;
+    :Max_ambient_temperature_C "25" ;
+    :Min_ambient_temperature_C "-25" ;
+    :Photometric_Web_File "https://www.fagerhult.com/Products/notor/13300-449/GetFileFromCommerce/?filename=13300-449.ies&documentRef=154723" ;
+    :Weight_kg "2.8" ;
+    :Width_mm "65" ;
+    :lm_W "141" ;
+    notor:hasArtNr "13315-402" .
+
+notor:7320046632090 a :A1_LD_Notor65_Betaopti ;
+    :Colour "White" ;
+    :Height_mm "65" ;
+    :IP_rating "20" ;
+    :Length_mm "1328" ;
+    :Light_control "PhasePulse" ;
+    :Louvre "Beta Opti" ;
+    :Lumen_output "6084" ;
+    :Max_ambient_temperature_C "25" ;
+    :Min_ambient_temperature_C "-25" ;
+    :Photometric_Web_File "https://www.fagerhult.com/Products/notor/13300-449/GetFileFromCommerce/?filename=13300-449.ies&documentRef=154720" ;
+    :Weight_kg "2.8" ;
+    :Width_mm "65" ;
+    :lm_W "141" ;
+    notor:hasArtNr "13315-449" .
+
+notor:7320046632113 a :A1_LD_Notor65_Betaopti ;
+    :Colour "White" ;
+    :Height_mm "65" ;
+    :IP_rating "20" ;
+    :Length_mm "1328" ;
+    :Light_control "ESenseActive" ;
+    :Louvre "Beta Opti" ;
+    :Lumen_output "6084" ;
+    :Max_ambient_temperature_C "25" ;
+    :Min_ambient_temperature_C "-25" ;
+    :Photometric_Web_File "https://www.fagerhult.com/Products/notor/13300-449/GetFileFromCommerce/?filename=13300-449.ies&documentRef=154721" ;
+    :Weight_kg "2.8" ;
+    :Width_mm "65" ;
+    :lm_W "132" ;
+    notor:hasArtNr "13315-442" .
+
+notor:7320046632151 a :A1_LD_Notor65_Betaopti ;
+    :Colour "Anodised" ;
+    :Height_mm "65" ;
+    :IP_rating "20" ;
+    :Length_mm "2528" ;
+    :Light_control "DaliPhasePulseControl" ;
+    :Louvre "Beta Opti" ;
+    :Lumen_output "4276" ;
+    :Max_ambient_temperature_C "25" ;
+    :Min_ambient_temperature_C "-25" ;
+    :Photometric_Web_File "https://www.fagerhult.com/Products/notor/13300-449/GetFileFromCommerce/?filename=13300-449.ies&documentRef=154718" ;
+    :Weight_kg "5.4" ;
+    :Width_mm "65" ;
+    :lm_W "130" ;
+    notor:hasArtNr "13316-402" .
+
+notor:7320046632199 a :A1_LD_Notor65_Betaopti ;
+    :Colour "Anodised" ;
+    :Height_mm "65" ;
+    :IP_rating "20" ;
+    :Length_mm "2528" ;
+    :Light_control "DaliPhasePulseControl" ;
+    :Louvre "Beta Opti" ;
+    :Lumen_output "6822" ;
+    :Max_ambient_temperature_C "25" ;
+    :Min_ambient_temperature_C "-25" ;
+    :Photometric_Web_File "https://www.fagerhult.com/Products/notor/13300-449/GetFileFromCommerce/?filename=13300-449.ies&documentRef=154719" ;
+    :Weight_kg "5.4" ;
+    :Width_mm "65" ;
+    :lm_W "132" ;
+    notor:hasArtNr "13317-402" .
+
+notor:7320046632236 a :A1_LD_Notor65_Betaopti ;
+    :Colour "Anodised" ;
+    :Height_mm "65" ;
+    :IP_rating "20" ;
+    :Length_mm "2528" ;
+    :Light_control "DaliPhasePulseControl" ;
+    :Louvre "Beta Opti" ;
+    :Lumen_output "4400" ;
+    :Max_ambient_temperature_C "25" ;
+    :Min_ambient_temperature_C "-25" ;
+    :Photometric_Web_File "https://www.fagerhult.com/Products/notor/13300-449/GetFileFromCommerce/?filename=13300-449.ies&documentRef=154717" ;
+    :Weight_kg "5.4" ;
+    :Width_mm "65" ;
+    :lm_W "134" ;
+    notor:hasArtNr "13318-402" .
+
+notor:7320046632274 a :A1_LD_Notor65_Betaopti ;
+    :Colour "Anodised" ;
+    :Height_mm "65" ;
+    :IP_rating "20" ;
+    :Length_mm "2528" ;
+    :Light_control "DaliPhasePulseControl" ;
+    :Louvre "Beta Opti" ;
+    :Lumen_output "7018" ;
+    :Max_ambient_temperature_C "25" ;
+    :Min_ambient_temperature_C "-25" ;
+    :Photometric_Web_File "https://www.fagerhult.com/Products/notor/13300-449/GetFileFromCommerce/?filename=13300-449.ies&documentRef=154716" ;
+    :Weight_kg "5.4" ;
+    :Width_mm "65" ;
+    :lm_W "135" ;
+    notor:hasArtNr "13319-402" .
+
+notor:7320046632311 a :A1_LD_Notor65_Betaopti ;
+    :Colour "White" ;
+    :Height_mm "65" ;
+    :IP_rating "20" ;
+    :Length_mm "2528" ;
+    :Light_control "DaliPhasePulseControl" ;
+    :Louvre "Beta Opti" ;
+    :Lumen_output "4276" ;
+    :Max_ambient_temperature_C "25" ;
+    :Min_ambient_temperature_C "-25" ;
+    :Photometric_Web_File "https://www.fagerhult.com/Products/notor/13300-449/GetFileFromCommerce/?filename=13300-449.ies&documentRef=154715" ;
+    :Weight_kg "5.4" ;
+    :Width_mm "65" ;
+    :lm_W "130" ;
+    notor:hasArtNr "13320-402" .
+
+notor:7320046632359 a :A1_LD_Notor65_Betaopti ;
+    :Colour "White" ;
+    :Height_mm "65" ;
+    :IP_rating "20" ;
+    :Length_mm "2528" ;
+    :Light_control "DaliPhasePulseControl" ;
+    :Louvre "Beta Opti" ;
+    :Lumen_output "6822" ;
+    :Max_ambient_temperature_C "25" ;
+    :Min_ambient_temperature_C "-25" ;
+    :Photometric_Web_File "https://www.fagerhult.com/Products/notor/13300-449/GetFileFromCommerce/?filename=13300-449.ies&documentRef=154694" ;
+    :Weight_kg "5.4" ;
+    :Width_mm "65" ;
+    :lm_W "132" ;
+    notor:hasArtNr "13321-402" .
+
+notor:7320046632472 a :A1_LD_Notor65_Betaopti ;
+    :Colour "Anodised" ;
+    :Height_mm "65" ;
+    :IP_rating "20" ;
+    :Length_mm "2528" ;
+    :Light_control "DaliPhasePulseControl" ;
+    :Louvre "Beta Opti" ;
+    :Lumen_output "9332" ;
+    :Max_ambient_temperature_C "25" ;
+    :Min_ambient_temperature_C "-25" ;
+    :Photometric_Web_File "https://www.fagerhult.com/Products/notor/13300-449/GetFileFromCommerce/?filename=13300-449.ies&documentRef=154698" ;
+    :Weight_kg "5.6" ;
+    :Width_mm "65" ;
+    :lm_W "134" ;
+    notor:hasArtNr "13324-402" .
+
+notor:7320046632519 a :A1_LD_Notor65_Betaopti ;
+    :Colour "Anodised" ;
+    :Height_mm "65" ;
+    :IP_rating "20" ;
+    :Length_mm "2528" ;
+    :Light_control "DaliPhasePulseControl" ;
+    :Louvre "Beta Opti" ;
+    :Lumen_output "11828" ;
+    :Max_ambient_temperature_C "25" ;
+    :Min_ambient_temperature_C "-25" ;
+    :Photometric_Web_File "https://www.fagerhult.com/Products/notor/13300-449/GetFileFromCommerce/?filename=13300-449.ies&documentRef=154697" ;
+    :Weight_kg "5.6" ;
+    :Width_mm "65" ;
+    :lm_W "137" ;
+    notor:hasArtNr "13325-402" .
+
+notor:7320046632557 a :A1_LD_Notor65_Betaopti ;
+    :Colour "Anodised" ;
+    :Height_mm "65" ;
+    :IP_rating "20" ;
+    :Length_mm "2528" ;
+    :Light_control "DaliPhasePulseControl" ;
+    :Louvre "Beta Opti" ;
+    :Lumen_output "9600" ;
+    :Max_ambient_temperature_C "25" ;
+    :Min_ambient_temperature_C "-25" ;
+    :Photometric_Web_File "https://www.fagerhult.com/Products/notor/13300-449/GetFileFromCommerce/?filename=13300-449.ies&documentRef=154695" ;
+    :Weight_kg "5.6" ;
+    :Width_mm "65" ;
+    :lm_W "138" ;
+    notor:hasArtNr "13326-402" .
+
+notor:7320046632595 a :A1_LD_Notor65_Betaopti ;
+    :Colour "Anodised" ;
+    :Height_mm "65" ;
+    :IP_rating "20" ;
+    :Length_mm "2528" ;
+    :Light_control "DaliPhasePulseControl" ;
+    :Louvre "Beta Opti" ;
+    :Lumen_output "12168" ;
+    :Max_ambient_temperature_C "25" ;
+    :Min_ambient_temperature_C "-25" ;
+    :Photometric_Web_File "https://www.fagerhult.com/Products/notor/13301-449/GetFileFromCommerce/?filename=13301-449.ies&documentRef=154702" ;
+    :Weight_kg "5.6" ;
+    :Width_mm "65" ;
+    :lm_W "141" ;
+    notor:hasArtNr "13327-402" .
+
+notor:7320046632632 a :A1_LD_Notor65_Betaopti ;
+    :Colour "White" ;
+    :Height_mm "65" ;
+    :IP_rating "20" ;
+    :Length_mm "2528" ;
+    :Light_control "DaliPhasePulseControl" ;
+    :Louvre "Beta Opti" ;
+    :Lumen_output "9332" ;
+    :Max_ambient_temperature_C "25" ;
+    :Min_ambient_temperature_C "-25" ;
+    :Photometric_Web_File "https://www.fagerhult.com/Products/notor/13301-449/GetFileFromCommerce/?filename=13301-449.ies&documentRef=154700" ;
+    :Weight_kg "5.6" ;
+    :Width_mm "65" ;
+    :lm_W "134" ;
+    notor:hasArtNr "13328-402" .
+
+notor:7320046632830 a :A1_LD_Notor65_Betaopti ;
+    :Colour "Anodised" ;
+    :Height_mm "65" ;
+    :IP_rating "20" ;
+    :Length_mm "1261" ;
+    :Light_control "DaliPhasePulseControl" ;
+    :Louvre "Beta Opti" ;
+    :Lumen_output "3411" ;
+    :Max_ambient_temperature_C "25" ;
+    :Min_ambient_temperature_C "-25" ;
+    :Photometric_Web_File "https://www.fagerhult.com/Products/notor/13300-449/GetFileFromCommerce/?filename=13300-449.ies&documentRef=154692" ;
+    :Weight_kg "2.5" ;
+    :Width_mm "65" ;
+    :lm_W "131" ;
+    notor:hasArtNr "13333-402" .
+
+notor:7320046632953 a :A1_LD_Notor65_Betaopti ;
+    :Colour "White" ;
+    :Height_mm "65" ;
+    :IP_rating "20" ;
+    :Length_mm "1261" ;
+    :Light_control "DaliPhasePulseControl" ;
+    :Louvre "Beta Opti" ;
+    :Lumen_output "2138" ;
+    :Max_ambient_temperature_C "25" ;
+    :Min_ambient_temperature_C "-25" ;
+    :Photometric_Web_File "https://www.fagerhult.com/Products/notor/13300-449/GetFileFromCommerce/?filename=13300-449.ies&documentRef=154696" ;
+    :Weight_kg "2.5" ;
+    :Width_mm "65" ;
+    :lm_W "130" ;
+    notor:hasArtNr "13336-402" .
+
+notor:7320046632991 a :A1_LD_Notor65_Betaopti ;
+    :Colour "White" ;
+    :Height_mm "65" ;
+    :IP_rating "20" ;
+    :Length_mm "1261" ;
+    :Light_control "DaliPhasePulseControl" ;
+    :Louvre "Beta Opti" ;
+    :Lumen_output "3411" ;
+    :Max_ambient_temperature_C "25" ;
+    :Min_ambient_temperature_C "-25" ;
+    :Photometric_Web_File "https://www.fagerhult.com/Products/notor/13300-449/GetFileFromCommerce/?filename=13300-449.ies&documentRef=154714" ;
+    :Weight_kg "2.5" ;
+    :Width_mm "65" ;
+    :lm_W "131" ;
+    notor:hasArtNr "13337-402" .
+
+notor:7320046633035 a :A1_LD_Notor65_Betaopti ;
+    :Colour "White" ;
+    :Height_mm "65" ;
+    :IP_rating "20" ;
+    :Length_mm "1261" ;
+    :Light_control "DaliPhasePulseControl" ;
+    :Louvre "Beta Opti" ;
+    :Lumen_output "2200" ;
+    :Max_ambient_temperature_C "25" ;
+    :Min_ambient_temperature_C "-25" ;
+    :Photometric_Web_File "https://www.fagerhult.com/Products/notor/13300-449/GetFileFromCommerce/?filename=13300-449.ies&documentRef=154713" ;
+    :Weight_kg "2.5" ;
+    :Width_mm "65" ;
+    :lm_W "134" ;
+    notor:hasArtNr "13338-402" .
+
+notor:7320046633073 a :A1_LD_Notor65_Betaopti ;
+    :Colour "White" ;
+    :Height_mm "65" ;
+    :IP_rating "20" ;
+    :Length_mm "1261" ;
+    :Light_control "DaliPhasePulseControl" ;
+    :Louvre "Beta Opti" ;
+    :Lumen_output "3509" ;
+    :Max_ambient_temperature_C "25" ;
+    :Min_ambient_temperature_C "-25" ;
+    :Photometric_Web_File "https://www.fagerhult.com/Products/notor/13300-449/GetFileFromCommerce/?filename=13300-449.ies&documentRef=154712" ;
+    :Weight_kg "2.5" ;
+    :Width_mm "65" ;
+    :lm_W "135" ;
+    notor:hasArtNr "13339-402" .
+
+notor:7320046633110 a :A1_LD_Notor65_Betaopti ;
+    :Colour "Anodised" ;
+    :Height_mm "65" ;
+    :IP_rating "20" ;
+    :Length_mm "1261" ;
+    :Light_control "DaliPhasePulseControl" ;
+    :Louvre "Beta Opti" ;
+    :Lumen_output "4666" ;
+    :Max_ambient_temperature_C "25" ;
+    :Min_ambient_temperature_C "-25" ;
+    :Photometric_Web_File "https://www.fagerhult.com/Products/notor/13300-449/GetFileFromCommerce/?filename=13300-449.ies&documentRef=154711" ;
+    :Weight_kg "2.7" ;
+    :Width_mm "65" ;
+    :lm_W "134" ;
+    notor:hasArtNr "13340-402" .
+
+notor:7320046633158 a :A1_LD_Notor65_Betaopti ;
+    :Colour "Anodised" ;
+    :Height_mm "65" ;
+    :IP_rating "20" ;
+    :Length_mm "1261" ;
+    :Light_control "DaliPhasePulseControl" ;
+    :Louvre "Beta Opti" ;
+    :Lumen_output "5914" ;
+    :Max_ambient_temperature_C "25" ;
+    :Min_ambient_temperature_C "-25" ;
+    :Photometric_Web_File "https://www.fagerhult.com/Products/notor/13300-449/GetFileFromCommerce/?filename=13300-449.ies&documentRef=154710" ;
+    :Weight_kg "2.7" ;
+    :Width_mm "65" ;
+    :lm_W "137" ;
+    notor:hasArtNr "13341-402" .
+
+notor:7320046633196 a :A1_LD_Notor65_Betaopti ;
+    :Colour "Anodised" ;
+    :Height_mm "65" ;
+    :IP_rating "20" ;
+    :Length_mm "1261" ;
+    :Light_control "DaliPhasePulseControl" ;
+    :Louvre "Beta Opti" ;
+    :Lumen_output "4800" ;
+    :Max_ambient_temperature_C "25" ;
+    :Min_ambient_temperature_C "-25" ;
+    :Photometric_Web_File "https://www.fagerhult.com/Products/notor/13300-449/GetFileFromCommerce/?filename=13300-449.ies&documentRef=154709" ;
+    :Weight_kg "2.7" ;
+    :Width_mm "65" ;
+    :lm_W "138" ;
+    notor:hasArtNr "13342-402" .
+
+notor:7320046633233 a :A1_LD_Notor65_Betaopti ;
+    :Colour "Anodised" ;
+    :Height_mm "65" ;
+    :IP_rating "20" ;
+    :Length_mm "1261" ;
+    :Light_control "DaliPhasePulseControl" ;
+    :Louvre "Beta Opti" ;
+    :Lumen_output "6084" ;
+    :Max_ambient_temperature_C "25" ;
+    :Min_ambient_temperature_C "-25" ;
+    :Photometric_Web_File "https://www.fagerhult.com/Products/notor/13300-449/GetFileFromCommerce/?filename=13300-449.ies&documentRef=154707" ;
+    :Weight_kg "2.7" ;
+    :Width_mm "65" ;
+    :lm_W "141" ;
+    notor:hasArtNr "13343-402" .
+
+notor:7320046633271 a :A1_LD_Notor65_Betaopti ;
+    :Colour "White" ;
+    :Height_mm "65" ;
+    :IP_rating "20" ;
+    :Length_mm "1261" ;
+    :Light_control "DaliPhasePulseControl" ;
+    :Louvre "Beta Opti" ;
+    :Lumen_output "4666" ;
+    :Max_ambient_temperature_C "25" ;
+    :Min_ambient_temperature_C "-25" ;
+    :Photometric_Web_File "https://www.fagerhult.com/Products/notor/13300-449/GetFileFromCommerce/?filename=13300-449.ies&documentRef=154706" ;
+    :Weight_kg "2.7" ;
+    :Width_mm "65" ;
+    :lm_W "134" ;
+    notor:hasArtNr "13344-402" .
+
+notor:7320046633318 a :A1_LD_Notor65_Betaopti ;
+    :Colour "White" ;
+    :Height_mm "65" ;
+    :IP_rating "20" ;
+    :Length_mm "1261" ;
+    :Light_control "DaliPhasePulseControl" ;
+    :Louvre "Beta Opti" ;
+    :Lumen_output "5914" ;
+    :Max_ambient_temperature_C "25" ;
+    :Min_ambient_temperature_C "-25" ;
+    :Photometric_Web_File "https://www.fagerhult.com/Products/notor/13300-449/GetFileFromCommerce/?filename=13300-449.ies&documentRef=154705" ;
+    :Weight_kg "2.7" ;
+    :Width_mm "65" ;
+    :lm_W "137" ;
+    notor:hasArtNr "13345-402" .
+
+notor:7320046633356 a :A1_LD_Notor65_Betaopti ;
+    :Colour "White" ;
+    :Height_mm "65" ;
+    :IP_rating "20" ;
+    :Length_mm "1261" ;
+    :Light_control "DaliPhasePulseControl" ;
+    :Louvre "Beta Opti" ;
+    :Lumen_output "4800" ;
+    :Max_ambient_temperature_C "25" ;
+    :Min_ambient_temperature_C "-25" ;
+    :Photometric_Web_File "https://www.fagerhult.com/Products/notor/13300-449/GetFileFromCommerce/?filename=13300-449.ies&documentRef=154704" ;
+    :Weight_kg "2.7" ;
+    :Width_mm "65" ;
+    :lm_W "138" ;
+    notor:hasArtNr "13346-402" .
+
+notor:7320046633394 a :A1_LD_Notor65_Betaopti ;
+    :Colour "White" ;
+    :Height_mm "65" ;
+    :IP_rating "20" ;
+    :Length_mm "1261" ;
+    :Light_control "DaliPhasePulseControl" ;
+    :Louvre "Beta Opti" ;
+    :Lumen_output "6084" ;
+    :Max_ambient_temperature_C "25" ;
+    :Min_ambient_temperature_C "-25" ;
+    :Photometric_Web_File "https://www.fagerhult.com/Products/notor/13300-449/GetFileFromCommerce/?filename=13300-449.ies&documentRef=154708" ;
+    :Weight_kg "2.7" ;
+    :Width_mm "65" ;
+    :lm_W "141" ;
+    notor:hasArtNr "13347-402" .
+
+notor:7320046633431 a :A1_LD_Notor65_Betaopti ;
+    :Colour "Anodised" ;
+    :Height_mm "65" ;
+    :IP_rating "20" ;
+    :Length_mm "2522" ;
+    :Light_control "DaliPhasePulseControl" ;
+    :Louvre "Beta Opti" ;
+    :Lumen_output "4276" ;
+    :Max_ambient_temperature_C "25" ;
+    :Min_ambient_temperature_C "-25" ;
+    :Photometric_Web_File "https://www.fagerhult.com/Products/notor/13300-449/GetFileFromCommerce/?filename=13300-449.ies&documentRef=154703" ;
+    :Weight_kg "5.3" ;
+    :Width_mm "65" ;
+    :lm_W "130" ;
+    notor:hasArtNr "13348-402" .
+
+notor:7320046633479 a :A1_LD_Notor65_Betaopti ;
+    :Colour "Anodised" ;
+    :Height_mm "65" ;
+    :IP_rating "20" ;
+    :Length_mm "2522" ;
+    :Light_control "DaliPhasePulseControl" ;
+    :Louvre "Beta Opti" ;
+    :Lumen_output "6822" ;
+    :Max_ambient_temperature_C "25" ;
+    :Min_ambient_temperature_C "-25" ;
+    :Photometric_Web_File "https://www.fagerhult.com/Products/notor/13300-449/GetFileFromCommerce/?filename=13300-449.ies&documentRef=154702" ;
+    :Weight_kg "5.3" ;
+    :Width_mm "65" ;
+    :lm_W "132" ;
+    notor:hasArtNr "13349-402" .
+
+notor:7320046633516 a :A1_LD_Notor65_Betaopti ;
+    :Colour "Anodised" ;
+    :Height_mm "65" ;
+    :IP_rating "20" ;
+    :Length_mm "2522" ;
+    :Light_control "DaliPhasePulseControl" ;
+    :Louvre "Beta Opti" ;
+    :Lumen_output "4400" ;
+    :Max_ambient_temperature_C "25" ;
+    :Min_ambient_temperature_C "-25" ;
+    :Photometric_Web_File "https://www.fagerhult.com/Products/notor/13300-449/GetFileFromCommerce/?filename=13300-449.ies&documentRef=154701" ;
+    :Weight_kg "5.3" ;
+    :Width_mm "65" ;
+    :lm_W "134" ;
+    notor:hasArtNr "13350-402" .
+
+notor:7320046635282 a :A1_LD_Notor65_Betaopti ;
+    :Colour "Anodised" ;
+    :Height_mm "65" ;
+    :IP_rating "20" ;
+    :Length_mm "2522" ;
+    :Light_control "DaliPhasePulseControl" ;
+    :Louvre "Beta Opti" ;
+    :Lumen_output "7018" ;
+    :Max_ambient_temperature_C "25" ;
+    :Min_ambient_temperature_C "-25" ;
+    :Photometric_Web_File "https://www.fagerhult.com/Products/notor/13300-449/GetFileFromCommerce/?filename=13300-449.ies&documentRef=154700" ;
+    :Weight_kg "5.3" ;
+    :Width_mm "65" ;
+    :lm_W "135" ;
+    notor:hasArtNr "13351-402" .
+
+notor:7320046635329 a :A1_LD_Notor65_Betaopti ;
+    :Colour "White" ;
+    :Height_mm "65" ;
+    :IP_rating "20" ;
+    :Length_mm "2522" ;
+    :Light_control "DaliPhasePulseControl" ;
+    :Louvre "Beta Opti" ;
+    :Lumen_output "4276" ;
+    :Max_ambient_temperature_C "25" ;
+    :Min_ambient_temperature_C "-25" ;
+    :Photometric_Web_File "https://www.fagerhult.com/Products/notor/13300-449/GetFileFromCommerce/?filename=13300-449.ies&documentRef=154699" ;
+    :Weight_kg "5.3" ;
+    :Width_mm "65" ;
+    :lm_W "130" ;
+    notor:hasArtNr "13352-402" .
+
+notor:7320046635367 a :A1_LD_Notor65_Betaopti ;
+    :Colour "White" ;
+    :Height_mm "65" ;
+    :IP_rating "20" ;
+    :Length_mm "2522" ;
+    :Light_control "DaliPhasePulseControl" ;
+    :Louvre "Beta Opti" ;
+    :Lumen_output "6822" ;
+    :Max_ambient_temperature_C "25" ;
+    :Min_ambient_temperature_C "-25" ;
+    :Photometric_Web_File "https://www.fagerhult.com/Products/notor/13304-449/GetFileFromCommerce/?filename=13304-449.ies&documentRef=154744" ;
+    :Weight_kg "5.3" ;
+    :Width_mm "65" ;
+    :lm_W "132" ;
+    notor:hasArtNr "13353-402" .
+
+notor:7320046635404 a :A1_LD_Notor65_Betaopti ;
+    :Colour "White" ;
+    :Height_mm "65" ;
+    :IP_rating "20" ;
+    :Length_mm "2522" ;
+    :Light_control "DaliPhasePulseControl" ;
+    :Louvre "Beta Opti" ;
+    :Lumen_output "4400" ;
+    :Max_ambient_temperature_C "25" ;
+    :Min_ambient_temperature_C "-25" ;
+    :Photometric_Web_File "https://www.fagerhult.com/Products/notor/13304-449/GetFileFromCommerce/?filename=13304-449.ies&documentRef=154732" ;
+    :Weight_kg "5.3" ;
+    :Width_mm "65" ;
+    :lm_W "134" ;
+    notor:hasArtNr "13354-402" .
+
+notor:7320046635442 a :A1_LD_Notor65_Betaopti ;
+    :Colour "White" ;
+    :Height_mm "65" ;
+    :IP_rating "20" ;
+    :Length_mm "2522" ;
+    :Light_control "DaliPhasePulseControl" ;
+    :Louvre "Beta Opti" ;
+    :Lumen_output "7018" ;
+    :Max_ambient_temperature_C "25" ;
+    :Min_ambient_temperature_C "-25" ;
+    :Photometric_Web_File "https://www.fagerhult.com/Products/notor/13304-449/GetFileFromCommerce/?filename=13304-449.ies&documentRef=154731" ;
+    :Weight_kg "5.3" ;
+    :Width_mm "65" ;
+    :lm_W "135" ;
+    notor:hasArtNr "13355-402" .
+
+notor:7320046635480 a :A1_LD_Notor65_Betaopti ;
+    :Colour "Anodised" ;
+    :Height_mm "65" ;
+    :IP_rating "20" ;
+    :Length_mm "2522" ;
+    :Light_control "DaliPhasePulseControl" ;
+    :Louvre "Beta Opti" ;
+    :Lumen_output "9332" ;
+    :Max_ambient_temperature_C "25" ;
+    :Min_ambient_temperature_C "-25" ;
+    :Photometric_Web_File "https://www.fagerhult.com/Products/notor/13304-449/GetFileFromCommerce/?filename=13304-449.ies&documentRef=154743" ;
+    :Weight_kg "5.5" ;
+    :Width_mm "65" ;
+    :lm_W "134" ;
+    notor:hasArtNr "13356-402" .
+
+notor:7320046635527 a :A1_LD_Notor65_Betaopti ;
+    :Colour "Anodised" ;
+    :Height_mm "65" ;
+    :IP_rating "20" ;
+    :Length_mm "2522" ;
+    :Light_control "DaliPhasePulseControl" ;
+    :Louvre "Beta Opti" ;
+    :Lumen_output "11828" ;
+    :Max_ambient_temperature_C "25" ;
+    :Min_ambient_temperature_C "-25" ;
+    :Photometric_Web_File "https://www.fagerhult.com/Products/notor/13304-449/GetFileFromCommerce/?filename=13304-449.ies&documentRef=154730" ;
+    :Weight_kg "5.5" ;
+    :Width_mm "65" ;
+    :lm_W "137" ;
+    notor:hasArtNr "13357-402" .
+
+notor:7320046635565 a :A1_LD_Notor65_Betaopti ;
+    :Colour "Anodised" ;
+    :Height_mm "65" ;
+    :IP_rating "20" ;
+    :Length_mm "2522" ;
+    :Light_control "DaliPhasePulseControl" ;
+    :Louvre "Beta Opti" ;
+    :Lumen_output "9600" ;
+    :Max_ambient_temperature_C "25" ;
+    :Min_ambient_temperature_C "-25" ;
+    :Photometric_Web_File "https://www.fagerhult.com/Products/notor/13304-449/GetFileFromCommerce/?filename=13304-449.ies&documentRef=154742" ;
+    :Weight_kg "5.5" ;
+    :Width_mm "65" ;
+    :lm_W "138" ;
+    notor:hasArtNr "13358-402" .
+
+notor:7320046635602 a :A1_LD_Notor65_Betaopti ;
+    :Colour "Anodised" ;
+    :Height_mm "65" ;
+    :IP_rating "20" ;
+    :Length_mm "2522" ;
+    :Light_control "DaliPhasePulseControl" ;
+    :Louvre "Beta Opti" ;
+    :Lumen_output "12168" ;
+    :Max_ambient_temperature_C "25" ;
+    :Min_ambient_temperature_C "-25" ;
+    :Photometric_Web_File "https://www.fagerhult.com/Products/notor/13304-449/GetFileFromCommerce/?filename=13304-449.ies&documentRef=154729" ;
+    :Weight_kg "5.5" ;
+    :Width_mm "65" ;
+    :lm_W "141" ;
+    notor:hasArtNr "13359-402" .
+
+notor:7320046635640 a :A1_LD_Notor65_Betaopti ;
+    :Colour "White" ;
+    :Height_mm "65" ;
+    :IP_rating "20" ;
+    :Length_mm "2522" ;
+    :Light_control "DaliPhasePulseControl" ;
+    :Louvre "Beta Opti" ;
+    :Lumen_output "9332" ;
+    :Max_ambient_temperature_C "25" ;
+    :Min_ambient_temperature_C "-25" ;
+    :Photometric_Web_File "https://www.fagerhult.com/Products/notor/13301-449/GetFileFromCommerce/?filename=13301-449.ies&documentRef=154698" ;
+    :Weight_kg "5.5" ;
+    :Width_mm "65" ;
+    :lm_W "134" ;
+    notor:hasArtNr "13360-402" .
+
+notor:7320046635688 a :A1_LD_Notor65_Betaopti ;
+    :Colour "White" ;
+    :Height_mm "65" ;
+    :IP_rating "20" ;
+    :Length_mm "2522" ;
+    :Light_control "DaliPhasePulseControl" ;
+    :Louvre "Beta Opti" ;
+    :Lumen_output "11828" ;
+    :Max_ambient_temperature_C "25" ;
+    :Min_ambient_temperature_C "-25" ;
+    :Photometric_Web_File "https://www.fagerhult.com/Products/notor/13304-449/GetFileFromCommerce/?filename=13304-449.ies&documentRef=154728" ;
+    :Weight_kg "5.5" ;
+    :Width_mm "65" ;
+    :lm_W "138" ;
+    notor:hasArtNr "13361-402" .
+
+notor:7320046635725 a :A1_LD_Notor65_Betaopti ;
+    :Colour "White" ;
+    :Height_mm "65" ;
+    :IP_rating "20" ;
+    :Length_mm "2522" ;
+    :Light_control "DaliPhasePulseControl" ;
+    :Louvre "Beta Opti" ;
+    :Lumen_output "9600" ;
+    :Max_ambient_temperature_C "25" ;
+    :Min_ambient_temperature_C "-25" ;
+    :Photometric_Web_File "https://www.fagerhult.com/Products/notor/13304-449/GetFileFromCommerce/?filename=13304-449.ies&documentRef=154741" ;
+    :Weight_kg "5.5" ;
+    :Width_mm "65" ;
+    :lm_W "138" ;
+    notor:hasArtNr "13362-402" .
+
+notor:7320046635763 a :A1_LD_Notor65_Betaopti ;
+    :Colour "White" ;
+    :Height_mm "65" ;
+    :IP_rating "20" ;
+    :Length_mm "2522" ;
+    :Light_control "DaliPhasePulseControl" ;
+    :Louvre "Beta Opti" ;
+    :Lumen_output "12168" ;
+    :Max_ambient_temperature_C "25" ;
+    :Min_ambient_temperature_C "-25" ;
+    :Photometric_Web_File "https://www.fagerhult.com/Products/notor/13304-449/GetFileFromCommerce/?filename=13304-449.ies&documentRef=154727" ;
+    :Weight_kg "5.5" ;
+    :Width_mm "65" ;
+    :lm_W "141" ;
+    notor:hasArtNr "13363-402" .
+
+notor:hasArtNr a rdf:Property .
+
