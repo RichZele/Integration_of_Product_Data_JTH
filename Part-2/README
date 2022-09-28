@@ -16,3 +16,6 @@ SPARQL_query_3.py
 SPARQL_query_translator
     Python + SPARQL to query stardog database
     the output is all product descriptions according to the CEN/TS 17623:2021 standard
+    
+README
+    this file
