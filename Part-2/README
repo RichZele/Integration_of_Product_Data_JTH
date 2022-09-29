@@ -1,19 +1,16 @@
 connectStardog-DB.py
     Python code to connect and query stardog database
+    the output is all product families, referred as databases in Stardog
 
-SPARQL_query_1.py
+Python+SPARQL_query_1.py
     Python + SPARQL to query stardog database
-    the output is all product families 
+    the output is all instances of the selected product family
 
-SPARQL_query_2.py
-    Python + SPARQL to query stardog database
-    the output is all instances of the selected product familiy
-
-SPARQL_query_3.py
+Python+SPARQL_query_2.py
     Python + SPARQL to query stardog database
     the output is all product descriptions (parameter and parameter values) of the selected product instance
 
-SPARQL_query_translator
+Python+SPARQL_query_3.py
     Python + SPARQL to query stardog database
     the output is all product descriptions according to the CEN/TS 17623:2021 standard
     
