@@ -1,0 +1,307 @@
+@prefix : <http://www.w3id.org/ppon/bppo#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix bpo: <http://www.w3id.org/bpo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@base <http://www.w3id.org/ppon/bppo> .
+
+<http://www.w3id.org/ppon/bppo> rdf:type owl:Ontology ;
+                                 owl:versionIRI <http://www.w3id.org/ppon/bppo/1.0> ;
+                                 rdfs:comment """The Building Product Property Ontology (BPPO) provides a vocabulary to define the properties for the products used in the construction industry. The ontology has been developed in accordance with the standard ISO23386:2020. 
+
+The namespace for BPPO terms is http://www.w3id.org/ppon/bppo#
+
+The suggested prefix for the BPPO namespace is bppo."""@en .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.w3.org/2004/02/skos/core#related
+skos:related rdf:type owl:ObjectProperty .
+
+
+###  http://www.w3id.org/ppon/bppo#compatibleWith
+:compatibleWith rdf:type owl:ObjectProperty ;
+                rdfs:domain :Property ;
+                rdfs:range :InterconnectedDictionary ;
+                rdfs:comment "This property is used for compatibility between already existing properties." ;
+                rdfs:label "relation of the property in the interconnected dictionaries" .
+
+
+###  http://www.w3id.org/ppon/bppo#countryOfUse
+:countryOfUse rdf:type owl:ObjectProperty ;
+              rdfs:domain :Property ;
+              rdfs:comment "Country in which the property is used." ;
+              rdfs:label "Country of use" .
+
+
+###  http://www.w3id.org/ppon/bppo#language
+:language rdf:type owl:ObjectProperty ;
+          rdfs:domain :Property ;
+          rdfs:range dc:Language .
+
+
+###  http://www.w3id.org/ppon/bppo#memberOf
+:memberOf rdf:type owl:ObjectProperty ;
+          rdfs:domain :Property ;
+          rdfs:range :PropertyGroup ;
+          rdfs:comment "This property describes the product property is a member of property group." ;
+          rdfs:label "member of" .
+
+
+###  http://www.w3id.org/ppon/bppo#propertyOf
+:propertyOf rdf:type owl:ObjectProperty ;
+            rdfs:domain :Property ;
+            rdfs:range bpo:Product ;
+            rdfs:comment "This property describes a property is used to decribe the characteristics of product." ;
+            rdfs:label "property of" .
+
+
+###  http://www.w3id.org/ppon/bppo#propertyStatus
+:propertyStatus rdf:type owl:ObjectProperty ;
+                rdfs:domain :Property ;
+                rdfs:range :Status ;
+                rdfs:comment "The property describes the status of the property during its life cycle." ;
+                rdfs:label "Status" .
+
+
+###  http://www.w3id.org/ppon/bppo#replacedBy
+:replacedBy rdf:type owl:ObjectProperty ;
+            rdfs:domain :Property ;
+            rdfs:range :Property ;
+            rdfs:comment "Identifier of the replacing property (or properties)." ;
+            rdfs:label "Replaced by" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.w3id.org/ppon/bppo#dataType
+:dataType rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Property ;
+          rdfs:comment "Format for expressing the value of the property. This can be understood as the storage type from a software perspective. In case of a dynamic property the value of this attribute is the datatype of the result of the calculation by the formula" ;
+          rdfs:label "Data Type" .
+
+
+###  http://www.w3id.org/ppon/bppo#dateOfActivation
+:dateOfActivation rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :Property ;
+                  rdfs:range xsd:dateTime ;
+                  rdfs:comment "Date after when the property can be used." ;
+                  rdfs:label "Date of activation" .
+
+
+###  http://www.w3id.org/ppon/bppo#dateOfCreation
+:dateOfCreation rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Property ;
+                rdfs:range xsd:dateTime ;
+                skos:example "2014-04-30T10:39:53Z" ;
+                rdfs:label "Date of creation" .
+
+
+###  http://www.w3id.org/ppon/bppo#dateOfDeactivation
+:dateOfDeactivation rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :Property ;
+                    rdfs:range xsd:dateTime ;
+                    rdfs:comment "Date as of which the property becomes obsolete. The property is maintained in the dictionary." ;
+                    rdfs:label "Date of deactivation" .
+
+
+###  http://www.w3id.org/ppon/bppo#dateOfLastChange
+:dateOfLastChange rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :Property ;
+                  rdfs:range xsd:dateTime ;
+                  rdfs:comment "Date of validation of the last change request" ;
+                  rdfs:label "Date of last change" .
+
+
+###  http://www.w3id.org/ppon/bppo#dateOfRevision
+:dateOfRevision rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Property ;
+                rdfs:range xsd:dateTime ;
+                rdfs:comment "Date of the revision" ;
+                rdfs:label "Date of revision" .
+
+
+###  http://www.w3id.org/ppon/bppo#dateOfVersion
+:dateOfVersion rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Property ;
+               rdfs:range xsd:dateTime ;
+               rdfs:comment "Date of the version" ;
+               rdfs:label "Date of version" .
+
+
+###  http://www.w3id.org/ppon/bppo#definition
+:definition rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Property ;
+            rdfs:range xsd:language ;
+            rdfs:comment "List of pairs (Definition of the property, language)" .
+
+
+###  http://www.w3id.org/ppon/bppo#deprecationExplanation
+:deprecationExplanation rdf:type owl:DatatypeProperty ;
+                        rdfs:domain :Property ;
+                        rdfs:range xsd:string ;
+                        rdfs:comment "Sentence explaining the reason of the deprecation. Can explain how to convert values to conform to the new property. This explanation has to be written in international English (EN)" ;
+                        rdfs:label "Deprecation explanation" .
+
+
+###  http://www.w3id.org/ppon/bppo#description
+:description rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf owl:topDataProperty ;
+             rdfs:domain :Property ;
+             rdfs:range xsd:language ;
+             rdfs:comment """List of pairs (Description of  the property, language)
+This attribute is used to provide a plain language description of the property""" .
+
+
+###  http://www.w3id.org/ppon/bppo#digitalFormat
+:digitalFormat rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Property ;
+               rdfs:comment "Pair for digital text type (precision, unit of measure). Precision is the number of significant digits" ;
+               rdfs:label "Digital format" .
+
+
+###  http://www.w3id.org/ppon/bppo#dimension
+:dimension rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Property ;
+           rdfs:range xsd:string ;
+           rdfs:comment "In case of a physical quantity, dimension according to ISO 80000. This attribute allows the dimension to be machine readable. As all physical quantities are derived from 7 base quantities, it is provided with the power attached to a basic dimension in the following order and with one space between each." .
+
+
+###  http://www.w3id.org/ppon/bppo#hasGUID
+:hasGUID rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Property ;
+         rdfs:range xsd:anyURI ;
+         skos:example "936DA01F-9ABD-4D9D-80C7-02AF85C822A8" ;
+         rdfs:comment             "globally unique identifier generated using an algorithm in conformity with standard ISO/IEC 11578:1996" ;
+         rdfs:label "globally unique identifier" .
+
+
+###  http://www.w3id.org/ppon/bppo#hasName
+:hasName rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Property ;
+         rdfs:range xsd:language ;
+         rdfs:comment """List of pairs (Name of the property and language).
+This attribute can be used to add synonyms for different domains""" .
+
+
+###  http://www.w3id.org/ppon/bppo#isDynamicProperty
+:isDynamicProperty rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf owl:topDataProperty ;
+                   rdfs:domain :Property ;
+                   rdfs:range xsd:boolean ;
+                   rdfs:comment "If this is a dynamic property, the value will be expressed as a formula" ;
+                   rdfs:label "Dynamic property" .
+
+
+###  http://www.w3id.org/ppon/bppo#numberOfValues
+:numberOfValues rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf owl:topDataProperty ;
+                rdfs:domain :Property ;
+                rdfs:range xsd:integer ;
+                rdfs:comment "This attribute provides information about the number of values to provide. It may be one value or a table of values (equivalent to ifcPropertyTableValue in EN ISO 16739). In case of a table value, the number of values represent the number of rows of a 2 columns table" ;
+                rdfs:label "Number of values" .
+
+
+###  http://www.w3id.org/ppon/bppo#physicalQuantity
+:physicalQuantity rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :Property ;
+                  rdfs:comment "List of Pairs (Physical quantity | Language). Physical quantities are expressed in International System (SI) units Non-physical quantities such as text are expressed with the value \"without\". This is equivalent to a measure in EN ISO 16739 and ISO 10303" ;
+                  rdfs:label "Physical quantity" .
+
+
+###  http://www.w3id.org/ppon/bppo#revisionNumber
+:revisionNumber rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Property ;
+                rdfs:range xsd:integer ;
+                rdfs:comment "This revision number allows tracking of minor changes eg new translation, changes of typos. If the version number changes, the revision number starts again at 1" .
+
+
+###  http://www.w3id.org/ppon/bppo#units
+:units rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Property ;
+       rdfs:range xsd:string ;
+       rdfs:comment "a unit to represent a scale that enables a value to be measured. It can be possible to use this attribute to explain there is no unit attached to the property by using “unitless”" ;
+       rdfs:label "Units" .
+
+
+###  http://www.w3id.org/ppon/bppo#versionNumber
+:versionNumber rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Property ;
+               rdfs:range xsd:integer ;
+               skos:example "2" ;
+               rdfs:comment  "This version number allows tracking of major changes essentially a change of the domain" ;
+               rdfs:label "Version number" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/Language
+dc:Language rdf:type owl:Class .
+
+
+###  http://www.w3id.org/bpo#Attribute
+bpo:Attribute rdf:type owl:Class .
+
+
+###  http://www.w3id.org/bpo#Product
+bpo:Product rdf:type owl:Class .
+
+
+###  http://www.w3id.org/bpo#RangedAttribute
+bpo:RangedAttribute rdf:type owl:Class .
+
+
+###  http://www.w3id.org/ppon/bppo#InterconnectedDictionary
+:InterconnectedDictionary rdf:type owl:Class ;
+                          rdfs:comment "Interconnected Dictionary is a dictionary following this standard and connected using specific attributes and interconnected to other interconnected dictionaries." .
+
+
+###  http://www.w3id.org/ppon/bppo#Property
+:Property rdf:type owl:Class ;
+          rdfs:subClassOf [ rdf:type owl:Restriction ;
+                            owl:onProperty skos:related ;
+                            owl:someValuesFrom bpo:Attribute
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty skos:related ;
+                            owl:someValuesFrom bpo:RangedAttribute
+                          ] ;
+          rdfs:comment "A class represents the properties of product used in the construction." ,
+                       "a property is defined as inherent or acquired feature (ISO/DIS 6707-1)" .
+
+
+###  http://www.w3id.org/ppon/bppo#PropertyGroup
+:PropertyGroup rdf:type owl:Class ;
+               rdfs:comment "A container enabling the properties to be prearranged or organized. A Property Set as defined is ISO 16739 is a group of properties, but a group of properties is not necessarily a Property Set." .
+
+
+###  http://www.w3id.org/ppon/bppo#Status
+:Status rdf:type owl:Class ;
+        rdfs:comment "The status of the property during its life cycle." .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.w3id.org/ppon/bppo#Active
+:Active rdf:type owl:NamedIndividual ,
+                 :Status .
+
+
+###  http://www.w3id.org/ppon/bppo#Inactive
+:Inactive rdf:type owl:NamedIndividual ,
+                   :Status .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
