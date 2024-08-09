@@ -1,8 +1,11 @@
 ## List of Competency Questions
 
 What is the serial number or unique identifier of the product?
+
 What are the raw materials used in the product and what are the individual components that make up the product?
+
 Where and when are the raw materials sourced from?
+
 What is the composition of the materials used in the product?
 What is the total carbon footprint of a product from raw material extraction to consumer use?
 What transport methods are used to deliver raw materials and components to the manufacturing side and what is the associated carbon footprint?
