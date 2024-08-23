@@ -17,11 +17,11 @@ For an in-depth understanding of the concepts and research underpinning these mo
 - **Thesis:**
   - [Ontology and Knowledge Graph-Based Product Data Representation for Sustainable Buildings](https://urn.kb.se/resolve?urn=urn:nbn:se:hj:diva-65950)
 
-These documents provide detailed insights into the development and application of the DPP Ontology.
+
 
 ## Continuous Improvement
 
-These modules are continually refined and enhanced based on user feedback, emerging industry standards, and the evolving needs of the digital product landscape. Our goal is to maintain their relevance and utility, ensuring they serve as robust tools for the management and sustainability of product information.
+The works presented here is continually refined and enhanced based on user feedback, emerging industry standards, and the evolving needs of the digital product landscape. Our goal is to maintain their relevance and utility, ensuring they serve as robust tools for the management and sustainability of product information.
 
 Contributions and suggestions are always welcome. 
 
