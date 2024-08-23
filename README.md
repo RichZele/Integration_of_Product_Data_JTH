@@ -11,9 +11,8 @@ Keywords: BIM, Information requirements, Product data, Semantic web technologies
 For an in-depth understanding of the concepts and research underpinning these modules, please refer to the following documents:
 
 - **Journal Papers:
-         ** [A modular ontology modeling approach to developing digital product passports to promote circular economy in the built environment](https://doi.org/10.1016/j.spc.2024.05.007)
-         ** [Integration of manufacturers' product data in BIM platforms using semantic web technologies]([https://doi.org/10.1016/j.spc.2024.05.007](https://doi.org/10.1016/j.autcon.2022.104630))
-  
+- **Journal Paper 1:** [A Modular Ontology Modeling Approach to Developing Digital Product Passports to Promote Circular Economy in the Built Environment](https://doi.org/10.1016/j.spc.2024.05.007)
+- **Journal Paper 2:** [Integration of Manufacturers' Product Data in BIM Platforms Using Semantic Web Technologies](https://doi.org/10.1016/j.autcon.2022.104630)
   
 - **Thesis:
         ** [Ontology and Knowledge Graph-Based Product Data Representation for Sustainable Buildings](https://urn.kb.se/resolve?urn=urn:nbn:se:hj:diva-65950)
