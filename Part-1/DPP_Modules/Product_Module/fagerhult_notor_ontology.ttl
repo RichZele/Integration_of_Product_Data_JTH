@@ -24,7 +24,7 @@
 
 :CCT_K a rdf:Property ;
     rdfs:range :A1_LD_Notor65_Betaopti ;
-    rdfs:seeAlso <http://example.org/BIM_lighting_properties_standards/CEN_TC_274_Ontology#Correlated_Colour_Temperature_(CCT)> .
+    rdfs:seeAlso cen:Correlated_Colour_Temperature_(CCT) .
 
 :CLO_function_on a rdf:Property ;
     rdfs:range :A1_LD_Notor65_Betaopti ;
@@ -36,7 +36,7 @@
 
 :CRI a rdf:Property ;
     rdfs:range :A1_LD_Notor65_Betaopti ;
-    rdfs:seeAlso <http://example.org/BIM_lighting_properties_standards/CEN_TC_274_Ontology#Colour_Rendering_Index_(CRI)> .
+    rdfs:seeAlso cen:Colour_Rendering_Index_(CRI) .
 
 :Colour a rdf:Property ;
     rdfs:range :A1_LD_Notor65_Betaopti ;
