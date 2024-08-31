@@ -1,0 +1,25 @@
+@prefix dpp: <http://www.w3id.org/dpp#> .
+@prefix bpo: <http://www.w3id.org/ppon/bppo#> .
+
+
+# Map Equivalent Classes 
+dpp:Product rdf:type owl:Class ;
+    owl:equivalentClass bpo:Product .
+
+# Map Object Properties
+dpp:hasName rdf:type owl:ObjectProperty ;
+    owl:equivalentProperty dpp:hasName .
+
+dpp:hasUnit rdf:type owl:ObjectProperty ;
+    owl:equivalentProperty bpo:units .
+
+# Map Data Properties
+dpp:hasIdentifier rdf:type owl:DatatypeProperty ;
+    owl:equivalentProperty bpo:hasGUID .
+
+# Map Annotation Properties
+dpp:identifierAsText rdf:type owl:AnnotationProperty ;
+    owl:equivalentProperty bpo:description .
+
+
+
