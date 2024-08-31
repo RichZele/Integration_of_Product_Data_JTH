@@ -1,5 +1,5 @@
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
-@prefix epd: <http://example.org/epd/> .
+@prefix epd: <http://www.w3id.org/dpp/epd#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix dpp: <http://www.w3id.org/dpp#> .
 @prefix env: <http://example.org/environment/> .
