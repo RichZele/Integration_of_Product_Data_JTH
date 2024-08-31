@@ -1,0 +1,214 @@
+@prefix dpp: <http://www.w3id.org/dpp#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+dpp:Notor65 rdf:type dpp:Product ;
+            dpp:hasName "Notor65"^^xsd:string ;
+            dpp:hasComponent dpp:linearLEDNotor,
+                             dpp:cobLEDNotor,
+                             dpp:roundLEDNotor,
+                             dpp:squareLEDNotor,
+                             dpp:screwNotor,
+                             dpp:clipNotor,
+                             dpp:flapNotor,
+                             dpp:driverNotor,
+                             dpp:psuNotor,
+                             dpp:sensorUnitNotor,
+                             dpp:batteryNotor .
+
+# Instances of light source components
+dpp:linearLEDNotor rdf:type dpp:LinearLEDCard .
+dpp:cobLEDNotor rdf:type dpp:COBLED .
+dpp:roundLEDNotor rdf:type dpp:RoundLEDCard .
+dpp:squareLEDNotor rdf:type dpp:SquareLEDCard .
+
+# Instances of fastenings
+dpp:screwNotor rdf:type dpp:Screw .
+dpp:clipNotor rdf:type dpp:Clip .
+dpp:flapNotor rdf:type dpp:Flap .
+
+# Instances of electrical components
+dpp:driverNotor rdf:type dpp:Driver .
+dpp:psuNotor rdf:type dpp:PSU .
+dpp:sensorUnitNotor rdf:type dpp:SensorUnit .
+dpp:batteryNotor rdf:type dpp:Battery .
+
+# Disassembly instruction 
+dpp:Notor65   dpp:hasInstructionEntity dpp:DisassemblyInstructionOfNotor65 .
+
+dpp:DisassemblyInstructionOfNotor65 rdf:type dpp:DisassemblyInstruction ;
+                                     dpp:hasInstructionDetail dpp:PowerDisconnection ,
+                                                               dpp:DismantleLuminaire ,
+                                                               dpp:DisassembleLuminaire ,
+                                                               dpp:MaterialSeparation ;
+                                     dpp:hasFirstStep dpp:PowerDisconnection ;
+                                     rdfs:seeAlso <https://www.fagerhult.com/Products/notor/notor-65-beta-opti/> .
+
+dpp:PowerDisconnection rdf:type dpp:FirstStep ;
+                        rdf:type dpp:SequentialInstructionDetail ;
+                        schema:description "Switch off electric supply to luminaire" ;
+                        dpp:stepOrder "1"^^xsd:decimal ;
+                        dpp:hasNext dpp:DismantleLuminaire .
+
+dpp:DismantleLuminaire rdf:type dpp:SequentialInstructionDetail ;
+                        schema:description "Dismantle the luminaire starting with external components. See the mounting instruction for your product for guidance" ;
+                        rdfs:seeAlso <http://www.fagerhult.com/mounting-instructions/Notor65> ;
+                        dpp:stepOrder "2"^^xsd:decimal ;
+                        dpp:hasNext dpp:DisassembleLuminaire .
+
+dpp:DisassembleLuminaire rdf:type dpp:SequentialInstructionDetail ;
+                         schema:description "Disassemble the luminaire for component separation" ;
+                         dpp:hasFirstStep dpp:ToolPreparation ;
+                         dpp:stepOrder "3"^^xsd:decimal ;
+                         dpp:hasSubStep dpp:ToolPreparation , 
+                                        dpp:ComponentRemoval,
+                                        dpp:IdentifyLightSources,
+                                        dpp:IdentifyElectricalComponents;
+                         dpp:hasNext dpp:MaterialSeparation .
+
+dpp:ToolPreparation rdf:type dpp:SequentialInstructionDetail ;
+                    schema:description "Use suitable tools to loosen screws and other fastenings" ;
+                    dpp:stepOrder "3.1"^^xsd:decimal;
+                    dpp:hasNext dpp:ComponentRemoval .
+
+dpp:ComponentRemoval rdf:type dpp:SequentialInstructionDetail ;
+                    schema:description "Carefully remove each component from the luminaire, including glare protection, reflectors,lenses and/or other components to locate LED/light source" ;
+                    dpp:stepOrder "3.2"^^xsd:decimal ;
+                    dpp:removes dpp:GlareProtection ;
+                    dpp:removes dpp:Reflector ;
+                    dpp:removes dpp:Lens ;
+                    dpp:hasNext dpp:IdentifyLightSources .
+
+dpp:IdentifyLightSources rdf:type dpp:SequentialInstructionDetail ;
+                         schema:description "Identify and sort different types of light sources" ;
+                         dpp:stepOrder "3.3"^^xsd:decimal ;
+                         dpp:hasNext dpp:IdentifyElectricalComponents .
+
+dpp:IdentifyElectricalComponents rdf:type dpp:SequentialInstructionDetail ;
+                                schema:description "Locate and label all electrical components for proper disposal or recycling" ;
+                                dpp:stepOrder "3.4"^^xsd:decimal ;  
+                                dpp:hasLastStep dpp:MaterialSeparation .
+
+dpp:MaterialSeparation rdf:type dpp:LastStep ;
+                       rdf:type dpp:SequentialInstructionDetail ;
+                       dpp:stepOrder "4"^^xsd:decimal ;
+                       schema:description "Separate materials according to type for recycling or disposal" .
+
+
+
+# Class definitions
+dpp:Product rdf:type owl:Class ;
+            rdfs:label "Product" .
+
+dpp:LinearLEDCard rdf:type owl:Class ;
+                  rdfs:label "Linear LED Card" ;
+                  rdfs:subClassOf dpp:Product .
+
+dpp:COBLED rdf:type owl:Class ;
+           rdfs:label "COB LED" ;
+           rdfs:subClassOf dpp:Product .
+
+dpp:RoundLEDCard rdf:type owl:Class ;
+                 rdfs:label "Round LED Card" ;
+                 rdfs:subClassOf dpp:Product .
+
+dpp:SquareLEDCard rdf:type owl:Class ;
+                  rdfs:label "Square LED Card" ;
+                  rdfs:subClassOf dpp:Product .
+
+dpp:Screw rdf:type owl:Class ;
+          rdfs:label "Screw" ;
+          rdfs:subClassOf dpp:Product .
+
+dpp:Clip rdf:type owl:Class ;
+         rdfs:label "Clip" ;
+         rdfs:subClassOf dpp:Product .
+
+dpp:Flap rdf:type owl:Class ;
+         rdfs:label "Flap" ;
+         rdfs:subClassOf dpp:Product .
+
+dpp:Driver rdf:type owl:Class ;
+           rdfs:label "Driver" ;
+           rdfs:subClassOf dpp:Product .
+
+dpp:PSU rdf:type owl:Class ;
+        rdfs:label "Power Supply Unit (PSU)" ;
+        rdfs:subClassOf dpp:Product .
+
+dpp:SensorUnit rdf:type owl:Class ;
+               rdfs:label "Sensor Unit" ;
+               rdfs:subClassOf dpp:Product .
+
+dpp:Battery rdf:type owl:Class ;
+            rdfs:label "Battery" ;
+            rdfs:subClassOf dpp:Product .
+
+dpp:DisassemblyInstruction rdf:type owl:Class ;
+                           rdfs:label "Disassembly Instruction" .
+
+dpp:SequentialInstructionDetail rdf:type owl:Class ;
+                                rdfs:label "Sequential Instruction Detail" .
+
+dpp:FirstStep rdf:type owl:Class ;
+              rdfs:label "FirstStep" .
+
+dpp:LastStep rdf:type owl:Class ;
+             rdfs:label "LastStep" .
+
+
+# Data property definitions
+dpp:hasName rdf:type owl:DatatypeProperty ;
+            rdfs:label "has name" ;
+            rdfs:domain dpp:Product ;
+            rdfs:range xsd:string .
+
+dpp:stepOrder rdf:type owl:DatatypeProperty ;
+              rdfs:label "step order" ;
+              rdfs:domain dpp:SequentialInstructionDetail ;
+              rdfs:range xsd:decimal .
+
+
+# Object property definitions
+dpp:hasComponent rdf:type owl:ObjectProperty ;
+                 rdfs:label "has component" ;
+                 rdfs:domain dpp:Product ;
+                 rdfs:range owl:Thing .
+
+dpp:hasInstructionEntity rdf:type owl:ObjectProperty ;
+                         rdfs:label "has instruction entity" ;
+                         rdfs:domain dpp:Product ;
+                         rdfs:range dpp:DisassemblyInstruction .
+
+dpp:hasInstructionDetail rdf:type owl:ObjectProperty ;
+                        rdfs:label "has instruction detail" ;
+                        rdfs:domain dpp:DisassemblyInstruction ;
+                        rdfs:range dpp:SequentialInstructionDetail .
+
+dpp:hasFirstStep rdf:type owl:ObjectProperty ;
+                 rdfs:label "hasFirstStep" ;
+                 rdfs:domain dpp:DisassemblyInstruction, dpp:SequentialInstructionDetail ;
+                 rdfs:range dpp:SequentialInstructionDetail .
+
+dpp:hasNext rdf:type owl:ObjectProperty ;
+            rdfs:label "has next" ;
+            rdfs:domain dpp:SequentialInstructionDetail ;
+            rdfs:range dpp:SequentialInstructionDetail .
+
+dpp:hasSubStep rdf:type owl:ObjectProperty ;
+               rdfs:label "has sub-step" ;
+               rdfs:domain dpp:SequentialInstructionDetail ;
+               rdfs:range dpp:SequentialInstructionDetail .
+
+dpp:hasLastStep rdf:type owl:ObjectProperty ;
+                rdfs:label "has last step" ;
+                rdfs:domain dpp:SequentialInstructionDetail ;
+                rdfs:range dpp:LastStep .
+
+dpp:removes rdf:type owl:ObjectProperty ;
+            rdfs:label "removes" ;
+            rdfs:domain dpp:SequentialInstructionDetail ;
+            rdfs:range owl:Thing .
