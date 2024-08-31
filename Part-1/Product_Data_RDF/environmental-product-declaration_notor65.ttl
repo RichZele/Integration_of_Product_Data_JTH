@@ -2,7 +2,7 @@
 @prefix epd: <http://www.w3id.org/dpp/epd#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix dpp: <http://www.w3id.org/dpp#> .
-@prefix env: <http://example.org/environment/> .
+
 
 epd:Notor65EPD
     dc:title "Environmental Product Declaration for Fagerhult's Notor 65" ;
@@ -21,14 +21,14 @@ dpp:Notor65
     epd:company epd:FagerhultsBelysningAB ;
     epd:model ["Notor 65 Beta Opti"; "Notor 65 Delta"; "Notor 65 Opal"; "Notor 65 Indirect"] .
 
-env:LifeCycleAssessment
-    env:functionalUnit "One Notor 65" ;
-    env:referenceServiceLife "20 years" ;
-    env:totalProductWeight ["43 kg"^^xsd:float; "21 kg"^^xsd:float] ;
-    env:energyConsumption "1700 kWh"^^xsd:float ;
-    env:materialsUsed ["Aluminium"; "Plastic"; "Steel"; "LED-Module"] ;
-    env:environmentalImpactCategories ["Climate change"; "Ozone depletion"; "Acidification"; "Eutrophication"; "Water use"; "Resource use (fossils, minerals, metals)"] .
+dpp:LifeCycleAssessment
+    dpp:functionalUnit "One Notor 65" ;
+    dpp:referenceServiceLife "20 years" ;
+    dpp:totalProductWeight ["43 kg"^^xsd:float; "21 kg"^^xsd:float] ;
+    dpp:energyConsumption "1700 kWh"^^xsd:float ;
+    dpp:materialsUsed ["Aluminium"; "Plastic"; "Steel"; "LED-Module"] ;
+    dpp:environmentalImpactCategories ["Climate change"; "Ozone depletion"; "Acidification"; "Eutrophication"; "Water use"; "Resource use (fossils, minerals, metals)"] .
 
-env:EndOfLife
-    env:wasteManagement "Sorting as electronic waste, material recycling" ;
-    env:disposal "Transport to municipal treatment of electronic waste" .
+dpp:EndOfLife
+    dpp:wasteManagement "Sorting as electronic waste, material recycling" ;
+    dpp:disposal "Transport to municipal treatment of electronic waste" .
