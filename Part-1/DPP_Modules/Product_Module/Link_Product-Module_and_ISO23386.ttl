@@ -1,5 +1,5 @@
 @prefix dpp: <http://www.w3id.org/dpp#> .
-@prefix bpo: <http://www.w3id.org/ppon/bppo#> .
+@prefix bpo: <http://www.w3id.org/bppo#> .
 
 
 # Map Equivalent Classes 
