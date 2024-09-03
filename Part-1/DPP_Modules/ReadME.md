@@ -13,7 +13,7 @@ These documents provide detailed insights into the development and application o
 
 ## Continuous Improvement
 
-⚠️**These modules are NOT COMPLETE YET. The work is still IN PROGRESS** and continually refined and enhanced based on user feedback, emerging industry standards, and the evolving needs of the digital product landscape. Our goal is to maintain their relevance and utility, ensuring they serve as robust tools for the management and sustainability of product information.
+⚠️**These modules are NOT COMPLETE YET. The work is still IN PROGRESS** and continually refined based on user feedback, emerging industry standards, and the evolving needs of the digital product landscape. Our goal is to maintain their relevance and utility, ensuring they serve as robust tools for the management and sustainability of product information.
 
 Contributions and suggestions are always welcome. 
 
