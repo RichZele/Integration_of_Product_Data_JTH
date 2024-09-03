@@ -17,5 +17,7 @@ These documents provide detailed insights into the development and application o
 
 Contributions and suggestions are always welcome. 
 
+Contact: Rahel Kebede (rahel.kebede@ju.se)
+
 
 
