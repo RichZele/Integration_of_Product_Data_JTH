@@ -1,0 +1,189 @@
+@prefix : <http://example.org/fagerhult_notor_ontology#> .
+@prefix cen: <http://example.org/BIM_lighting_properties_standards/CEN_TC_274_Ontology#> .
+@prefix dpp: <http://www.w3id.org/dpp#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://example.org/fagerhult_notor_ontology> a owl:Ontology .
+
+:AM a rdf:Property ;
+    rdfs:domain :A1_LD_Notor65_Betaopti ;
+    rdfs:seeAlso cen:dimming_method .
+
+:Average_W a rdf:Property ;
+    rdfs:domain :A1_LD_Notor65_Betaopti ;
+    rdfs:seeAlso cen:constant_light_output_average_power .
+
+:CCT_K a rdf:Property ;
+    rdfs:domain :A1_LD_Notor65_Betaopti ;
+    rdfs:seeAlso cen:Correlated_Colour_Temperature .
+
+:CLO_function_on a rdf:Property ;
+    rdfs:domain :A1_LD_Notor65_Betaopti ;
+    rdfs:seeAlso cen:Constant_Light_Output .
+
+:CLO_time_h a rdf:Property ;
+    rdfs:domain :A1_LD_Notor65_Betaopti ;
+    rdfs:seeAlso cen:median_useful_life .
+
+:CRI a rdf:Property ;
+    rdfs:domain :A1_LD_Notor65_Betaopti ;
+    rdfs:seeAlso cen:Colour_Rendering_Index .
+
+:Colour a rdf:Property ;
+    rdfs:domain :A1_LD_Notor65_Betaopti ;
+    rdfs:seeAlso cen:Housing_colour .
+
+:Corridor_function a rdf:Property ;
+    rdfs:domain :A1_LD_Notor65_Betaopti ;
+    rdfs:seeAlso cen:control_features .
+
+:End_W a rdf:Property ;
+    rdfs:domain :A1_LD_Notor65_Betaopti ;
+    rdfs:seeAlso cen:constant_light_output_end_power .
+
+:Height_mm a rdf:Property ;
+    rdfs:domain :A1_LD_Notor65_Betaopti ;
+    rdfs:seeAlso cen:Height .
+
+:IK_rating a rdf:Property ;
+    rdfs:domain :A1_LD_Notor65_Betaopti ;
+    rdfs:seeAlso cen:Electrical_safety_class .
+
+:Length_mm a rdf:Property ;
+    rdfs:domain :A1_LD_Notor65_Betaopti ;
+    rdfs:seeAlso cen:Length .
+
+:Life_time_LED_driver_max_10_failure_h a rdf:Property ;
+    rdfs:domain :A1_LD_Notor65_Betaopti ;
+    rdfs:seeAlso cen:control_gear_lifetime .
+
+:Light_control a rdf:Property ;
+    rdfs:domain :A1_LD_Notor65_Betaopti ;
+    rdfs:seeAlso cen:Dimming_method .
+
+:Light_distribution a rdf:Property ;
+    rdfs:domain :A1_LD_Notor65_Betaopti ;
+    rdfs:seeAlso cen:Type_of_distribution .
+
+:Light_source a rdf:Property ;
+    rdfs:domain :A1_LD_Notor65_Betaopti ;
+    rdfs:seeAlso cen:ILCOS_Light_source_type .
+
+:Louvre a rdf:Property ;
+    rdfs:domain :A1_LD_Notor65_Betaopti ;
+    rdfs:seeAlso cen:Optical_system .
+
+:Lumen_maintenance_at_50_000_h a rdf:Property ;
+    rdfs:domain :A1_LD_Notor65_Betaopti ;
+    rdfs:seeAlso cen:median_useful_life .
+
+:Lumen_output a rdf:Property ;
+    rdfs:domain :A1_LD_Notor65_Betaopti ;
+    rdfs:seeAlso cen:Rated_luminous_flux_of_the_luminaire .
+
+:MCB_C10A a rdf:Property ;
+    rdfs:domain :A1_LD_Notor65_Betaopti ;
+    rdfs:seeAlso cen:circuit_number .
+
+:Mains_frequency_Hz a rdf:Property ;
+    rdfs:domain :A1_LD_Notor65_Betaopti ;
+    rdfs:seeAlso cen:nominal_frequency .
+
+:Max_ambient_temperature_C a rdf:Property ;
+    rdfs:domain :A1_LD_Notor65_Betaopti ;
+    rdfs:seeAlso cen:Maximal_Ambient_Temperature .
+
+:Min_ambient_temperature_C a rdf:Property ;
+    rdfs:domain :A1_LD_Notor65_Betaopti ;
+    rdfs:seeAlso cen:Minimal_Ambient_Temperature .
+
+:PWM a rdf:Property ;
+    rdfs:domain :A1_LD_Notor65_Betaopti ;
+    rdfs:seeAlso cen:dimming_method .
+
+:Photometric_code a rdf:Property ;
+    rdfs:domain :A1_LD_Notor65_Betaopti ;
+    rdfs:seeAlso cen:light_distribution_curve_LDC .
+
+:Power_factor_100_ a rdf:Property ;
+    rdfs:domain :A1_LD_Notor65_Betaopti ;
+    rdfs:seeAlso cen:Power_Factor .
+
+:Power_on_last_level a rdf:Property ;
+    rdfs:domain :A1_LD_Notor65_Betaopti ;
+    rdfs:seeAlso cen:control_features .
+
+:RGB a rdf:Property ;
+    rdfs:domain :A1_LD_Notor65_Betaopti ;
+    rdfs:seeAlso cen:Colour_Appearance .
+
+:Rated_supply_voltage_V a rdf:Property ;
+    rdfs:domain :A1_LD_Notor65_Betaopti ;
+    rdfs:seeAlso cen:Rated_voltage .
+
+:SDCM a rdf:Property ;
+    rdfs:domain :A1_LD_Notor65_Betaopti ;
+    rdfs:seeAlso cen:Initial_Colour_Tolerance .
+
+:Standby_W a rdf:Property ;
+    rdfs:domain :A1_LD_Notor65_Betaopti ;
+    rdfs:seeAlso cen:Standby_Power .
+
+:Surge_protection_CM_kV_kA a rdf:Property ;
+    rdfs:domain :A1_LD_Notor65_Betaopti ;
+    rdfs:seeAlso cen:Surge_protection .
+
+:Surge_protection_DM_kV_kA a rdf:Property ;
+    rdfs:domain :A1_LD_Notor65_Betaopti ;
+    rdfs:seeAlso cen:Surge_protection .
+
+:System_wattage_start_W a rdf:Property ;
+    rdfs:domain :A1_LD_Notor65_Betaopti ;
+    rdfs:seeAlso cen:constant_light_output_start_power .
+
+:Tunable_White a rdf:Property ;
+    rdfs:domain :A1_LD_Notor65_Betaopti ;
+    rdfs:seeAlso cen:Colour_temperature_adjusting_range .
+
+:W a rdf:Property ;
+    rdfs:domain :A1_LD_Notor65_Betaopti ;
+    rdfs:seeAlso cen:rated_input_power .
+
+:Weight_kg a rdf:Property ;
+    rdfs:domain :A1_LD_Notor65_Betaopti ;
+    rdfs:seeAlso cen:Weight .
+
+:Width_mm a rdf:Property ;
+    rdfs:domain :A1_LD_Notor65_Betaopti ;
+    rdfs:seeAlso cen:Width .
+
+:lm_W a rdf:Property ;
+    rdfs:domain :A1_LD_Notor65_Betaopti ;
+    rdfs:seeAlso cen:Luminous_efficacy .
+
+:Notor a owl:Class ;
+    rdfs:comment """Fagerhult’s classic interior luminaire Notor is available in several versions for suspended, surface mounted or recessed installation. Notor is an obvious choice in circumstances when there is a desire to create long, unbroken lines of light. Discreet or striking – it is simple to adapt the nature of the lighting with the architecture in mind. 
+<br><br>
+<b>Notor 65</b><br>
+Notor 65 is ideal for use in workplaces with regard to the requirements of the EN-12464–1 standard. As the name implies, the cross-section is 65x65 mm and with this, we can achieve so much more. Choose between different light distributions with direct, direct/indirect, indirect light or asymmetric light. The luminaire is available with Beta Opti, Delta or Opal louvres. 
+<br>
+Like other members of the Notor concept, Notor 65 can be constructed as long continuous installations. For continuous installation, we have developed a solution for the joints between the louvres so the light opening is not disturbed by an interruption or light leakage. Using Notor 65 Control Track Unit, a unit for mounting spotlights, in a continuous installation allows additional accent lighting. 
+<br>All luminaires are available in module lengths 800, 1200 or 2400 mm in white or natural anodised aluminium.
+<br>With its controlled light distribution, Notor 65 Asymmetrical is ideal for lighting whiteboards. The luminaire creates a high light comfort with a soft gradient between illuminated and unlit surfaces.
+<br><br>
+<b>Notor 78</b><br>
+Notor 78 has a cross-section of 78x78 mm and is more of a workplace luminaire with direct/indirect light distribution in combinations of 70/30, 50/50 or 30/70. The direct light is equipped with a Delta louvre and the indirect light with a technical film that increases the spread of light to avoid bright spots on the ceiling. Notor 78 is available in several different luminous fluxes for a well adapted lighting design. 
+<br><br>
+The luminaires are available in lengths of 1200 or 2400 mm and, like other members of the Notor concept, Notor 78 can be constructed as long continuous installations. Notor 78 is available in white or natural anodised aluminium.""" .
+
+:Notor_65_Beta_Opti a owl:Class ;
+    rdfs:subClassOf :Notor .
+
+dpp:Notor65 a owl:Class .
+
+:A1_LD_Notor65_Betaopti a owl:Class ;
+    rdfs:subClassOf :Notor_65_Beta_Opti ;
+    owl:equivalentClass dpp:Notor65 .
+
