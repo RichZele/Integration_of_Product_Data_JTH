@@ -27,8 +27,6 @@ dpp-proxy:ProductAsType rdfs:subClassOf dpp:Product ;
 
 :Notor_65_Beta_Opti rdfs:subClassOf :Notor ;
     a dpp-proxy:ProductAsType .
-
-dpp:Notor65 a owl:Class .
   
 
 
