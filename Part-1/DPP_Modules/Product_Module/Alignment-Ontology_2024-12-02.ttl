@@ -1,0 +1,36 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dpp: <http://www.w3id.org/dpp#> .
+@prefix notor: <http://example.org/fagerhult_notor_product_data#> .
+@prefix : <http://example.org/fagerhult_notor_ontology#> . 
+@prefix ifc: <https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL/> .
+@prefix dpp-proxy: <http://digitalsamverkan.se/ont/dpp-proxy#> .
+
+
+# Define the ontology metadata
+<http://example.org/alignment>
+    a owl:Ontology ;
+    rdfs:label "Alignment Ontology for Notor65" ;
+    rdfs:comment "This ontology aligns different representations of the Notor65 product across namespaces." .
+
+### Align classes
+:A1_LD_Notor65_Betaopti rdfs:subClassOf :Notor_65_Beta_Opti ;
+    owl:equivalentClass dpp:Notor65 ;
+    rdfs:label "A1_LD_Notor65_Betaopti" .
+
+:Notor rdfs:subClassOf dpp:Product ;
+        rdfs:subClassOf ifc:IfcProduct ;
+        rdfs:subClassOf ifc:IfcLightFixture .
+
+dpp-proxy:ProductAsType rdfs:subClassOf dpp:Product ;
+    rdfs:label "Product Type" .
+
+:Notor_65_Beta_Opti rdfs:subClassOf :Notor ;
+    a dpp-proxy:ProductAsType .
+
+dpp:Notor65 a owl:Class .
+  
+
+
+
+
