@@ -7,7 +7,7 @@ With the growing adoption of Building Information Modeling (BIM) in the architec
 Keywords: BIM, Information requirements, Product data, Semantic web technologies, Ontology, Knowledge graphs, Design science 
 
 - **Ontology Browser:**
-  - [Explore the DPP Ontology and Documentation](https://richzele.github.io/dpp-ontology-site/)
+  - [Explore the DPP Ontology](https://richzele.github.io/dpp-ontology-site/)
 
 ## Further Reading
 
