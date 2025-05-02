@@ -2,6 +2,9 @@
 
 The **Digital Product Passport (DPP) Ontology Modules** are a comprehensive set of resources designed to facilitate the standardized integration and management of product data across various domains. These modules play a crucial role in ensuring traceability, compliance, and sustainability within the digital product ecosystem.
 
+- **Ontology Browser:**
+  - [Explore the DPP Ontology](https://richzele.github.io/dpp-ontology-site/)
+
 ## Further Reading
 
 For an in-depth understanding of the concepts and research underpinning these modules, please refer to the following documents:
