@@ -1,189 +1,691 @@
-@prefix : <http://example.org/fagerhult_notor_ontology#> .
-@prefix cen: <http://example.org/BIM_lighting_properties_standards/CEN_TC_274_Ontology#> .
-@prefix dpp: <http://www.w3id.org/dpp#> .
+@prefix cen: <https://www.w3id.org/dpp/standards/cen/ts-17623-2021#> .
+@prefix notor: <http://www.w3id.org/dpp/fagerhult/notor#> .
+@prefix notor65: <http://www.w3id.org/dpp/fagerhult/notor65/data/#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix qudt: <http://qudt.org/schema/qudt/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix unit: <http://qudt.org/vocab/unit/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 
-<http://example.org/fagerhult_notor_ontology> a owl:Ontology .
+qudt:hasUnit a owl:ObjectProperty .
 
-:AM a rdf:Property ;
-    rdfs:domain :A1_LD_Notor65_Betaopti ;
-    rdfs:seeAlso cen:dimming_method .
+<http://www.w3id.org/dpp/fagerhult> a owl:Ontology ;
+    dcterms:title "Fagerhult Lighting Ontology" ;
+    dcterms:creator "Rahel Kebede" ;
+    dcterms:description "An ontology to describe Fagerhult lighting products and their attributes." .
 
-:Average_W a rdf:Property ;
-    rdfs:domain :A1_LD_Notor65_Betaopti ;
-    rdfs:seeAlso cen:constant_light_output_average_power .
 
-:CCT_K a rdf:Property ;
-    rdfs:domain :A1_LD_Notor65_Betaopti ;
-    rdfs:seeAlso cen:Correlated_Colour_Temperature .
+notor:adapter a rdf:Property,
+        owl:DatatypeProperty ;
+    rdfs:label "Adapter"@sv ;
+    qudt:hasUnit unit:A ;
+    rdfs:domain notor:Notor ;
+    rdfs:range xsd:string .
 
-:CLO_function_on a rdf:Property ;
-    rdfs:domain :A1_LD_Notor65_Betaopti ;
-    rdfs:seeAlso cen:Constant_Light_Output .
+notor:am a rdf:Property,
+        owl:DatatypeProperty ;
+    rdfs:label "Am"@sv ;
+    qudt:hasUnit unit:A ;
+    rdfs:domain notor:Notor ;
+    rdfs:range xsd:boolean ;
+    rdfs:seeAlso cen:dimmingmethod ;
+    notor:hasGUID "0jGPV_emX0auTlyNQx4grP" .
 
-:CLO_time_h a rdf:Property ;
-    rdfs:domain :A1_LD_Notor65_Betaopti ;
-    rdfs:seeAlso cen:median_useful_life .
+notor:average a rdf:Property,
+        owl:DatatypeProperty ;
+    rdfs:label "medel"@sv ;
+    qudt:hasUnit unit:G ;
+    rdfs:domain notor:Notor ;
+    rdfs:range xsd:decimal ;
+    rdfs:seeAlso cen:constantlightoutputaveragepower ;
+    notor:hasGUID "3B8KQ1WqfC8x5qTA1pA7PY" .
 
-:CRI a rdf:Property ;
-    rdfs:domain :A1_LD_Notor65_Betaopti ;
-    rdfs:seeAlso cen:Colour_Rendering_Index .
+notor:beamAngle a rdf:Property,
+        owl:DatatypeProperty ;
+    rdfs:label "Spridningsvinkel"@sv ;
+    qudt:hasUnit unit:M ;
+    rdfs:domain notor:Notor ;
+    rdfs:range xsd:string .
 
-:Colour a rdf:Property ;
-    rdfs:domain :A1_LD_Notor65_Betaopti ;
-    rdfs:seeAlso cen:Housing_colour .
+notor:brandOfDriver a rdf:Property,
+        owl:DatatypeProperty ;
+    rdfs:label "Driverfabrikat"@sv ;
+    rdfs:domain notor:Notor ;
+    rdfs:range xsd:string .
 
-:Corridor_function a rdf:Property ;
-    rdfs:domain :A1_LD_Notor65_Betaopti ;
-    rdfs:seeAlso cen:control_features .
+notor:cct a rdf:Property,
+        owl:DatatypeProperty ;
+    rdfs:label "CCT"@sv ;
+    qudt:hasUnit unit:K ;
+    rdfs:domain notor:Notor ;
+    rdfs:range xsd:integer ;
+    rdfs:seeAlso cen:correlatedcolourtemperature ;
+    notor:hasGUID "0XeHsouWz8PxASJ4mpkdEY" .
 
-:End_W a rdf:Property ;
-    rdfs:domain :A1_LD_Notor65_Betaopti ;
-    rdfs:seeAlso cen:constant_light_output_end_power .
+notor:class a rdf:Property,
+        owl:DatatypeProperty ;
+    rdfs:label "Klass"@sv ;
+    rdfs:domain notor:Notor ;
+    rdfs:range xsd:integer .
 
-:Height_mm a rdf:Property ;
-    rdfs:domain :A1_LD_Notor65_Betaopti ;
-    rdfs:seeAlso cen:Height .
+notor:cloFunctionOn a rdf:Property,
+        owl:DatatypeProperty ;
+    rdfs:label "Konstant ljusflde CLO"@sv ;
+    rdfs:domain notor:Notor ;
+    rdfs:range xsd:boolean ;
+    rdfs:seeAlso cen:constantlightoutput ;
+    notor:hasGUID "3kbFNwkkb7gPUsnc_COBg4" .
 
-:IK_rating a rdf:Property ;
-    rdfs:domain :A1_LD_Notor65_Betaopti ;
-    rdfs:seeAlso cen:Electrical_safety_class .
+notor:cloTime a rdf:Property,
+        owl:DatatypeProperty ;
+    rdfs:label "CLO"@sv ;
+    qudt:hasUnit unit:M ;
+    rdfs:domain notor:Notor ;
+    rdfs:range xsd:integer ;
+    rdfs:seeAlso cen:medianusefullife ;
+    notor:hasGUID "0NMpOQzNH679doR_IuOYUl" .
 
-:Length_mm a rdf:Property ;
-    rdfs:domain :A1_LD_Notor65_Betaopti ;
-    rdfs:seeAlso cen:Length .
+notor:colour a rdf:Property,
+        owl:DatatypeProperty ;
+    rdfs:label "housing colour"@en,
+        "Frg"@sv ;
+    rdfs:comment "The name of colour of the housing. Standardized colour classification systems may be used" ;
+    rdfs:domain notor:Notor ;
+    rdfs:range xsd:string ;
+    rdfs:seeAlso cen:housingcolour ;
+    notor:hasGUID "13i4dlOM1FvhfPVt5JElgA" .
 
-:Life_time_LED_driver_max_10_failure_h a rdf:Property ;
-    rdfs:domain :A1_LD_Notor65_Betaopti ;
-    rdfs:seeAlso cen:control_gear_lifetime .
+notor:connection a rdf:Property,
+        owl:DatatypeProperty ;
+    rdfs:label "Anslutning"@sv ;
+    rdfs:domain notor:Notor ;
+    rdfs:range xsd:string .
 
-:Light_control a rdf:Property ;
-    rdfs:domain :A1_LD_Notor65_Betaopti ;
-    rdfs:seeAlso cen:Dimming_method .
+notor:corridorFunction a rdf:Property,
+        owl:DatatypeProperty ;
+    rdfs:label "control features"@en,
+        "Korridorfunktion"@sv ;
+    rdfs:comment "Description of control elements and features" ;
+    rdfs:domain notor:Notor ;
+    rdfs:range xsd:boolean ;
+    rdfs:seeAlso cen:controlfeatures ;
+    notor:hasGUID "00aw6unKX0ghwxryKRoQm9" .
 
-:Light_distribution a rdf:Property ;
-    rdfs:domain :A1_LD_Notor65_Betaopti ;
-    rdfs:seeAlso cen:Type_of_distribution .
+notor:corrosionClass a rdf:Property,
+        owl:DatatypeProperty ;
+    rdfs:label "Korrosionsklass"@sv ;
+    rdfs:domain notor:Notor ;
+    rdfs:range xsd:string .
 
-:Light_source a rdf:Property ;
-    rdfs:domain :A1_LD_Notor65_Betaopti ;
-    rdfs:seeAlso cen:ILCOS_Light_source_type .
+notor:cri a rdf:Property,
+        owl:DatatypeProperty ;
+    rdfs:label "Ra"@sv ;
+    rdfs:domain notor:Notor ;
+    rdfs:range xsd:integer ;
+    rdfs:seeAlso cen:colourrenderingindex ;
+    notor:hasGUID "28UYB1MD91NhF5F8uF6VCZ" .
 
-:Louvre a rdf:Property ;
-    rdfs:domain :A1_LD_Notor65_Betaopti ;
-    rdfs:seeAlso cen:Optical_system .
+notor:diameter a rdf:Property,
+        owl:DatatypeProperty ;
+    rdfs:label "Diameter"@sv ;
+    qudt:hasUnit unit:MilliM ;
+    rdfs:domain notor:Notor ;
+    rdfs:range xsd:decimal .
 
-:Lumen_maintenance_at_50_000_h a rdf:Property ;
-    rdfs:domain :A1_LD_Notor65_Betaopti ;
-    rdfs:seeAlso cen:median_useful_life .
+notor:diffuser a rdf:Property,
+        owl:DatatypeProperty ;
+    rdfs:label "Kupa"@sv ;
+    rdfs:domain notor:Notor ;
+    rdfs:range xsd:string .
 
-:Lumen_output a rdf:Property ;
-    rdfs:domain :A1_LD_Notor65_Betaopti ;
-    rdfs:seeAlso cen:Rated_luminous_flux_of_the_luminaire .
+notor:end a rdf:Property,
+        owl:DatatypeProperty ;
+    rdfs:label "slut"@sv ;
+    qudt:hasUnit unit:W ;
+    rdfs:domain notor:Notor ;
+    rdfs:range xsd:integer ;
+    rdfs:seeAlso cen:constantlightoutputendpower ;
+    notor:hasGUID "3UEOcatIDEMf$qdvydAlfg" .
 
-:MCB_C10A a rdf:Property ;
-    rdfs:domain :A1_LD_Notor65_Betaopti ;
-    rdfs:seeAlso cen:circuit_number .
+notor:hasArticleNumber a owl:DatatypeProperty ;
+    rdfs:label "Article number" ;
+    rdfs:comment "Article number of the product" ;
+    rdfs:domain notor:Notor ;
+    rdfs:range xsd:string .
 
-:Mains_frequency_Hz a rdf:Property ;
-    rdfs:domain :A1_LD_Notor65_Betaopti ;
-    rdfs:seeAlso cen:nominal_frequency .
+notor:hasGUID a owl:DatatypeProperty ;
+    rdfs:label "globally unique identifier" ;
+    rdfs:comment "globally unique identifier generated using an algorithm in conformity with standard ISO/IEC 11578:1996" ;
+    rdfs:domain notor:Property ;
+    rdfs:range xsd:anyURI .
 
-:Max_ambient_temperature_C a rdf:Property ;
-    rdfs:domain :A1_LD_Notor65_Betaopti ;
-    rdfs:seeAlso cen:Maximal_Ambient_Temperature .
+notor:height a rdf:Property,
+        owl:DatatypeProperty ;
+    rdfs:label "height"@en,
+        "Hjd"@sv ;
+    qudt:hasUnit unit:MilliM ;
+    rdfs:comment "Height of the housing of the luminaire or sensing device. Corresponds to z-axis, gamma angle 180° and 180° vertical of the light distribution curve. This definition is regardless of orientation of luminaires. See Figure 1" ;
+    rdfs:domain notor:Notor ;
+    rdfs:range xsd:decimal ;
+    rdfs:seeAlso cen:height ;
+    notor:hasGUID "19Z9XKYDT4p8HR0ZbD$wO_" .
 
-:Min_ambient_temperature_C a rdf:Property ;
-    rdfs:domain :A1_LD_Notor65_Betaopti ;
-    rdfs:seeAlso cen:Minimal_Ambient_Temperature .
+notor:ikRating a rdf:Property,
+        owl:DatatypeProperty ;
+    rdfs:label "electrical safety class"@en,
+        "IK klass"@sv ;
+    qudt:hasUnit unit:G ;
+    rdfs:comment "Indicates whether the electrical device has a protective earth connection or not" ;
+    rdfs:domain notor:Notor ;
+    rdfs:range xsd:string ;
+    rdfs:seeAlso cen:electricalsafetyclass ;
+    notor:hasGUID "0Ias3th8D2cg4EvP$KqQcv" .
 
-:PWM a rdf:Property ;
-    rdfs:domain :A1_LD_Notor65_Betaopti ;
-    rdfs:seeAlso cen:dimming_method .
+notor:installation a rdf:Property,
+        owl:DatatypeProperty ;
+    rdfs:label "Montage"@sv ;
+    rdfs:domain notor:Notor ;
+    rdfs:range xsd:string .
 
-:Photometric_code a rdf:Property ;
-    rdfs:domain :A1_LD_Notor65_Betaopti ;
-    rdfs:seeAlso cen:light_distribution_curve_LDC .
+notor:ipOvanUndertak a rdf:Property,
+        owl:DatatypeProperty ;
+    rdfs:label "IP ovan undertak"@sv ;
+    rdfs:domain notor:Notor ;
+    rdfs:range <http://www.w3.org/2001/XMLSchema#xsd:string> ;
+    rdfs:seeAlso cen:ingressprotectionipcode ;
+    notor:hasGUID "1K_1K1q6n7KgOFJw5Cuc_i" .
 
-:Power_factor_100_ a rdf:Property ;
-    rdfs:domain :A1_LD_Notor65_Betaopti ;
-    rdfs:seeAlso cen:Power_Factor .
+notor:ipRating a rdf:Property,
+        owl:DatatypeProperty ;
+    rdfs:label "IP klass"@sv ;
+    qudt:hasUnit unit:G ;
+    rdfs:domain notor:Notor ;
+    rdfs:range xsd:integer .
 
-:Power_on_last_level a rdf:Property ;
-    rdfs:domain :A1_LD_Notor65_Betaopti ;
-    rdfs:seeAlso cen:control_features .
+notor:length a rdf:Property,
+        owl:DatatypeProperty ;
+    rdfs:label "length"@en,
+        "Lngd"@sv ;
+    qudt:hasUnit unit:MilliM ;
+    rdfs:comment "Length of the housing of the luminaire or sensing device. Length is set parallel to the C90-C270 plane. Corresponds to y-axis and with 90° horizontal of the Light Distribution Curve. This definition is regardless of orientation of luminaires. See Figure 1." ;
+    rdfs:domain notor:Notor ;
+    rdfs:range xsd:decimal ;
+    rdfs:seeAlso cen:length ;
+    notor:hasGUID "1uJglYpRnFpQ4tStHaR2Pf" .
 
-:RGB a rdf:Property ;
-    rdfs:domain :A1_LD_Notor65_Betaopti ;
-    rdfs:seeAlso cen:Colour_Appearance .
+notor:lens a rdf:Property,
+        owl:DatatypeProperty ;
+    rdfs:label "Lins"@sv ;
+    rdfs:domain notor:Notor ;
+    rdfs:range xsd:string .
 
-:Rated_supply_voltage_V a rdf:Property ;
-    rdfs:domain :A1_LD_Notor65_Betaopti ;
-    rdfs:seeAlso cen:Rated_voltage .
+notor:lifeTimeLedDriverMax10Failure a rdf:Property,
+        owl:DatatypeProperty ;
+    rdfs:label "Livslngd driver"@sv ;
+    qudt:hasUnit unit:M ;
+    rdfs:domain notor:Notor ;
+    rdfs:range xsd:string ;
+    rdfs:seeAlso cen:controlgearlifetime ;
+    notor:hasGUID "3sOx4EgST3axh5ZPV$lkbS" .
 
-:SDCM a rdf:Property ;
-    rdfs:domain :A1_LD_Notor65_Betaopti ;
-    rdfs:seeAlso cen:Initial_Colour_Tolerance .
+notor:lightControl a rdf:Property,
+        owl:DatatypeProperty ;
+    rdfs:label "dimming method"@en,
+        "Ljusstyrning"@sv ;
+    qudt:hasUnit unit:G ;
+    rdfs:comment "Determines which dimmer type is applicable for the luminaire." ;
+    rdfs:domain notor:Notor ;
+    rdfs:range xsd:string ;
+    rdfs:seeAlso cen:dimmingmethod ;
+    notor:hasGUID "0jGPV_emX0auTlyNQx4grP" .
 
-:Standby_W a rdf:Property ;
-    rdfs:domain :A1_LD_Notor65_Betaopti ;
-    rdfs:seeAlso cen:Standby_Power .
+notor:lightDistribution a rdf:Property,
+        owl:DatatypeProperty ;
+    rdfs:label "Ljusfrdelning"@sv ;
+    qudt:hasUnit unit:G ;
+    rdfs:domain notor:Notor ;
+    rdfs:range xsd:string ;
+    rdfs:seeAlso cen:typeofdistribution ;
+    notor:hasGUID "28T0Q968jDwvyxAshmZRwz" .
 
-:Surge_protection_CM_kV_kA a rdf:Property ;
-    rdfs:domain :A1_LD_Notor65_Betaopti ;
-    rdfs:seeAlso cen:Surge_protection .
+notor:lightEmittingSurface a rdf:Property,
+        owl:DatatypeProperty ;
+    rdfs:label "Ljusavgivande yta"@sv ;
+    qudt:hasUnit unit:M ;
+    rdfs:domain notor:Notor ;
+    rdfs:range xsd:string .
 
-:Surge_protection_DM_kV_kA a rdf:Property ;
-    rdfs:domain :A1_LD_Notor65_Betaopti ;
-    rdfs:seeAlso cen:Surge_protection .
+notor:lightSource a rdf:Property,
+        owl:DatatypeProperty ;
+    rdfs:label "Ljusklla"@sv ;
+    qudt:hasUnit unit:G ;
+    rdfs:domain notor:Notor ;
+    rdfs:range xsd:string ;
+    rdfs:seeAlso cen:ilcoslightsourcetype ;
+    notor:hasGUID "0G4TAennPD5gzRoG2rlZv_" .
 
-:System_wattage_start_W a rdf:Property ;
-    rdfs:domain :A1_LD_Notor65_Betaopti ;
-    rdfs:seeAlso cen:constant_light_output_start_power .
+notor:lightSourceColour a rdf:Property,
+        owl:DatatypeProperty ;
+    rdfs:label "Frg ljusklla"@sv ;
+    qudt:hasUnit unit:G ;
+    rdfs:domain notor:Notor ;
+    rdfs:range xsd:string .
 
-:Tunable_White a rdf:Property ;
-    rdfs:domain :A1_LD_Notor65_Betaopti ;
-    rdfs:seeAlso cen:Colour_temperature_adjusting_range .
+notor:lm a rdf:Property,
+        owl:DatatypeProperty ;
+    rdfs:label "lm/W"@en,
+        "lm"@sv ;
+    qudt:hasUnit unit:LumenPerW ;
+    rdfs:domain notor:Notor ;
+    rdfs:range xsd:integer ;
+    rdfs:seeAlso cen:luminousefficacy ;
+    notor:hasGUID "1QmFILGbX6_BfU63rG5mrh" .
 
-:W a rdf:Property ;
-    rdfs:domain :A1_LD_Notor65_Betaopti ;
-    rdfs:seeAlso cen:rated_input_power .
+notor:louvre a rdf:Property,
+        owl:DatatypeProperty ;
+    rdfs:label "optical system"@en,
+        "Blndskydd"@sv ;
+    rdfs:comment "Description of the optical system used in the luminaire including surface texture" ;
+    rdfs:domain notor:Notor ;
+    rdfs:range xsd:string ;
+    rdfs:seeAlso cen:opticalsystem ;
+    notor:hasGUID "0nxCXUkH97wPwN9azBYbMv" .
 
-:Weight_kg a rdf:Property ;
-    rdfs:domain :A1_LD_Notor65_Betaopti ;
-    rdfs:seeAlso cen:Weight .
+notor:lumenMaintenanceAt50000H a rdf:Property,
+        owl:DatatypeProperty ;
+    rdfs:label "LLMF vid 50000 timmar"@sv ;
+    qudt:hasUnit unit:M ;
+    rdfs:domain notor:Notor ;
+    rdfs:range xsd:integer ;
+    rdfs:seeAlso cen:medianusefullife ;
+    notor:hasGUID "0NMpOQzNH679doR_IuOYUl" .
 
-:Width_mm a rdf:Property ;
-    rdfs:domain :A1_LD_Notor65_Betaopti ;
-    rdfs:seeAlso cen:Width .
+notor:lumenMaintenanceL100B50 a rdf:Property,
+        owl:DatatypeProperty ;
+    rdfs:label "Bibehllning ljusflde L100 B50"@sv ;
+    qudt:hasUnit unit:M ;
+    rdfs:domain notor:Notor ;
+    rdfs:range xsd:integer .
 
-:lm_W a rdf:Property ;
-    rdfs:domain :A1_LD_Notor65_Betaopti ;
-    rdfs:seeAlso cen:Luminous_efficacy .
+notor:lumenMaintenanceL70B10 a rdf:Property,
+        owl:DatatypeProperty ;
+    rdfs:label "Bibehllning ljusflde L70 B10"@sv ;
+    qudt:hasUnit unit:M ;
+    rdfs:domain notor:Notor ;
+    rdfs:range xsd:string .
 
-:Notor a owl:Class ;
+notor:lumenMaintenanceL70B50 a rdf:Property,
+        owl:DatatypeProperty ;
+    rdfs:label "Bibehllning ljusflde L70 B50"@sv ;
+    qudt:hasUnit unit:M ;
+    rdfs:domain notor:Notor ;
+    rdfs:range xsd:string .
+
+notor:lumenMaintenanceL80B10 a rdf:Property,
+        owl:DatatypeProperty ;
+    rdfs:label "Bibehllning ljusflde L80 B10"@sv ;
+    qudt:hasUnit unit:M ;
+    rdfs:domain notor:Notor ;
+    rdfs:range xsd:string .
+
+notor:lumenMaintenanceL80B50 a rdf:Property,
+        owl:DatatypeProperty ;
+    rdfs:label "Bibehllning ljusflde L80 B50"@sv ;
+    qudt:hasUnit unit:M ;
+    rdfs:domain notor:Notor ;
+    rdfs:range xsd:string .
+
+notor:lumenMaintenanceL90B10 a rdf:Property,
+        owl:DatatypeProperty ;
+    rdfs:label "Bibehllning ljusflde L90 B10"@sv ;
+    qudt:hasUnit unit:M ;
+    rdfs:domain notor:Notor ;
+    rdfs:range xsd:string .
+
+notor:lumenMaintenanceL90B50 a rdf:Property,
+        owl:DatatypeProperty ;
+    rdfs:label "Bibehllning ljusflde L90 B50"@sv ;
+    qudt:hasUnit unit:M ;
+    rdfs:domain notor:Notor ;
+    rdfs:range xsd:string .
+
+notor:lumenOutput a rdf:Property,
+        owl:DatatypeProperty ;
+    rdfs:label "Ljusflde"@sv ;
+    qudt:hasUnit unit:M ;
+    rdfs:domain notor:Notor ;
+    rdfs:range xsd:integer ;
+    rdfs:seeAlso cen:ratedluminousfluxoftheluminaire ;
+    notor:hasGUID "2oxTEZw7TCPPcnnsapMO1u" .
+
+notor:luminanceClass a rdf:Property,
+        owl:DatatypeProperty ;
+    rdfs:label "Lumkod"@sv ;
+    qudt:hasUnit unit:M ;
+    rdfs:domain notor:Notor ;
+    rdfs:range xsd:string .
+
+notor:mainsFrequency a rdf:Property,
+        owl:DatatypeProperty ;
+    rdfs:label "Max frekvens"@sv ;
+    qudt:hasUnit unit:HZ ;
+    rdfs:domain notor:Notor ;
+    rdfs:range xsd:string ;
+    rdfs:seeAlso cen:nominalfrequency ;
+    notor:hasGUID "22IpUkOwD2iOIVugd8CAfb" .
+
+notor:maxAmbientTemperature a rdf:Property,
+        owl:DatatypeProperty ;
+    rdfs:label "Max omgivningstemp"@sv ;
+    qudt:hasUnit unit:DEG_C ;
+    rdfs:domain notor:Notor ;
+    rdfs:range xsd:integer ;
+    rdfs:seeAlso cen:maximalambienttemperature ;
+    notor:hasGUID "0f2B86WL1DauqVXMD$Svdh" .
+
+notor:maxPostHeight a rdf:Property,
+        owl:DatatypeProperty ;
+    rdfs:label "Max stolphjd"@sv ;
+    qudt:hasUnit unit:M ;
+    rdfs:domain notor:Notor ;
+    rdfs:range xsd:decimal .
+
+notor:mcbB10a a rdf:Property,
+        owl:DatatypeProperty ;
+    rdfs:label "MCB B10A"@sv ;
+    qudt:hasUnit unit:A ;
+    rdfs:domain notor:Notor ;
+    rdfs:range xsd:integer .
+
+notor:mcbB16a a rdf:Property,
+        owl:DatatypeProperty ;
+    rdfs:label "MCB B16A"@sv ;
+    qudt:hasUnit unit:A ;
+    rdfs:domain notor:Notor ;
+    rdfs:range xsd:integer .
+
+notor:mcbC10a a rdf:Property,
+        owl:DatatypeProperty ;
+    rdfs:label "circuit number"@en,
+        "MCB C10A"@sv ;
+    qudt:hasUnit unit:A ;
+    rdfs:comment "circuit number" ;
+    rdfs:domain notor:Notor ;
+    rdfs:range xsd:integer ;
+    rdfs:seeAlso cen:circuitnumber ;
+    notor:hasGUID "2vwn75Kg55RuoCwjIK1l_l" .
+
+notor:mcbC16a a rdf:Property,
+        owl:DatatypeProperty ;
+    rdfs:label "MCB C16A"@sv ;
+    qudt:hasUnit unit:A ;
+    rdfs:domain notor:Notor ;
+    rdfs:range xsd:integer .
+
+notor:minAmbientTemperature a rdf:Property,
+        owl:DatatypeProperty ;
+    rdfs:label "ambient temperature"@en,
+        "Min omgivningstemp"@sv ;
+    qudt:hasUnit unit:DEG_C ;
+    rdfs:comment "Ambient temperature range" ;
+    rdfs:domain notor:Notor ;
+    rdfs:range xsd:integer ;
+    rdfs:seeAlso cen:minimalambienttemperature ;
+    notor:hasGUID "2gr49_xaP46O1yRdKp3PXW" .
+
+notor:module a rdf:Property,
+        owl:DatatypeProperty ;
+    rdfs:label "Modul"@sv ;
+    rdfs:domain notor:Notor ;
+    rdfs:range xsd:integer .
+
+notor:noOfLeds a rdf:Property,
+        owl:DatatypeProperty ;
+    rdfs:label "Antal LEDs"@sv ;
+    rdfs:domain notor:Notor ;
+    rdfs:range xsd:string .
+
+notor:ntcFunction a rdf:Property,
+        owl:DatatypeProperty ;
+    rdfs:label "NTC funktion"@sv ;
+    rdfs:domain notor:Notor ;
+    rdfs:range xsd:string .
+
+notor:numberOfLightUnits a rdf:Property,
+        owl:DatatypeProperty ;
+    rdfs:label "Antal ljusenheter"@sv ;
+    qudt:hasUnit unit:M ;
+    rdfs:domain notor:Notor ;
+    rdfs:range xsd:integer .
+
+notor:photometricCode a rdf:Property,
+        owl:DatatypeProperty ;
+    rdfs:label "Fotometrisk kod"@sv ;
+    qudt:hasUnit unit:M ;
+    rdfs:domain notor:Notor ;
+    rdfs:range xsd:string ;
+    rdfs:seeAlso cen:lightdistributioncurveldc ;
+    notor:hasGUID "1lEpo0LO16FPpSj0jFwIOu" .
+
+notor:pottedDriver a rdf:Property,
+        owl:DatatypeProperty ;
+    rdfs:label "Fuktskyddad driver"@sv ;
+    rdfs:domain notor:Notor ;
+    rdfs:range xsd:string .
+
+notor:powerFactor a rdf:Property,
+        owl:DatatypeProperty ;
+    rdfs:label "Effektfaktor vid 100  ljusflde"@sv ;
+    qudt:hasUnit unit:PERCENT ;
+    rdfs:domain notor:Notor ;
+    rdfs:range xsd:decimal ;
+    rdfs:seeAlso cen:powerfactor ;
+    notor:hasGUID "3LBrQkLDDFheBOxrGk8Zr_" .
+
+notor:powerOnLastLevel a rdf:Property,
+        owl:DatatypeProperty ;
+    rdfs:label "control features"@en,
+        "Minnesfunktion i driftdon"@sv ;
+    rdfs:comment "Description of control elements and features" ;
+    rdfs:domain notor:Notor ;
+    rdfs:range xsd:boolean ;
+    rdfs:seeAlso cen:controlfeatures ;
+    notor:hasGUID "00aw6unKX0ghwxryKRoQm9" .
+
+notor:projectedWindArea a rdf:Property,
+        owl:DatatypeProperty ;
+    rdfs:label "Projicerad vindyta"@sv ;
+    qudt:hasUnit unit:M ;
+    rdfs:domain notor:Notor ;
+    rdfs:range xsd:string .
+
+notor:protectiveGlass a rdf:Property,
+        owl:DatatypeProperty ;
+    rdfs:label "Skyddsglas"@sv ;
+    qudt:hasUnit unit:G ;
+    rdfs:domain notor:Notor ;
+    rdfs:range xsd:string .
+
+notor:pwm a rdf:Property,
+        owl:DatatypeProperty ;
+    rdfs:label "PWM Hz"@sv ;
+    qudt:hasUnit unit:HZ ;
+    rdfs:domain notor:Notor ;
+    rdfs:range xsd:string .
+
+notor:ral a rdf:Property,
+        owl:DatatypeProperty ;
+    rdfs:label "RAL"@sv ;
+    qudt:hasUnit unit:A ;
+    rdfs:domain notor:Notor ;
+    rdfs:range xsd:integer .
+
+notor:ratedSupplyVoltage a rdf:Property,
+        owl:DatatypeProperty ;
+    rdfs:label "Mrkspnning"@sv ;
+    qudt:hasUnit unit:G ;
+    rdfs:domain notor:Notor ;
+    rdfs:range xsd:range ;
+    rdfs:seeAlso cen:ratedvoltage ;
+    notor:hasGUID "3$$yIxYFj1E9zXdzpVaCgt" .
+
+notor:reflector a rdf:Property,
+        owl:DatatypeProperty ;
+    rdfs:label "Reflektor"@sv ;
+    rdfs:domain notor:Notor ;
+    rdfs:range xsd:string .
+
+notor:rfFidelityIndex a rdf:Property,
+        owl:DatatypeProperty ;
+    rdfs:label "Rf fidelity index"@sv ;
+    rdfs:domain notor:Notor ;
+    rdfs:range xsd:string .
+
+notor:rgGamutIndex a rdf:Property,
+        owl:DatatypeProperty ;
+    rdfs:label "Rg gamut index"@sv ;
+    qudt:hasUnit unit:M ;
+    rdfs:domain notor:Notor ;
+    rdfs:range xsd:string .
+
+notor:rgb a rdf:Property,
+        owl:DatatypeProperty ;
+    rdfs:label "RGB"@sv ;
+    rdfs:domain notor:Notor ;
+    rdfs:range xsd:string ;
+    rdfs:seeAlso cen:colourappearance ;
+    notor:hasGUID "24nX7s16TBMe_Qfk$rKDn3" .
+
+notor:sdcm a rdf:Property,
+        owl:DatatypeProperty ;
+    rdfs:label "SDCM"@sv ;
+    rdfs:domain notor:Notor ;
+    rdfs:range xsd:integer ;
+    rdfs:seeAlso cen:initialcolourtolerance ;
+    notor:hasGUID "1NvFrN1kP1MBnwjfcEtZS9" .
+
+notor:socket a rdf:Property,
+        owl:DatatypeProperty ;
+    rdfs:label "Sockel"@sv ;
+    rdfs:domain notor:Notor ;
+    rdfs:range xsd:string .
+
+notor:standby a rdf:Property,
+        owl:DatatypeProperty ;
+    rdfs:label "standby power"@en,
+        "Standby"@sv ;
+    qudt:hasUnit unit:W ;
+    rdfs:comment "Power consumption of switched off luminaire. All electrical components including emergency and lighting controls components have to be considered. Is also known as parasitic power. See also EN 15193-1." ;
+    rdfs:domain notor:Notor ;
+    rdfs:range xsd:decimal ;
+    rdfs:seeAlso cen:standbypower ;
+    notor:hasGUID "0TzE4sMDv1pwfygK1xxjm5" .
+
+notor:surgeProtectionCm a rdf:Property,
+        owl:DatatypeProperty ;
+    rdfs:label "verspnningsskydd"@sv ;
+    qudt:hasUnit unit:KiloV-PER-KiloA ;
+    rdfs:domain notor:Notor ;
+    rdfs:range xsd:integer ;
+    rdfs:seeAlso cen:surgeprotection ;
+    notor:hasGUID "3yprn4XcD1CP0A67A$WxFb" .
+
+notor:surgeProtectionDm a rdf:Property,
+        owl:DatatypeProperty ;
+    rdfs:label "verspnningsskydd"@sv ;
+    qudt:hasUnit unit:KiloV-PER-KiloA ;
+    rdfs:domain notor:Notor ;
+    rdfs:range xsd:integer ;
+    rdfs:seeAlso cen:surgeprotection ;
+    notor:hasGUID "3yprn4XcD1CP0A67A$WxFb" .
+
+notor:switchControl a rdf:Property,
+        owl:DatatypeProperty ;
+    rdfs:label "Faspuls"@sv ;
+    qudt:hasUnit unit:M ;
+    rdfs:domain notor:Notor ;
+    rdfs:range xsd:integer .
+
+notor:systemWattageStart a rdf:Property,
+        owl:DatatypeProperty ;
+    rdfs:label "start"@sv ;
+    qudt:hasUnit unit:M ;
+    rdfs:domain notor:Notor ;
+    rdfs:range xsd:integer ;
+    rdfs:seeAlso cen:constantlightoutputstartpower ;
+    notor:hasGUID "2d9pUf$QXEtxHYdBYou0$3" .
+
+notor:tilt a rdf:Property,
+        owl:DatatypeProperty ;
+    rdfs:label "Tilt"@sv ;
+    qudt:hasUnit unit:DEG ;
+    rdfs:domain notor:Notor ;
+    rdfs:range xsd:decimal .
+
+notor:tunableWhite a rdf:Property,
+        owl:DatatypeProperty ;
+    rdfs:label "Tunable White"@sv ;
+    qudt:hasUnit unit:W ;
+    rdfs:domain notor:Notor ;
+    rdfs:range xsd:string ;
+    rdfs:seeAlso cen:colourtemperatureadjustingrange ;
+    notor:hasGUID "1BRqnx6Qr6G8KJpH$WYPD_" .
+
+notor:tunableWhiteColourRange a rdf:Property,
+        owl:DatatypeProperty ;
+    rdfs:label "Tunable White frgtemperaturintervall"@sv ;
+    qudt:hasUnit unit:G ;
+    rdfs:domain notor:Notor ;
+    rdfs:range xsd:string .
+
+notor:turn a rdf:Property,
+        owl:DatatypeProperty ;
+    rdfs:label "Vrid"@sv ;
+    qudt:hasUnit unit:DEG ;
+    rdfs:domain notor:Notor ;
+    rdfs:range xsd:string .
+
+notor:ugr a rdf:Property,
+        owl:DatatypeProperty ;
+    rdfs:label "UGR"@sv ;
+    rdfs:domain notor:Notor ;
+    rdfs:range xsd:string .
+
+notor:weight a rdf:Property,
+        owl:DatatypeProperty ;
+    rdfs:label "weight"@en,
+        "Vikt"@sv ;
+    qudt:hasUnit unit:KiloGM ;
+    rdfs:comment "Weight of the luminaire or sensing device" ;
+    rdfs:domain notor:Notor ;
+    rdfs:range xsd:decimal ;
+    rdfs:seeAlso cen:weight ;
+    notor:hasGUID "1RPyGAgMf4hRTZ0DogLFnU" .
+
+notor:width a rdf:Property,
+        owl:DatatypeProperty ;
+    rdfs:label "width"@en,
+        "Bredd"@sv ;
+    qudt:hasUnit unit:MilliM ;
+    rdfs:comment "Width of the housing of the luminaire or sensing device. Width is set parallel to the C0-C180 plane. Corresponds to the x-axis and with 0° horizontal of the Light Distribution Curve. This definition is regardless of orientation of luminaires. See Figure 1." ;
+    rdfs:domain notor:Notor ;
+    rdfs:range xsd:decimal ;
+    rdfs:seeAlso cen:width ;
+    notor:hasGUID "1dPvrZN3vEIB0n0vwYvDcX" .
+
+notor65:Notor65_BetaOpti a owl:Class ;
+    rdfs:subClassOf notor:Notor .
+
+notor:Notor a owl:Class ;
     rdfs:comment """Fagerhult’s classic interior luminaire Notor is available in several versions for suspended, surface mounted or recessed installation. Notor is an obvious choice in circumstances when there is a desire to create long, unbroken lines of light. Discreet or striking – it is simple to adapt the nature of the lighting with the architecture in mind. 
-<br><br>
-<b>Notor 65</b><br>
+Notor 65
 Notor 65 is ideal for use in workplaces with regard to the requirements of the EN-12464–1 standard. As the name implies, the cross-section is 65x65 mm and with this, we can achieve so much more. Choose between different light distributions with direct, direct/indirect, indirect light or asymmetric light. The luminaire is available with Beta Opti, Delta or Opal louvres. 
-<br>
 Like other members of the Notor concept, Notor 65 can be constructed as long continuous installations. For continuous installation, we have developed a solution for the joints between the louvres so the light opening is not disturbed by an interruption or light leakage. Using Notor 65 Control Track Unit, a unit for mounting spotlights, in a continuous installation allows additional accent lighting. 
-<br>All luminaires are available in module lengths 800, 1200 or 2400 mm in white or natural anodised aluminium.
-<br>With its controlled light distribution, Notor 65 Asymmetrical is ideal for lighting whiteboards. The luminaire creates a high light comfort with a soft gradient between illuminated and unlit surfaces.
-<br><br>
-<b>Notor 78</b><br>
+All luminaires are available in module lengths 800, 1200 or 2400 mm in white or natural anodised aluminium.
+With its controlled light distribution, Notor 65 Asymmetrical is ideal for lighting whiteboards. The luminaire creates a high light comfort with a soft gradient between illuminated and unlit surfaces.
+Notor 78
 Notor 78 has a cross-section of 78x78 mm and is more of a workplace luminaire with direct/indirect light distribution in combinations of 70/30, 50/50 or 30/70. The direct light is equipped with a Delta louvre and the indirect light with a technical film that increases the spread of light to avoid bright spots on the ceiling. Notor 78 is available in several different luminous fluxes for a well adapted lighting design. 
-<br><br>
 The luminaires are available in lengths of 1200 or 2400 mm and, like other members of the Notor concept, Notor 78 can be constructed as long continuous installations. Notor 78 is available in white or natural anodised aluminium.""" .
-
-:Notor_65_Beta_Opti a owl:Class ;
-    rdfs:subClassOf :Notor .
-
-dpp:Notor65 a owl:Class .
-
-:A1_LD_Notor65_Betaopti a owl:Class ;
-    rdfs:subClassOf :Notor_65_Beta_Opti ;
-    owl:equivalentClass dpp:Notor65 .
 

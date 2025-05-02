@@ -5,9 +5,18 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 @base <http://www.w3id.org/dpp/EoL#> .
 
-<http://www.w3id.org/dpp/EoL> rdf:type owl:Ontology .
+<http://www.w3id.org/dpp/EoL> rdf:type owl:Ontology ;
+    owl:versionIRI <http://www.w3id.org/dpp/EoL/1.0> ;
+    owl:versionInfo "1.0" ;
+    dcterms:title "Digital Product Passport – End-of-Life Management Module Ontology" ;
+    dcterms:creator "Rahel Kebede" ;
+    dcterms:contributor "Peter Johansson" , "Annika Moscati" ;
+    dcterms:description "This ontology defines concepts and properties related to the end-of-life phase of products in a Digital Product Passport (DPP), including reuse, recycling, recovery processes, and material separation." ;
+    dcterms:created "2024-01-30"^^xsd:date ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> .
 
 #################################################################
 #    Annotation properties

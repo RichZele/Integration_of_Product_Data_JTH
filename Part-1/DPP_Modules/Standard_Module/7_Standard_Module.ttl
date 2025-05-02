@@ -1,0 +1,168 @@
+@prefix : <http://www.w3id.org/dpp/standard#> .
+@prefix dpp: <http://www.w3id.org/dpp#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<http://www.w3id.org/dpp/standard> a owl:Ontology ;
+    owl:versionIRI <http://www.w3id.org/dpp/standard/1.0> ;
+    owl:versionInfo "1.0" ;
+    dcterms:title "Digital Product Passport – Standard Module Ontology" ;
+    dcterms:creator "Rahel Kebede" ;
+    dcterms:contributor "Peter Johansson" , "Annika Moscati" ;
+    dcterms:description "This ontology defines concepts and properties for representing product standards, certifications, and compliance requirements in the context of a Digital Product Passport (DPP)." ;
+    dcterms:created "2023-09-07"^^xsd:date ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> .
+
+dpp:adheresTo a owl:ObjectProperty ;
+    rdfs:label "adheres to"@en ;
+    rdfs:comment "Links a product to the standard it adheres to"@en ;
+    rdfs:domain dpp:Product ;
+    rdfs:range dpp:Standard .
+
+dpp:checkedAgainst a owl:ObjectProperty ;
+    rdfs:label "checked against"@en ;
+    rdfs:comment "Links a compliance check to the standard being verified"@en ;
+    rdfs:domain dpp:ComplianceCheck ;
+    rdfs:range dpp:Standard .
+
+dpp:description a owl:DatatypeProperty ;
+    rdfs:label "description"@en ;
+    rdfs:comment "A brief description of the item"@en ;
+    rdfs:domain dpp:BuildingCode,
+        dpp:DeclarationOfConformity,
+        dpp:Guarantee,
+        dpp:LiabilityDetail,
+        dpp:Regulation,
+        dpp:TechnicalDocumentation,
+        dpp:Warranty ;
+    rdfs:range xsd:string .
+
+dpp:hasBuildingCode a owl:ObjectProperty ;
+    rdfs:label "has BuildingCode"@en ;
+    rdfs:comment "Links Product to BuildingCode"@en ;
+    rdfs:domain dpp:Product ;
+    rdfs:range dpp:BuildingCode .
+
+dpp:hasComplianceCheck a owl:ObjectProperty ;
+    rdfs:label "has compliance check"@en ;
+    rdfs:comment "Links a product to a compliance check verifying its adherence to a standard"@en ;
+    rdfs:domain dpp:Product ;
+    rdfs:range dpp:ComplianceCheck .
+
+dpp:hasDeclarationOfConformity a owl:ObjectProperty ;
+    rdfs:label "has DeclarationOfConformity"@en ;
+    rdfs:comment "Links Product to DeclarationOfConformity"@en ;
+    rdfs:domain dpp:Product ;
+    rdfs:range dpp:DeclarationOfConformity .
+
+dpp:hasFireResistanceRating a owl:ObjectProperty ;
+    rdfs:label "has FireResistanceRating"@en ;
+    rdfs:comment "Links Product to FireResistanceRating"@en ;
+    rdfs:domain dpp:Product ;
+    rdfs:range dpp:FireResistanceRating .
+
+dpp:hasGuarantee a owl:ObjectProperty ;
+    rdfs:label "has Guarantee"@en ;
+    rdfs:comment "Links Product to Guarantee"@en ;
+    rdfs:domain dpp:Product ;
+    rdfs:range dpp:Guarantee .
+
+dpp:hasLiabilityDetail a owl:ObjectProperty ;
+    rdfs:label "has LiabilityDetail"@en ;
+    rdfs:comment "Links Product to LiabilityDetail"@en ;
+    rdfs:domain dpp:Product ;
+    rdfs:range dpp:LiabilityDetail .
+
+dpp:hasRegulation a owl:ObjectProperty ;
+    rdfs:label "has Regulation"@en ;
+    rdfs:comment "Links Product to Regulation"@en ;
+    rdfs:domain dpp:Product ;
+    rdfs:range dpp:Regulation .
+
+dpp:hasSoundTransmissionClass a owl:ObjectProperty ;
+    rdfs:label "has SoundTransmissionClass"@en ;
+    rdfs:comment "Links Product to SoundTransmissionClass"@en ;
+    rdfs:domain dpp:Product ;
+    rdfs:range dpp:SoundTransmissionClass .
+
+dpp:hasTechnicalDocumentation a owl:ObjectProperty ;
+    rdfs:label "has TechnicalDocumentation"@en ;
+    rdfs:comment "Links Product to TechnicalDocumentation"@en ;
+    rdfs:domain dpp:Product ;
+    rdfs:range dpp:TechnicalDocumentation .
+
+dpp:hasVerificationResult a owl:ObjectProperty ;
+    rdfs:label "has verification result"@en ;
+    rdfs:comment "Links a compliance check to its result"@en ;
+    rdfs:domain dpp:ComplianceCheck ;
+    rdfs:range dpp:VerificationResult .
+
+dpp:hasWarranty a owl:ObjectProperty ;
+    rdfs:label "has Warranty"@en ;
+    rdfs:comment "Links Product to Warranty"@en ;
+    rdfs:domain dpp:Product ;
+    rdfs:range dpp:Warranty .
+
+dpp:rating a owl:DatatypeProperty ;
+    rdfs:label "rating"@en ;
+    rdfs:comment "The rating value of the item"@en ;
+    rdfs:domain dpp:FireResistanceRating,
+        dpp:SoundTransmissionClass ;
+    rdfs:range xsd:string .
+
+dpp:regulatedBy a owl:ObjectProperty ;
+    rdfs:label "regulated by"@en ;
+    rdfs:comment "Links a standard to the organization responsible for its creation and maintenance"@en ;
+    rdfs:domain dpp:Standard ;
+    rdfs:range dpp:Organization .
+
+dpp:standardDescription a owl:DatatypeProperty ;
+    rdfs:label "standard description"@en ;
+    rdfs:comment "A brief description of the standard"@en ;
+    rdfs:domain dpp:Standard ;
+    rdfs:range xsd:string .
+
+dpp:standardIdentifier a owl:DatatypeProperty ;
+    rdfs:label "standard identifier"@en ;
+    rdfs:comment "A unique identifier or code for the standard"@en ;
+    rdfs:domain dpp:Standard ;
+    rdfs:range xsd:string .
+
+dpp:standardName a owl:DatatypeProperty ;
+    rdfs:label "standard name"@en ;
+    rdfs:comment "The name of the standard"@en ;
+    rdfs:domain dpp:Standard ;
+    rdfs:range xsd:string .
+
+dpp:Organization a owl:Class .
+
+dpp:VerificationResult a owl:Class .
+
+dpp:BuildingCode a owl:Class .
+
+dpp:DeclarationOfConformity a owl:Class .
+
+dpp:FireResistanceRating a owl:Class .
+
+dpp:Guarantee a owl:Class .
+
+dpp:LiabilityDetail a owl:Class .
+
+dpp:Regulation a owl:Class .
+
+dpp:SoundTransmissionClass a owl:Class .
+
+dpp:TechnicalDocumentation a owl:Class .
+
+dpp:Warranty a owl:Class .
+
+dpp:ComplianceCheck a owl:Class .
+
+dpp:Standard a owl:Class ;
+    rdfs:label "Standard"@en ;
+    rdfs:comment "A set of criteria, guidelines, or specifications that are established to ensure consistent quality, safety, and compatibility in products, processes, or services."@en .
+
+dpp:Product a owl:Class .
+
