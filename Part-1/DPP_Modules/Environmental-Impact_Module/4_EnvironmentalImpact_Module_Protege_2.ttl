@@ -1,22 +1,26 @@
-@prefix : <http://www.w3id.org/dpp#> .
-@prefix dpp: <http://www.w3id.org/dpp#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix :        <http://w3id.org/dpp#> .
+@prefix dpp:     <http://w3id.org/dpp#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@base <http://www.w3id.org/dpp#> .
 
-<http://www.w3id.org/dpp/environmentalImpact> rdf:type owl:Ontology ;
-    owl:versionIRI <http://www.w3id.org/dpp/environmentalImpact/1.0> ;
-    owl:versionInfo "1.0" ;
-    dcterms:title "Digital Product Passport – Environmental Impact Module Ontology" ;
-    dcterms:creator "Rahel Kebede" ;
+@base <http://w3id.org/dpp#> .
+
+<https://w3id.org/dpp/environmentalimpact>
+    a owl:Ontology ;
+    owl:versionIRI   <https://w3id.org/dpp/environmentalimpact/1.0> ;
+    owl:versionInfo  "1.0" ;
+    dcterms:title    "Digital Product Passport – Environmental Impact Module Ontology"@en ;
+    dcterms:creator  "Rahel Kebede" ;
     dcterms:contributor "Peter Johansson" , "Annika Moscati" ;
-    dcterms:description "This ontology defines concepts and properties related to the environmental impacts of products within a Digital Product Passport (DPP), including lifecycle assessment indicators, emissions, and sustainability metrics." ;
-    dcterms:created "2023-10-29"^^xsd:date ;
-    dcterms:license <https://creativecommons.org/licenses/by/4.0/> .
+    dcterms:description
+        "This ontology defines concepts and properties related to the environmental impacts of products within a Digital Product Passport (DPP), including lifecycle assessment indicators, emissions, and sustainability metrics."@en ;
+    dcterms:created  "2023-10-29"^^xsd:date ;
+    dcterms:license  <https://creativecommons.org/licenses/by/4.0/> ;
+    owl:imports      <https://w3id.org/dpp> .
+
 
 #################################################################
 #    Annotation properties

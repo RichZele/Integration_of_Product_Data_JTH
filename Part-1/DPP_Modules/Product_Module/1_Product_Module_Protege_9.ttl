@@ -1,17 +1,17 @@
-@prefix : <http://www.w3id.org/dpp#> .
+@prefix : <http://w3id.org/dpp#> .
 @prefix bot: <https://w3id.org/bot#> .
 @prefix bpo: <https://w3id.org/bpo#> .
-@prefix dpp: <http://www.w3id.org/dpp#> .
+@prefix dpp: <http://w3id.org/dpp#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@base <http://www.w3id.org/dpp#> .
+@base <http://w3id.org/dpp#> .
 
-<http://www.w3id.org/dpp> rdf:type owl:Ontology ;
-                           owl:versionIRI <http://www.w3id.org/dpp/product/1.0> ;
+<https://w3id.org/dpp> rdf:type owl:Ontology ;
+                           owl:versionIRI <http://w3id.org/dpp/product/1.0> ;
                            dcterms:contributor "Annika Moscati" ,
                                                "Peter Johansson" ;
                            dcterms:created "2024-02-05"^^xsd:date ;

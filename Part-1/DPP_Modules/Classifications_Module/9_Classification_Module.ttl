@@ -1,13 +1,15 @@
-@prefix : <http://www.w3id.org/dpp/classification#> .
-@prefix dpp: <http://www.w3id.org/dpp#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix :        <http://w3id.org/dpp#> .
+@prefix dpp:     <http://w3id.org/dpp#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 
-<http://www.w3id.org/dpp/classification> rdf:type owl:Ontology ;
-    owl:versionIRI <http://www.w3id.org/dpp/classification/1.0> ;
+@base <http://w3id.org/dpp#> .
+
+<https://w3id.org/dpp/classification> rdf:type owl:Ontology ;
+    owl:versionIRI <https://w3id.org/dpp/classification/1.0> ;
     owl:versionInfo "1.0" ;
     dcterms:title "Digital Product Passport – Classification Module Ontology" ;
     dcterms:creator "Rahel Kebede" ;

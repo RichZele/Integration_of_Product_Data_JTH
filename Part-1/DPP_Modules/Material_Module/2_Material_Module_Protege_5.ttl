@@ -1,14 +1,25 @@
-@prefix : <http://www.w3id.org/dpp#> .
-@prefix dpp: <http://www.w3id.org/dpp#> .
-@prefix mat: <http://bimerr.iot.linkeddata.es/def/material-properties#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://www.w3id.org/dpp#> .
+@prefix :        <http://w3id.org/dpp#> .
+@prefix dpp:     <http://w3id.org/dpp#> .
+@prefix mat:     <http://bimerr.iot.linkeddata.es/def/material-properties#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 
-<http://www.w3id.org/dpp_material> rdf:type owl:Ontology .
+@base <http://w3id.org/dpp#> .
+
+<https://w3id.org/dpp/material>
+    a owl:Ontology ;
+    owl:versionIRI   <https://w3id.org/dpp/material/1.0> ;
+    owl:versionInfo  "1.0" ;
+    dcterms:title    "Digital Product Passport – Material Module Ontology"@en ;
+    dcterms:creator  "Rahel Kebede" ;
+    dcterms:description "This ontology defines concepts and properties for representing material characteristics, composition, and related data within the Digital Product Passport (DPP) context."@en ;
+    dcterms:license  <https://creativecommons.org/licenses/by/4.0/> ;
+    owl:imports      <https://w3id.org/dpp> ,
+                     <http://bimerr.iot.linkeddata.es/def/material-properties> .
+
 
 #################################################################
 #    Annotation properties
@@ -359,7 +370,7 @@ dpp:subeventOf rdf:type owl:ObjectProperty ;
 #    Data properties
 #################################################################
 
-###  http://www.w3id.org/dpp#hasNumericValue
+###  http://w3id.org/dpp#hasNumericValue
 dpp:hasNumericValue rdf:type owl:DatatypeProperty ;
                     rdfs:domain dpp:QuantityValue ;
                     rdfs:range xsd:double ;
@@ -370,7 +381,7 @@ dpp:hasNumericValue rdf:type owl:DatatypeProperty ;
                                                                                ] .
 
 
-###  http://www.w3id.org/dpp#identifierAsText
+###  http://w3id.org/dpp#identifierAsText
 dpp:identifierAsText rdf:type owl:DatatypeProperty ;
                      rdfs:domain dpp:Identifier ;
                      rdfs:range xsd:string ;
@@ -381,7 +392,7 @@ dpp:identifierAsText rdf:type owl:DatatypeProperty ;
                                                                                 ] .
 
 
-###  http://www.w3id.org/dpp#nameAsString
+###  http://w3id.org/dpp#nameAsString
 dpp:nameAsString rdf:type owl:DatatypeProperty ;
                  rdfs:domain dpp:Name ;
                  rdfs:range xsd:string ;
@@ -412,7 +423,7 @@ mat:Material rdf:type owl:Class ;
 <http://ontologydesignpatterns.org/opla#Pattern> rdf:type owl:Class .
 
 
-###  http://www.w3id.org/dpp#Agent
+###  http://w3id.org/dpp#Agent
 dpp:Agent rdf:type owl:Class ;
           <http://ontologydesignpatterns.org/opla#isNativeTo> <http://www.w3id.org/dpp/material-modules/d8313f95-220c-42eb-a555-0daee9437575> ,
                                                               <http://www.w3id.org/dpp/material-modules/8139a624-1eae-4a22-8257-13a3729c0582> ;
@@ -422,7 +433,7 @@ dpp:Agent rdf:type owl:Class ;
                                                                      ] .
 
 
-###  http://www.w3id.org/dpp#AgentRole
+###  http://w3id.org/dpp#AgentRole
 dpp:AgentRole rdf:type owl:Class ;
               <http://ontologydesignpatterns.org/opla#isNativeTo> <http://www.w3id.org/dpp/material-modules/8139a624-1eae-4a22-8257-13a3729c0582> ;
               <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "670.1465844687829"^^xsd:double ;
@@ -431,7 +442,7 @@ dpp:AgentRole rdf:type owl:Class ;
                                                                          ] .
 
 
-###  http://www.w3id.org/dpp#Bag
+###  http://w3id.org/dpp#Bag
 dpp:Bag rdf:type owl:Class ;
         rdfs:subClassOf dpp:Collection ;
         <http://ontologydesignpatterns.org/opla#isNativeTo> <http://www.w3id.org/dpp/material-modules/675db85f-448f-4d28-bb54-5f1007c6cf6c> ;
@@ -441,7 +452,7 @@ dpp:Bag rdf:type owl:Class ;
                                                                    ] .
 
 
-###  http://www.w3id.org/dpp#BagItem
+###  http://w3id.org/dpp#BagItem
 dpp:BagItem rdf:type owl:Class ;
             <http://ontologydesignpatterns.org/opla#isNativeTo> <http://www.w3id.org/dpp/material-modules/675db85f-448f-4d28-bb54-5f1007c6cf6c> ;
             <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "610.4269296633395"^^xsd:double ;
@@ -450,7 +461,7 @@ dpp:BagItem rdf:type owl:Class ;
                                                                        ] .
 
 
-###  http://www.w3id.org/dpp#Certification
+###  http://w3id.org/dpp#Certification
 dpp:Certification rdf:type owl:Class ;
                   <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "98.19172517329407"^^xsd:double ;
                                                                                <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "140.35545757589557"^^xsd:double ;
@@ -458,7 +469,7 @@ dpp:Certification rdf:type owl:Class ;
                                                                              ] .
 
 
-###  http://www.w3id.org/dpp#Classification
+###  http://w3id.org/dpp#Classification
 dpp:Classification rdf:type owl:Class ;
                    <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "266.520430335428"^^xsd:double ;
                                                                                 <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "156.0068608722199"^^xsd:double ;
@@ -466,7 +477,7 @@ dpp:Classification rdf:type owl:Class ;
                                                                               ] .
 
 
-###  http://www.w3id.org/dpp#Collection
+###  http://w3id.org/dpp#Collection
 dpp:Collection rdf:type owl:Class ;
                <http://ontologydesignpatterns.org/opla#isNativeTo> <http://www.w3id.org/dpp/material-modules/675db85f-448f-4d28-bb54-5f1007c6cf6c> ;
                <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "790.0464524621802"^^xsd:double ;
@@ -475,7 +486,7 @@ dpp:Collection rdf:type owl:Class ;
                                                                           ] .
 
 
-###  http://www.w3id.org/dpp#CompositionContext
+###  http://w3id.org/dpp#CompositionContext
 dpp:CompositionContext rdf:type owl:Class ;
                        rdfs:subClassOf dpp:Context ;
                        <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "17.900100725099577"^^xsd:double ;
@@ -484,7 +495,7 @@ dpp:CompositionContext rdf:type owl:Class ;
                                                                                   ] .
 
 
-###  http://www.w3id.org/dpp#CompositionDetail
+###  http://w3id.org/dpp#CompositionDetail
 dpp:CompositionDetail rdf:type owl:Class ;
                       rdfs:subClassOf dpp:Range ;
                       <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "250.02293578147768"^^xsd:double ;
@@ -493,7 +504,7 @@ dpp:CompositionDetail rdf:type owl:Class ;
                                                                                  ] .
 
 
-###  http://www.w3id.org/dpp#Consumer
+###  http://w3id.org/dpp#Consumer
 dpp:Consumer rdf:type owl:Class ;
              rdfs:subClassOf dpp:Agent ;
              <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "770.3392523999922"^^xsd:double ;
@@ -502,7 +513,7 @@ dpp:Consumer rdf:type owl:Class ;
                                                                         ] .
 
 
-###  http://www.w3id.org/dpp#ConsumerRole
+###  http://w3id.org/dpp#ConsumerRole
 dpp:ConsumerRole rdf:type owl:Class ;
                  rdfs:subClassOf dpp:AgentRole ;
                  <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "740.2276673888839"^^xsd:double ;
@@ -511,7 +522,7 @@ dpp:ConsumerRole rdf:type owl:Class ;
                                                                             ] .
 
 
-###  http://www.w3id.org/dpp#Context
+###  http://w3id.org/dpp#Context
 dpp:Context rdf:type owl:Class ;
             <http://ontologydesignpatterns.org/opla#isNativeTo> <http://www.w3id.org/dpp/material-modules/4857fc77-f2e7-4410-a905-9648ba75754a> ;
             <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "260.3838822614381"^^xsd:double ;
@@ -520,7 +531,7 @@ dpp:Context rdf:type owl:Class ;
                                                                        ] .
 
 
-###  http://www.w3id.org/dpp#Domain
+###  http://w3id.org/dpp#Domain
 dpp:Domain rdf:type owl:Class ;
            <http://ontologydesignpatterns.org/opla#isNativeTo> <http://www.w3id.org/dpp/material-modules/4857fc77-f2e7-4410-a905-9648ba75754a> ;
            <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "60.14823893747953"^^xsd:double ;
@@ -529,7 +540,7 @@ dpp:Domain rdf:type owl:Class ;
                                                                       ] .
 
 
-###  http://www.w3id.org/dpp#EndingFix
+###  http://w3id.org/dpp#EndingFix
 dpp:EndingFix rdf:type owl:Class ;
               rdfs:subClassOf dpp:Fix ;
               <http://ontologydesignpatterns.org/opla#isNativeTo> <http://www.w3id.org/dpp/material-modules/494e3b5c-fe38-448a-9764-dfd49b98c68d> ;
@@ -539,7 +550,7 @@ dpp:EndingFix rdf:type owl:Class ;
                                                                          ] .
 
 
-###  http://www.w3id.org/dpp#EntityWithProvenance
+###  http://w3id.org/dpp#EntityWithProvenance
 dpp:EntityWithProvenance rdf:type owl:Class ;
                          <http://ontologydesignpatterns.org/opla#isNativeTo> <http://www.w3id.org/dpp/material-modules/d8313f95-220c-42eb-a555-0daee9437575> ;
                          <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "320.1235119571413"^^xsd:double ;
@@ -548,7 +559,7 @@ dpp:EntityWithProvenance rdf:type owl:Class ;
                                                                                     ] .
 
 
-###  http://www.w3id.org/dpp#EnvironmentalImpact
+###  http://w3id.org/dpp#EnvironmentalImpact
 dpp:EnvironmentalImpact rdf:type owl:Class ;
                         <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "106.93029106993177"^^xsd:double ;
                                                                                      <http://ontologydesignpatterns.org/opla-sd#entityPositionY> "216.43663169025763"^^xsd:double ;
@@ -556,7 +567,7 @@ dpp:EnvironmentalImpact rdf:type owl:Class ;
                                                                                    ] .
 
 
-###  http://www.w3id.org/dpp#Event
+###  http://w3id.org/dpp#Event
 dpp:Event rdf:type owl:Class ;
           <http://ontologydesignpatterns.org/opla#isNativeTo> <http://www.w3id.org/dpp/material-modules/46946791-472d-4448-b28e-197791c41217> ;
           <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "-100.42077914234378"^^xsd:double ;
@@ -565,7 +576,7 @@ dpp:Event rdf:type owl:Class ;
                                                                      ] .
 
 
-###  http://www.w3id.org/dpp#Fix
+###  http://w3id.org/dpp#Fix
 dpp:Fix rdf:type owl:Class ;
         <http://ontologydesignpatterns.org/opla#isNativeTo> <http://www.w3id.org/dpp/material-modules/494e3b5c-fe38-448a-9764-dfd49b98c68d> ;
         <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "600.1559819085496"^^xsd:double ;
@@ -574,7 +585,7 @@ dpp:Fix rdf:type owl:Class ;
                                                                    ] .
 
 
-###  http://www.w3id.org/dpp#IDType
+###  http://w3id.org/dpp#IDType
 dpp:IDType rdf:type owl:Class ;
            <http://ontologydesignpatterns.org/opla#isNativeTo> <http://www.w3id.org/dpp/material-modules/d2cf0f2f-cacf-4702-aa5e-eef679c6332a> ;
            <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "410.3069756546917"^^xsd:double ;
@@ -583,7 +594,7 @@ dpp:IDType rdf:type owl:Class ;
                                                                       ] .
 
 
-###  http://www.w3id.org/dpp#Identifier
+###  http://w3id.org/dpp#Identifier
 dpp:Identifier rdf:type owl:Class ;
                <http://ontologydesignpatterns.org/opla#isNativeTo> <http://www.w3id.org/dpp/material-modules/d2cf0f2f-cacf-4702-aa5e-eef679c6332a> ;
                <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "220.06705314625185"^^xsd:double ;
@@ -592,7 +603,7 @@ dpp:Identifier rdf:type owl:Class ;
                                                                           ] .
 
 
-###  http://www.w3id.org/dpp#Manufacturer
+###  http://w3id.org/dpp#Manufacturer
 dpp:Manufacturer rdf:type owl:Class ;
                  rdfs:subClassOf dpp:Agent ;
                  <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "759.8635052020161"^^xsd:double ;
@@ -601,7 +612,7 @@ dpp:Manufacturer rdf:type owl:Class ;
                                                                             ] .
 
 
-###  http://www.w3id.org/dpp#Manufacturing
+###  http://w3id.org/dpp#Manufacturing
 dpp:Manufacturing rdf:type owl:Class ;
                   rdfs:subClassOf dpp:ProvenanceActivity ;
                   <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "1020.1643008385905"^^xsd:double ;
@@ -610,7 +621,7 @@ dpp:Manufacturing rdf:type owl:Class ;
                                                                              ] .
 
 
-###  http://www.w3id.org/dpp#ManufacturingRole
+###  http://w3id.org/dpp#ManufacturingRole
 dpp:ManufacturingRole rdf:type owl:Class ;
                       rdfs:subClassOf dpp:AgentRole ;
                       <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "720.452119980732"^^xsd:double ;
@@ -619,7 +630,7 @@ dpp:ManufacturingRole rdf:type owl:Class ;
                                                                                  ] .
 
 
-###  http://www.w3id.org/dpp#Mass
+###  http://w3id.org/dpp#Mass
 dpp:Mass rdf:type owl:Class ;
          rdfs:subClassOf dpp:Quantity ;
          <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "500.27167050577896"^^xsd:double ;
@@ -628,7 +639,7 @@ dpp:Mass rdf:type owl:Class ;
                                                                     ] .
 
 
-###  http://www.w3id.org/dpp#Material
+###  http://w3id.org/dpp#Material
 dpp:Material rdf:type owl:Class ;
              rdfs:subClassOf mat:Material ,
                              dpp:EntityWithProvenance ;
@@ -640,7 +651,7 @@ dpp:Material rdf:type owl:Class ;
              rdfs:label "Material"@en .
 
 
-###  http://www.w3id.org/dpp#MaterialComposition
+###  http://w3id.org/dpp#MaterialComposition
 dpp:MaterialComposition rdf:type owl:Class ;
                         rdfs:subClassOf dpp:PropertyToBeReified ;
                         <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "128.54374643312752"^^xsd:double ;
@@ -649,7 +660,7 @@ dpp:MaterialComposition rdf:type owl:Class ;
                                                                                    ] .
 
 
-###  http://www.w3id.org/dpp#MaterialProperty
+###  http://w3id.org/dpp#MaterialProperty
 dpp:MaterialProperty rdf:type owl:Class ;
                      rdfs:subClassOf dpp:BagItem ;
                      <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "340.39286012740604"^^xsd:double ;
@@ -658,7 +669,7 @@ dpp:MaterialProperty rdf:type owl:Class ;
                                                                                 ] .
 
 
-###  http://www.w3id.org/dpp#MaterialScientist
+###  http://w3id.org/dpp#MaterialScientist
 dpp:MaterialScientist rdf:type owl:Class ;
                       rdfs:subClassOf dpp:Agent ;
                       <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "769.932983242883"^^xsd:double ;
@@ -667,7 +678,7 @@ dpp:MaterialScientist rdf:type owl:Class ;
                                                                                  ] .
 
 
-###  http://www.w3id.org/dpp#MaterialSpecification
+###  http://w3id.org/dpp#MaterialSpecification
 dpp:MaterialSpecification rdf:type owl:Class ;
                           rdfs:subClassOf dpp:Domain ;
                           <http://ontologydesignpatterns.org/opla#isNativeTo> <http://www.w3id.org/dpp/material-modules/26fe252c-dac0-4844-a19b-cb9bb5546d48> ;
@@ -677,7 +688,7 @@ dpp:MaterialSpecification rdf:type owl:Class ;
                                                                                      ] .
 
 
-###  http://www.w3id.org/dpp#MaterialTreatment
+###  http://w3id.org/dpp#MaterialTreatment
 dpp:MaterialTreatment rdf:type owl:Class ;
                       rdfs:subClassOf dpp:Event ;
                       <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "-399.5900640579007"^^xsd:double ;
@@ -686,7 +697,7 @@ dpp:MaterialTreatment rdf:type owl:Class ;
                                                                                  ] .
 
 
-###  http://www.w3id.org/dpp#Name
+###  http://w3id.org/dpp#Name
 dpp:Name rdf:type owl:Class ;
          <http://ontologydesignpatterns.org/opla#isNativeTo> <http://www.w3id.org/dpp/material-modules/c0131992-1d12-4923-90e0-ff30cda96794> ;
          <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "350.04954523554863"^^xsd:double ;
@@ -695,7 +706,7 @@ dpp:Name rdf:type owl:Class ;
                                                                     ] .
 
 
-###  http://www.w3id.org/dpp#ParticipantRole
+###  http://w3id.org/dpp#ParticipantRole
 dpp:ParticipantRole rdf:type owl:Class ;
                     <http://ontologydesignpatterns.org/opla#isNativeTo> <http://www.w3id.org/dpp/material-modules/46946791-472d-4448-b28e-197791c41217> ;
                     <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "-440.37728762467043"^^xsd:double ;
@@ -704,7 +715,7 @@ dpp:ParticipantRole rdf:type owl:Class ;
                                                                                ] .
 
 
-###  http://www.w3id.org/dpp#Place
+###  http://w3id.org/dpp#Place
 dpp:Place rdf:type owl:Class ;
           <http://ontologydesignpatterns.org/opla#isNativeTo> <http://www.w3id.org/dpp/material-modules/494e3b5c-fe38-448a-9764-dfd49b98c68d> ;
           <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "1029.7166485458763"^^xsd:double ;
@@ -713,7 +724,7 @@ dpp:Place rdf:type owl:Class ;
                                                                      ] .
 
 
-###  http://www.w3id.org/dpp#Product
+###  http://w3id.org/dpp#Product
 dpp:Product rdf:type owl:Class ;
             rdfs:subClassOf dpp:EntityWithProvenance ;
             <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "540.0765354572281"^^xsd:double ;
@@ -722,7 +733,7 @@ dpp:Product rdf:type owl:Class ;
                                                                        ] .
 
 
-###  http://www.w3id.org/dpp#PropertyToBeReified
+###  http://w3id.org/dpp#PropertyToBeReified
 dpp:PropertyToBeReified rdf:type owl:Class ;
                         <http://ontologydesignpatterns.org/opla#isNativeTo> <http://www.w3id.org/dpp/material-modules/4857fc77-f2e7-4410-a905-9648ba75754a> ;
                         <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "30.30995831848736"^^xsd:double ;
@@ -731,7 +742,7 @@ dpp:PropertyToBeReified rdf:type owl:Class ;
                                                                                    ] .
 
 
-###  http://www.w3id.org/dpp#ProvenanceActivity
+###  http://w3id.org/dpp#ProvenanceActivity
 dpp:ProvenanceActivity rdf:type owl:Class ;
                        <http://ontologydesignpatterns.org/opla#isNativeTo> <http://www.w3id.org/dpp/material-modules/d8313f95-220c-42eb-a555-0daee9437575> ;
                        <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "729.7342738184825"^^xsd:double ;
@@ -740,7 +751,7 @@ dpp:ProvenanceActivity rdf:type owl:Class ;
                                                                                   ] .
 
 
-###  http://www.w3id.org/dpp#QualityAssessment
+###  http://w3id.org/dpp#QualityAssessment
 dpp:QualityAssessment rdf:type owl:Class ;
                       rdfs:subClassOf dpp:ProvenanceActivity ;
                       <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "980.3300534066339"^^xsd:double ;
@@ -749,7 +760,7 @@ dpp:QualityAssessment rdf:type owl:Class ;
                                                                                  ] .
 
 
-###  http://www.w3id.org/dpp#QualityInspector
+###  http://w3id.org/dpp#QualityInspector
 dpp:QualityInspector rdf:type owl:Class ;
                      rdfs:subClassOf dpp:Agent ;
                      <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "729.7923857845833"^^xsd:double ;
@@ -758,7 +769,7 @@ dpp:QualityInspector rdf:type owl:Class ;
                                                                                 ] .
 
 
-###  http://www.w3id.org/dpp#QualityInspectorRole
+###  http://w3id.org/dpp#QualityInspectorRole
 dpp:QualityInspectorRole rdf:type owl:Class ;
                          rdfs:subClassOf dpp:AgentRole ;
                          <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "739.8310249031872"^^xsd:double ;
@@ -767,7 +778,7 @@ dpp:QualityInspectorRole rdf:type owl:Class ;
                                                                                     ] .
 
 
-###  http://www.w3id.org/dpp#Quantity
+###  http://w3id.org/dpp#Quantity
 dpp:Quantity rdf:type owl:Class ;
              <http://ontologydesignpatterns.org/opla#isNativeTo> <http://www.w3id.org/dpp/material-modules/076176d3-2eda-4a17-9d6c-863e2a8b5246> ;
              <http://ontologydesignpatterns.org/opla-sd#entityPosition> [ <http://ontologydesignpatterns.org/opla-sd#entityPositionX> "350.2474516653264"^^xsd:double ;

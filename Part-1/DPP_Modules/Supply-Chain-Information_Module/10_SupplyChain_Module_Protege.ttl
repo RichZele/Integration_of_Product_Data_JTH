@@ -1,13 +1,24 @@
-@prefix : <http://www.w3id.org/dpp/SupplyChain#> .
-@prefix dpp: <http://www.w3id.org/dpp#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://www.w3id.org/dpp/SupplyChain#> .
+@prefix :        <http://w3id.org/dpp#> .
+@prefix dpp:     <http://w3id.org/dpp#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 
-<http://www.w3id.org/dpp/SupplyChain> rdf:type owl:Ontology .
+@base <http://w3id.org/dpp#> .
+
+<https://w3id.org/dpp/supplychain>
+    a owl:Ontology ;
+    owl:versionIRI   <https://w3id.org/dpp/supplychain/1.0> ;
+    owl:versionInfo  "1.0" ;
+    dcterms:title    "Digital Product Passport – Supply Chain Module Ontology"@en ;
+    dcterms:creator  "Rahel Kebede" ;
+    dcterms:description
+        "This ontology defines concepts and properties for representing supply chain actors, events, and traceability information in the context of a Digital Product Passport (DPP)."@en ;
+    dcterms:license  <https://creativecommons.org/licenses/by/4.0/> ;
+    owl:imports      <https://w3id.org/dpp> .
+
 
 #################################################################
 #    Annotation properties
